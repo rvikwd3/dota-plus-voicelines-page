@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Radiance";
+    src: url("./fonts/radiance/radiance.ttf");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Radiance";
+    src: url("./fonts/radiance/radiance-bold.ttf");
+    font-weight: bold;
+  }
+}
+
+@layer components {
+  .voicelineContainer {
+    @apply gap-x-2 md:gap-x-3 lg:gap-x-4 py-2 md:rounded items-center bg-neutral-900 hover:bg-neutral-800 transition ease-out duration-100;
+  }
+
+  .voicelineContainer-grid {
+    grid-template-columns: 1fr 28px 28px 2fr;
+  }
+
+  @media (min-width: 768px) {
+    .voicelineContainer-grid {
+      grid-template-columns: 1fr 32px 32px 2fr 1fr;
+    }
+  }
+
+  [data-tooltip] {
+    position: relative;
+    z-index: 100;
+  }
+
+  /* Positioning and visibility settings of the tooltip */
+  [data-tooltip]:before,
+  [data-tooltip]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+    pointer-events: none;
+    transition: 0.1s;
+    will-change: transform;
+  }
+
+  /* The actual tooltip with a dynamic width */
+  [data-tooltip]:before {
+    @apply py-2 px-4 bg-neutral-700 text-neutral-200;
+    content: attr(data-tooltip);
+    min-width: 50px;
+    max-width: 200px;
+    width: max-content;
+    width: -moz-max-content;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    white-space: pre-wrap;
+    transform: translate(-50%, -5px) scale(0.5);
+  }
+
+  /* Tooltip arrow */
+  [data-tooltip]:after {
+    content: "";
+    border-style: solid;
+    border-width: 5px 5px 0px 5px; /* CSS triangle */
+    @apply border-t-neutral-700 border-r-transparent border-b-transparent border-l-transparent;
+    transition-duration: 0s; /* If the mouse leaves the element, 
+                              the transition effects for the 
+                              tooltip arrow are "turned off" */
+    transform-origin: top; /* Orientation setting for the
+                              slide-down effect */
+    transform: translateX(-50%) scaleY(0);
+  }
+
+  /* Tooltip becomes visible at hover */
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* Scales from 0.5 to 1 -> grow effect */
+  [data-tooltip]:hover:before {
+    transition-delay: 0.1s;
+    transform: translate(-50%, -5px) scale(1);
+  }
+  /* 
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+  */
+  [data-tooltip]:hover:after {
+    transition-delay: 0.2s; /* Starting after the grow effect */
+    transition-duration: 0.1s;
+    transform: translateX(-50%) scaleY(1);
+  }
+}
