@@ -18,28 +18,28 @@ export const VoicelineText = ({
   let textGradient = "";
   switch (plusTierName) {
     case PlusTier.bronze:
-      textGradient = `from-bronze-top to-bronze-bottom`;
+      textGradient = `to-bronze-to from-bronze-from `;
       break;
     case PlusTier.silver:
-      textGradient = `from-silver-top to-silver-bottom`;
+      textGradient = `to-silver-to from-silver-from `;
       break;
     case PlusTier.gold:
-      textGradient = `from-gold-top to-gold-bottom`;
+      textGradient = `to-gold-to from-gold-from `;
       break;
     case PlusTier.platinum:
-      textGradient = `from-platinum-top to-platinum-bottom`;
+      textGradient = `to-platinum-to from-platinum-from `;
       break;
     case PlusTier.master:
-      textGradient = `from-master-top to-master-bottom`;
+      textGradient = `to-master-to from-master-from `;
       break;
     case PlusTier.grandmaster:
-      textGradient = `from-grandmaster-top to-grandmaster-bottom`;
+      textGradient = `to-grandmaster-to from-grandmaster-from `;
       break;
     case PlusTier.bonus:
-      textGradient = `from-bonus-top to-bonus-bottom`;
+      textGradient = `to-bonus-to from-bonus-from `;
       break;
     case PlusTier.bag:
-      textGradient = `from-bag-top to-bag-bottom`;
+      textGradient = `to-bag-to from-bag-from `;
       break;
     default:
       assertUnreachable(plusTierName);

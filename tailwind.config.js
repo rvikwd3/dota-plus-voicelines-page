@@ -11,37 +11,37 @@ module.exports = {
         'sans': ['Radiance', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'bronze': {
-          top: '#fadd9a',
-          bottom: '#e2b276',
+        bronze: {
+          from: '#fadd9a',
+          to: '#e2b276',
         },
-        'silver': {
-          top: '#dff1f4',
-          bottom: '#add7e0',
+        silver: {
+          from: '#dff1f4',
+          to: '#add7e0',
         },
-        'gold': {
-          top: '#fdfbd2',
-          bottom: '#e9e463',
+        gold: {
+          from: '#fdfbd2',
+          to: '#e9e463',
         },
-        'platinum': {
-          top: '#dae7ff',
-          bottom: '#5d9eff',
+        platinum: {
+          from: '#dae7ff',
+          to: '#5d9eff',
         },
-        'master': {
-          top: '#dbc6ff',
-          bottom: '#8326c5',
+        master: {
+          from: '#dbc6ff',
+          to: '#8326c5',
         },
-        'grandmaster': {
-          top: '#f3a8a8',
-          bottom: '#e01333',
+        grandmaster: {
+          from: '#f3a8a8',
+          to: '#e01333',
         },
-        'bonus': {
-          top: '#fcffeb',
-          bottom: '#fafac6',
+        bonus: {
+          from: '#fcffeb',
+          to: '#fafac6',
         },
-        'bag': {
-          top: '#dff1f4',
-          bottom: '#add7e0',
+        bag: {
+          from: '#dff1f4',
+          to: '#add7e0',
         },
       },
       dropShadow: {
