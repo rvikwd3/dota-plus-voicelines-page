@@ -5199,20 +5199,12 @@ export const heroesLookupTable = [
         {
           "text": "Throughout the aeons I have been known by many names...but my true name of power...is Carl.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/37/Vo_invoker_invo_rare_04.mp3"
-        },
-        {
-          "text": "I was not content to wait aeons. Dangerous magics bring me here... to now.",
-          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/62/Vo_invoker_kidvo_la_rare_04.mp3"
         }
       ],
       "grandmaster": [
         {
           "text": "I am a beacon of knowledge blazing out across a black sea of ignorance.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/59/Vo_invoker_invo_level_05.mp3"
-        },
-        {
-          "text": "I am a beacon of knowledge blazing out across a black sea of ignorance.",
-          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/63/Vo_invoker_kidvo_la_level_05.mp3"
         }
       ]
     }
@@ -7555,7 +7547,7 @@ export const heroesLookupTable = [
         },
         {
           "text": "Expertise! From the experts.",
-          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/93/Vo_ogre_magi_ogm_arc_illus_02_02.mp3"
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/32/Vo_ogre_magi_ogm_arc_ability_multi_05.mp3"
         }
       ],
       "gold": [
