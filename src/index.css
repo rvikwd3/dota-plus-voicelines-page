@@ -17,16 +17,16 @@
 }
 
 @layer components {
-  .voicelineContainer {
+  .voicelineItem {
     @apply gap-x-2 md:gap-x-3 lg:gap-x-4 py-2 md:rounded items-center bg-neutral-900 hover:bg-neutral-800 transition ease-out duration-100;
   }
 
-  .voicelineContainer-grid {
+  .voicelineItem-grid {
     grid-template-columns: 1fr 28px 28px 2fr;
   }
 
   @media (min-width: 768px) {
-    .voicelineContainer-grid {
+    .voicelineItem-grid {
       grid-template-columns: 1fr 32px 32px 2fr 1fr;
     }
   }

@@ -24,7 +24,7 @@ const Voiceline = ({
     <>
       <li
         key={entry.command}
-        className={`grid cursor-pointer voicelineContainer-grid voicelineContainer md:px-2`}
+        className={`voicelineItem grid cursor-pointer voicelineItem-grid md:px-2`}
         onClick={onVoicelineClick}
       >
         <Command

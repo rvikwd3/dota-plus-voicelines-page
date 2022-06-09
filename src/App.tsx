@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="w-full h-full">
       <h1 className="text-center font-bold text-4xl text-sky-600">
-        Hello World
+        Dota Plus Voiceline Page
       </h1>
       <VoicelinesListContainer voicelines={voicelinesToShow} />
     </div>

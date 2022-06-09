@@ -20,7 +20,7 @@ export const CopyIcon = ({
         setCopyState("Copied!");
       }}
       id={id}
-      className={`${className} cursor-pointer mr-8`}
+      className={`cursor-pointer mr-8 ${className}`}
       onMouseLeave={(e) => {
         e.preventDefault();
         setTimeout(() => {    // Allow tooltip to fade out before changing tooltip content
