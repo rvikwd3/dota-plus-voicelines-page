@@ -1,21 +1,24 @@
-import { useState } from "react";
-import { VoicelineContainerEntry } from "../types";
-import VoicelinesListContainer from "./components/VoicelinesListContainer";
+import { lazy, Suspense } from "react";
+import Spinner from "./components/Spinner";
 
-import { plusTierIconUrlList } from "./config";
-import { parseHeroesLookupTable } from "./utils/parseHeroesLookupTable";
+const VoicelinesListContainer = lazy(() => import("./components/VoicelinesListContainer"));
 
 const App = () => {
-  const [voicelinesToShow, setVoicelinesToShow] = useState<
-    VoicelineContainerEntry[]
-  >(parseHeroesLookupTable());
-
   return (
     <div className="w-full h-full">
       <h1 className="text-center font-bold text-4xl text-sky-600">
         Dota Plus Voiceline Page
       </h1>
-      <VoicelinesListContainer voicelines={voicelinesToShow} />
+
+      <Suspense
+        fallback={
+          <div className="flex text-center justify-center items-center pt-28">
+            <Spinner />
+          </div>
+        }
+      >
+        <VoicelinesListContainer />
+      </Suspense>
     </div>
   );
 };

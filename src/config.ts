@@ -12,3 +12,6 @@ export const plusTierIconUrlList: {[key in PlusTier]: string} = {
   master: "/images/master.png",
   grandmaster: "/images/grandmaster.png",
 }
+
+export const initialVoicelinesShown: number = 50;
+export const incrementVoicelinesShownOnScroll: number = 40;
