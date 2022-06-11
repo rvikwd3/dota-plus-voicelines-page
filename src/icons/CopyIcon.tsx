@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export const CopyIcon = ({
-  commandToCopy,
+  copyCallback,
   className,
   id,
 }: {
-  commandToCopy: string;
+  copyCallback: () => void;
   className: string;
   id: string;
 }) => {
@@ -16,7 +16,7 @@ export const CopyIcon = ({
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
-        navigator.clipboard.writeText(commandToCopy);
+        copyCallback();
         setCopyState("Copied!");
       }}
       id={id}
@@ -29,7 +29,7 @@ export const CopyIcon = ({
       }}
     >
       <svg
-        className="drop-shadow-sm active:drop-shadow-white-glow transition duration-200"
+        className="drop-shadow-sm active:scale-75 transition duration-200"
         xmlns="http://www.w3.org/2000/svg"
         width="36"
         height="36"

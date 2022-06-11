@@ -44,9 +44,6 @@ module.exports = {
           to: '#add7e0',
         },
       },
-      dropShadow: {
-        'white-glow': '0 0 11px rgba(255, 255, 255, 0.8)',
-      }
     },
   },
   plugins: [],

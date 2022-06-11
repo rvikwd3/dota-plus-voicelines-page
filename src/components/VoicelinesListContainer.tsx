@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { VoicelineContainerEntry } from "../../types";
 import VoicelineListScroller from "./VoicelineListScroller";
 import { parseHeroesLookupTable } from "../utils/parseHeroesLookupTable";

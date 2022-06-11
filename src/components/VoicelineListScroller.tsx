@@ -1,13 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { VoicelineContainerEntry } from "../../types";
+import useInfiniteScroll from "../hooks/useInfiniteScroll";
+import Voiceline from "./Voiceline";
 import {
   incrementVoicelinesShownOnScroll,
   initialVoicelinesShown,
 } from "../config";
-import useInfiniteScroll from "../hooks/useInfiniteScroll";
 import { DownArrow } from "../icons";
-import Spinner from "./Spinner";
-import Voiceline from "./Voiceline";
 
 const VoicelineListScroller = ({
   voicelines,
@@ -20,26 +19,34 @@ const VoicelineListScroller = ({
     initialVoicelinesShown,
     incrementVoicelinesShownOnScroll
   );
+
+  const [isSmallDisplay, setIsSmallDisplay] = useState<boolean>(
+    !window.matchMedia("(min-width: 768px").matches
+  );
+
   useEffect(() => {
-    console.log(`Current limit: %c${limit}`, "color: turquoise;");
-  }, [limit]);
+    window
+      .matchMedia("(min-width: 768px")
+      .addEventListener("change", (e) => setIsSmallDisplay(!e.matches));
+  }, []);
 
   return (
     <div className="flex flex-col items-center">
-      <ul className="md:w-5/6 lg:w-4/6 flex flex-col gap-y-2">
+      <ul className="md:w-5/6 lg:w-4/6 flex flex-col gap-y-2 overflow-hidden select-none md:select-auto">
         {voicelines.slice(0, limit).map((entry) => (
           <Voiceline
             key={entry.command}
             entry={entry}
+            enableDrag={isSmallDisplay}
             setCurrentVoiceline={setCurrentVoiceline}
           />
         ))}
       </ul>
       <div
         ref={loadMoreTriggerRef}
-        className="text-neutral-200 text-xl text-center p-4 mb-8"
+        className="text-neutral-200 text-xl text-center p-4 mb-10"
       >
-        <DownArrow className="animate-bounce"/>
+        {limit <= voicelines.length && <DownArrow className="animate-bounce" />}
       </div>
     </div>
   );

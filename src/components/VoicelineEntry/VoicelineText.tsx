@@ -7,11 +7,13 @@ const assertUnreachable = (x: never): never => {
 export const VoicelineText = ({
   text,
   plusTierName,
+  isClickable,
   className,
   id,
 }: {
   text: string;
   plusTierName: PlusTier;
+  isClickable: boolean;
   className?: string;
   id?: string;
 }) => {
@@ -48,7 +50,7 @@ export const VoicelineText = ({
     <div id={`${id}`} className={`${className} drop-shadow-sm `}>
       <span
         className={`cursor-auto inline break-word md:text-lg font-bold justify-self-start leading-snug tracking-normal bg-clip-text text-transparent bg-gradient-to-b ${textGradient}`}
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e) => !isClickable && e.stopPropagation()}
       >
         {text}
       </span>
