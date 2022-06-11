@@ -1,7 +1,6 @@
 @import "tailwindcss/base";
 @import "./css/fonts.css";
 @import "tailwindcss/components";
-@import "./css/animations.css";
 @import "./css/tooltip.css";
 @import "./css/voicelineItem.css";
 @import "tailwindcss/utilities";
