@@ -1,0 +1,30 @@
+:root {
+ --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+} 
+
+.mobileCommandDisplay-enter {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-45px);
+}
+
+.mobileCommandDisplay-enter-active {
+  opacity: 1;
+  max-height: 60px;
+  transform: translateY(0px);
+  transition: opacity 500ms, max-height 500ms var(--ease-out-cubic),
+    transform 500ms var(--ease-out-cubic);
+}
+
+.mobileCommandDisplay-exit {
+  opacity: 1;
+  max-height: 60px;
+}
+
+.mobileCommandDisplay-exit-active {
+  opacity: 0;
+  max-height: 0px;
+  transform: translateY(-45px);
+  transition: opacity 500ms, max-height 500ms var(--ease-out-cubic),
+    transform 500ms var(--ease-out-cubic);
+}

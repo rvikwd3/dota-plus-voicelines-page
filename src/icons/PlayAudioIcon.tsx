@@ -1,4 +1,4 @@
-export const CopyIcon = ({
+export const PlayAudioIcon = ({
   id,
   className,
 }: {
@@ -8,7 +8,7 @@ export const CopyIcon = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`icon icon-tabler icon-tabler-copy ${className}`}
+      className={ `icon icon-tabler icon-tabler-volume ${className}` }
       width="44"
       height="44"
       viewBox="0 0 24 24"
@@ -19,8 +19,9 @@ export const CopyIcon = ({
       strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <rect x="8" y="8" width="12" height="12" rx="2" />
-      <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+      <path d="M15 8a5 5 0 0 1 0 8" />
+      <path d="M17.7 5a9 9 0 0 1 0 14" />
+      <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
     </svg>
   );
 };

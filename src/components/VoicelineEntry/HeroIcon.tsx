@@ -10,8 +10,8 @@ export const HeroIcon = ({
   className?: string;
 }) => {
   return (
-    <div data-tooltip={tooltip}>
-      <img id="heroIcon" src={iconUrl} className={`${className} cursor-auto w-7 md:w-8`} />
+    <div data-tooltip={tooltip} className={`${className}`}>
+      <img id="heroIcon" src={iconUrl} className="cursor-auto w-7 md:w-8" />
     </div>
   );
 };

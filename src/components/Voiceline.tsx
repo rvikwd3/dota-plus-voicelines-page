@@ -1,11 +1,17 @@
 import { VoicelineContainerEntry } from "../../types";
 import { plusTierIconUrlList } from "../config";
-import { CopyIcon } from "../icons";
+import {
+  InteractableCopyIcon,
+  LeftChevronIcon,
+  CopyIcon,
+} from "../icons";
 import { Command, VoicelineText } from "./VoicelineEntry";
 import { HeroIcon } from "./VoicelineEntry/HeroIcon";
+import MobileCommandDrawer from "./MobileCommandDrawer";
 
-import { useSpring, animated } from "@react-spring/web";
+import { useSpring, useTransition, animated, easings } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
+import { useRef, useState } from "react";
 
 const Voiceline = ({
   entry,
@@ -20,8 +26,30 @@ const Voiceline = ({
   id?: string;
   classname?: string;
 }) => {
+  const [copiedState, setCopiedState] = useState<boolean>(false);
+  const [showMobileCommandDisplay, setShowMobileCommandDisplay] =
+    useState<boolean>(false);
+  const slideLeftBound = 170;
+
+  const animateDrawer = useTransition(showMobileCommandDisplay, {
+    from: { y: -52, opacity: 0, maxHeight: 0 },
+    enter: { y: 0, opacity: 1, maxHeight: 52 },
+    leave: { y: -52, opacity: 0, maxHeight: 0 },
+    config: {
+      duration: 400,
+      easing: easings.easeOutCubic,
+    },
+  });
+
   const onVoicelineClick = () => {
-    setCurrentVoiceline(entry.voiceline.url);
+    // If larger display, don't play the voiceline on click
+    if (!enableDrag) {
+      setCurrentVoiceline(entry.voiceline.url);
+    }
+    // If smaller display, open the command drawer on tap(click)
+    if (enableDrag) {
+      setShowMobileCommandDisplay((isShowing) => !isShowing);
+    }
   };
 
   const copyCommandToClipboard = () => {
@@ -30,10 +58,21 @@ const Voiceline = ({
 
   const [{ x }, api] = useSpring(() => ({ x: 0 }));
   const bind = useDrag(
-    ({ event, down, active, distance, offset: [x] }) => {
+    ({ down, active, distance, offset: [x] }) => {
       // On sliding 100px left, copy voiceline command
-      if (!active && distance[0] > 100) {
+      if (!active && distance[0] >= slideLeftBound) {
         copyCommandToClipboard();
+      }
+
+      // On sliding left, change swipe text to copied if not done so already
+      if (active && distance[0] >= slideLeftBound && !copiedState) {
+        // After 200ms set copiedState to True, then revert after 2sec
+        setTimeout(() => {
+          setCopiedState(true);
+        }, 200);
+        setTimeout(() => {
+          setCopiedState(false);
+        }, 2000);
       }
       api.start({ x: down ? x : 0, immediate: down });
     },
@@ -42,7 +81,7 @@ const Voiceline = ({
       axis: "x",
       from: () => [x.get(), 0],
       bounds: {
-        left: -150,
+        left: -slideLeftBound,
         right: 0,
       },
       filterTaps: true,
@@ -50,45 +89,72 @@ const Voiceline = ({
   );
 
   return (
-    <div className="relative">
-      <div className="absolute md:hidden z-0 w-full h-full bg-slate-600 flex items-center justify-end text-neutral-400">
-        Slide to copy
+    <div>
+      <div className="relative">
+        <div className="absolute md:hidden z-0 w-full h-full pr-2">
+          {copiedState ? (
+            <div className="w-full h-full flex items-center justify-end text-neutral-400">
+              <span>Copied!</span>
+            </div>
+          ) : (
+            <div className="w-full h-full flex items-center justify-end text-neutral-400">
+              <span>Slide to copy</span>
+              <LeftChevronIcon className="w-5 stroke-neutral-400 -mr-1" />
+              <CopyIcon className="w-6 stroke-neutral-400" />
+            </div>
+          )}
+        </div>
+        <animated.li
+          key={entry.command}
+          className={`touch-pan-y z-10 relative grid cursor-pointer voicelineItem voicelineItem-grid px-2 md:px-3`}
+          onClick={onVoicelineClick}
+          {...bind()}
+          style={{ x }}
+        >
+          <Command
+            id="command"
+            className="hidden md:block text-gray-400 text-md font-bold text-right"
+            command={entry.command}
+          />
+          <HeroIcon
+            className="justify-self-center cursor-default shadow-sm"
+            iconUrl={entry.heroIconUrl}
+            tooltip={entry.heroNames.join(", ")}
+          />
+          <img
+            id="plusTierIcon"
+            src={plusTierIconUrlList[entry.plusTierName]}
+            className="justify-self-center cursor-default w-7 md:w-8 shadow-sm"
+            onClick={(e) => !enableDrag && e.stopPropagation()}
+          />
+          <VoicelineText
+            id="voicelineText"
+            text={entry.voiceline.text}
+            isClickable={enableDrag} // Disable clickable if smallDisplay (enableDrag)
+            plusTierName={entry.plusTierName}
+          />
+          <InteractableCopyIcon
+            id="copyIcon"
+            copyCallback={copyCommandToClipboard}
+            className="hidden md:block justify-self-end hover:-translate-y-[2px] transition"
+          />
+        </animated.li>
       </div>
-      <animated.li
-        key={entry.command}
-        className={`touch-pan-y z-10 relative voicelineItem grid cursor-pointer voicelineItem-grid md:px-2`}
-        onClick={onVoicelineClick}
-        {...bind()}
-        style={{ x }}
-      >
-        <Command
-          id="command"
-          className="inline text-gray-400 text-md font-bold text-right"
-          command={entry.command}
-        />
-        <HeroIcon
-          className="cursor-default"
-          iconUrl={entry.heroIconUrl}
-          tooltip={entry.heroNames.join(", ")}
-        />
-        <img
-          id="plusTierIcon"
-          src={plusTierIconUrlList[entry.plusTierName]}
-          className="cursor-default w-7 md:w-8"
-          onClick={(e) => !enableDrag && e.stopPropagation()}
-        />
-        <VoicelineText
-          id="voicelineText"
-          text={entry.voiceline.text}
-          isClickable={enableDrag}  // Disable clickable if smallDisplay (enableDrag)
-          plusTierName={entry.plusTierName}
-        />
-        <CopyIcon
-          id="copyIcon"
-          copyCallback={copyCommandToClipboard}
-          className="hidden md:block justify-self-end hover:-translate-y-[2px] transition"
-        />
-      </animated.li>
+      {animateDrawer((style, showDrawer) =>
+        showDrawer ? (
+          <animated.div style={style} className={`z-0 shadow-sm md:hidden`}>
+            <MobileCommandDrawer
+              command={entry.command}
+              copyCommandToClipboard={copyCommandToClipboard}
+              setCurrentVoiceline={() =>
+                setCurrentVoiceline(entry.voiceline.url)
+              }
+            />
+          </animated.div>
+        ) : (
+          ""
+        )
+      )}
     </div>
   );
 };
