@@ -4,3 +4,9 @@
 @import "./css/tooltip.css";
 @import "./css/voicelineItem.css";
 @import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

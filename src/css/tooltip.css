@@ -32,6 +32,10 @@
   transform: translate(-50%, -5px) scale(0.5);
 }
 
+[data-tooltip][mobile]:before {
+  @apply ml-2
+}
+
 /* Tooltip arrow */
 [data-tooltip]:after {
   content: "";

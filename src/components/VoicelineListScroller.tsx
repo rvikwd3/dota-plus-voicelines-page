@@ -37,7 +37,7 @@ const VoicelineListScroller = ({
           <Voiceline
             key={entry.command}
             entry={entry}
-            enableDrag={isSmallDisplay}
+            isSmallDisplay={isSmallDisplay}
             setCurrentVoiceline={setCurrentVoiceline}
           />
         ))}

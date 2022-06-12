@@ -1,27 +1,23 @@
 import { VoicelineContainerEntry } from "../../types";
 import { plusTierIconUrlList } from "../config";
-import {
-  InteractableCopyIcon,
-  LeftChevronIcon,
-  CopyIcon,
-} from "../icons";
+import { InteractableCopyIcon, LeftChevronIcon, CopyIcon } from "../icons";
 import { Command, VoicelineText } from "./VoicelineEntry";
 import { HeroIcon } from "./VoicelineEntry/HeroIcon";
 import MobileCommandDrawer from "./MobileCommandDrawer";
 
 import { useSpring, useTransition, animated, easings } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const Voiceline = ({
   entry,
-  enableDrag,
+  isSmallDisplay,
   setCurrentVoiceline,
   id,
   classname,
 }: {
   entry: VoicelineContainerEntry;
-  enableDrag: boolean;
+  isSmallDisplay: boolean;
   setCurrentVoiceline: (url: string) => void;
   id?: string;
   classname?: string;
@@ -32,9 +28,21 @@ const Voiceline = ({
   const slideLeftBound = 170;
 
   const animateDrawer = useTransition(showMobileCommandDisplay, {
-    from: { y: -52, opacity: 0, maxHeight: 0 },
-    enter: { y: 0, opacity: 1, maxHeight: 52 },
-    leave: { y: -52, opacity: 0, maxHeight: 0 },
+    from: {
+      y: -52,
+      opacity: 0,
+      // maxHeight: 0
+    },
+    enter: {
+      y: 0,
+      opacity: 1,
+      // maxHeight: 52
+    },
+    leave: {
+      y: -52,
+      opacity: 0,
+      // maxHeight: 0
+    },
     config: {
       duration: 400,
       easing: easings.easeOutCubic,
@@ -43,11 +51,11 @@ const Voiceline = ({
 
   const onVoicelineClick = () => {
     // If larger display, don't play the voiceline on click
-    if (!enableDrag) {
+    if (!isSmallDisplay) {
       setCurrentVoiceline(entry.voiceline.url);
     }
     // If smaller display, open the command drawer on tap(click)
-    if (enableDrag) {
+    if (isSmallDisplay) {
       setShowMobileCommandDisplay((isShowing) => !isShowing);
     }
   };
@@ -77,7 +85,7 @@ const Voiceline = ({
       api.start({ x: down ? x : 0, immediate: down });
     },
     {
-      enabled: enableDrag,
+      enabled: isSmallDisplay,
       axis: "x",
       from: () => [x.get(), 0],
       bounds: {
@@ -111,13 +119,17 @@ const Voiceline = ({
           {...bind()}
           style={{ x }}
         >
-          <Command
-            id="command"
-            className="hidden md:block text-gray-400 text-md font-bold text-right"
-            command={entry.command}
-          />
+          {!isSmallDisplay && (
+            <Command
+              id="command"
+              className="text-gray-400 text-md font-bold text-right"
+              command={entry.command}
+            />
+          )}
           <HeroIcon
-            className="justify-self-center cursor-default shadow-sm"
+            className={"justify-self-center cursor-default shadow-sm".concat(
+              isSmallDisplay ? " mobile" : ""
+            )}
             iconUrl={entry.heroIconUrl}
             tooltip={entry.heroNames.join(", ")}
           />
@@ -125,24 +137,26 @@ const Voiceline = ({
             id="plusTierIcon"
             src={plusTierIconUrlList[entry.plusTierName]}
             className="justify-self-center cursor-default w-7 md:w-8 shadow-sm"
-            onClick={(e) => !enableDrag && e.stopPropagation()}
+            onClick={(e) => !isSmallDisplay && e.stopPropagation()}
           />
           <VoicelineText
             id="voicelineText"
             text={entry.voiceline.text}
-            isClickable={enableDrag} // Disable clickable if smallDisplay (enableDrag)
+            isClickable={isSmallDisplay} // Disable clickable if smallDisplay (isSmallDisplay)
             plusTierName={entry.plusTierName}
           />
-          <InteractableCopyIcon
-            id="copyIcon"
-            copyCallback={copyCommandToClipboard}
-            className="hidden md:block justify-self-end hover:-translate-y-[2px] transition"
-          />
+          {!isSmallDisplay && (
+            <InteractableCopyIcon
+              id="copyIcon"
+              copyCallback={copyCommandToClipboard}
+              className="hidden md:block justify-self-end hover:-translate-y-[2px] transition"
+            />
+          )}
         </animated.li>
       </div>
       {animateDrawer((style, showDrawer) =>
         showDrawer ? (
-          <animated.div style={style} className={`z-0 shadow-sm md:hidden`}>
+          <animated.div style={style} className={`z-10 shadow-xl md:hidden`}>
             <MobileCommandDrawer
               command={entry.command}
               copyCommandToClipboard={copyCommandToClipboard}
