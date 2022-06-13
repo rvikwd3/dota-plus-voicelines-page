@@ -1,6 +1,6 @@
 import { PlusTier, VoicelineContainerEntry } from "../../types";
 import { chatwheelCommand, plusTierIconUrlList } from "../config";
-import { heroesLookupTable } from "../data/heroesLookupTable_manuallyHydrated";
+import heroesLookupTable from "../data/heroesLookupTable_manuallyHydrated.json";
 
 /*
  * Reduce the heroesLookupTable to a flat collection of Voiceline Entries

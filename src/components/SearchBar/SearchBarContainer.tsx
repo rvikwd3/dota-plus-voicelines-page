@@ -30,7 +30,7 @@ export const SearchBarContainer = ({ id, className }: Props) => {
 
   return (
     <div
-      className={`bg-[#121212] w-full h-full p-4 my-4 z-20 sticky top-0 left-0 shadow-black/95 transition duration-200 ${
+      className={`bg-[#121212] p-4 my-4 z-20 sticky top-0 left-0 shadow-black/95 transition duration-200 ${
         isPastScrollOffset ? "shadow-lg" : "shadow-none"
       }`}
     >

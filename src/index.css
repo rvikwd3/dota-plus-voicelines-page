@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "./css/fonts.css";
 @import "tailwindcss/components";
+@import "./css/noListScrollbar.css";
 @import "./css/tooltip.css";
 @import "./css/voicelineItem.css";
 @import "tailwindcss/utilities";
@@ -9,5 +10,9 @@
   html {
     -webkit-tap-highlight-color: transparent;
     font-smoothing: always;
+  }
+
+  html, body, #root {
+    height: 100%;
   }
 }

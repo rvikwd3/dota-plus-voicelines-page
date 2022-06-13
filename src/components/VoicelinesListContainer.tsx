@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { VoicelineContainerEntry } from "../../types";
 import VoicelineListScroller from "./VoicelineListScroller";
 import { parseHeroesLookupTable } from "../utils/parseHeroesLookupTable";
 
 const VoicelinesListContainer = () => {
-  const [voicelinesToShow, setVoicelinesToShow] = useState<
-    VoicelineContainerEntry[]
-  >(parseHeroesLookupTable());
+  const voicelinesToShow = useMemo<VoicelineContainerEntry[]>(
+    parseHeroesLookupTable,
+    []
+  );
 
   const [voicelineUrl, setVoicelineUrl] = useState<string>();
   const [voicelineAudio, setVoicelineAudio] = useState<HTMLAudioElement>(

@@ -1,6 +1,3 @@
-import { PropsWithRef } from "react";
-import { VoicelineContainerEntry } from "../../../types";
-
 export const Command = ({ command, className, id }: {
   command: string;
   className: string;

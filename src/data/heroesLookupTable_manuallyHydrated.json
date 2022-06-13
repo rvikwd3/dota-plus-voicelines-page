@@ -1,4 +1,4 @@
-export const heroesLookupTable = [
+[
   {
     "name": ["aba", "abbadon", "abaddon", "abba"],
     "icon": "/images/heroes/icons/npc_dota_hero_abaddon_png.png",
@@ -594,7 +594,7 @@ export const heroesLookupTable = [
     }
   },
   {
-    "name": ["bat", "batrider",],
+    "name": ["bat", "batrider"],
     "icon": "/images/heroes/icons/npc_dota_hero_batrider_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_batrider_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_batrider_png.png",
@@ -4745,7 +4745,7 @@ export const heroesLookupTable = [
       "facelessvoid",
       "faceless",
       "darkterror",
-      "void",
+      "void"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_faceless_void_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_faceless_void_png.png",
@@ -11828,7 +11828,14 @@ export const heroesLookupTable = [
     }
   },
   {
-    "name": ["wkarcana", "skeleton king", "skeletonking", "skele", "wraithkingarcana", "leoric"],
+    "name": [
+      "wkarcana",
+      "skeleton king",
+      "skeletonking",
+      "skele",
+      "wraithkingarcana",
+      "leoric"
+    ],
     "icon": "/images/heroes/icons/npc_dota_hero_skeleton_king_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_skeleton_king_alt1_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_skeleton_king_alt1_png.png",

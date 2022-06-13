@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from "react";
 import { usePopper } from "react-popper";
-import { CopyIcon, InteractableCopyIcon, PlayAudioIcon } from "../icons";
+import { InteractableCopyIcon, PlayAudioIcon } from "../icons";
 import AnimateTooltip from "./AnimateTooltip";
 
 type CommandDrawerProps = {
