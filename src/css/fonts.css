@@ -1,11 +1,19 @@
 @font-face {
   font-family: "Radiance";
-  src: url("./fonts/radiance/radiance.ttf");
+  src: url("./fonts/radiance/radiance-webfont.woff2") format("woff2"),
+    url("./fonts/radiance/radiance-webfont.woff") format("woff"),
+    url("./fonts/radiance/radiance.ttf");
+
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Radiance";
-  src: url("./fonts/radiance/radiance-bold.ttf");
+  src: url("./fonts/radiance/radiance-bold-webfont.woff2") format("woff2"),
+    url("./fonts/radiance/radiance-bold-webfont.woff") format("woff"),
+    url("./fonts/radiance/radiance-bold.ttf");
+
   font-weight: bold;
+  font-style: bold;
 }

@@ -8,5 +8,6 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+    font-smoothing: always;
   }
 }

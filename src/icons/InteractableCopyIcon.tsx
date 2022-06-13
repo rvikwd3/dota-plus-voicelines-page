@@ -1,49 +1,91 @@
-import { useState } from "react";
+import { SyntheticEvent, useState } from "react";
+import { usePopper } from "react-popper";
+import AnimateTooltip from "../components/AnimateTooltip";
+import { CopyIcon } from "./CopyIcon";
 
 export const InteractableCopyIcon = ({
   copyCallback,
   className,
+  svgClassName,
   id,
 }: {
   copyCallback: () => void;
-  className: string;
-  id: string;
+  className?: string;
+  svgClassName?: string;
+  id?: string;
 }) => {
   const [copyState, setCopyState] = useState<string>("Copy Command");
+  const [showTooltip, setShowTooltip] = useState<boolean>(false);
+
+  const [tooltipRef, setTooltipRef] = useState<HTMLAnchorElement | null>();
+  const [popperRef, setPoppperRef] = useState<HTMLDivElement | null>();
+  const [arrowRef, setArrowRef] = useState<HTMLDivElement | null>();
+  const { update, styles, attributes } = usePopper(tooltipRef, popperRef, {
+    placement: "top",
+    modifiers: [
+      {
+        name: "arrow",
+        options: {
+          element: arrowRef,
+        },
+      },
+      {
+        name: "offset",
+        options: {
+          offset: [0, 0],
+        },
+      },
+    ],
+  });
+
+  const [hoverTimeout, setHoverTimeout] = useState<number>();
+
+  const hoverCopyIcon = () => {
+    setShowTooltip(true);
+    clearTimeout(hoverTimeout); // debounce not hover
+  };
+
+  const notHoverCopyIcon = () => {
+    setHoverTimeout(setTimeout(() => setShowTooltip(false), 200)); // setup for debounce if element is re-hovered
+  };
+
+  const onIconClick = async (event: SyntheticEvent) => {
+    event.preventDefault();
+    event.stopPropagation();
+    copyCallback();
+    setCopyState("Copied!");
+    await update!();
+    setTimeout(async () => {
+      setCopyState("Copy Command");
+      await update!();
+    }, 5000);
+  };
+
   return (
-    <a
-      data-tooltip={copyState}  // Tooltip content
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        copyCallback();
-        setCopyState("Copied!");
-      }}
-      id={id}
-      className={`cursor-pointer mr-8 ${className}`}
-      onMouseLeave={(e) => {
-        e.preventDefault();
-        setTimeout(() => {    // Allow tooltip to fade out before changing tooltip content
-          setCopyState("Copy Command");
-        }, 100);
-      }}
-    >
-      <svg
-        className="drop-shadow-sm active:scale-75 transition duration-100"
-        xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="#d4d4d4"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+    <>
+      <a
+        onClick={onIconClick}
+        onMouseEnter={hoverCopyIcon}
+        onMouseLeave={notHoverCopyIcon}
+        id={id}
+        ref={setTooltipRef}
+        className={`${className}`}
       >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <rect x="8" y="8" width="12" height="12" rx="2" />
-        <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-      </svg>
-    </a>
+        <CopyIcon className={`${svgClassName}`} />
+      </a>
+      <AnimateTooltip show={showTooltip}>
+        <div
+          className="w-max tooltip bg-stone-700 text-neutral-100 px-2 py-2 text-sm text-center rounded-md shadow-xl"
+          role="tooltip"
+          data-popper-placement="top"
+          ref={setPoppperRef}
+          style={styles.popper}
+          {...attributes.popper}
+        >
+          <div className="arrow" ref={setArrowRef} style={styles.arrow} />
+          {copyState}
+        </div>
+      </AnimateTooltip>
+    </>
   );
 };

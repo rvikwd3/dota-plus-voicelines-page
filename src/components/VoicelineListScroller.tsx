@@ -32,7 +32,7 @@ const VoicelineListScroller = ({
 
   return (
     <div className="flex flex-col items-center">
-      <ul className="md:w-5/6 lg:w-4/6 flex flex-col gap-y-2 select-none md:select-auto">
+      <div className="md:w-5/6 lg:w-4/6 flex flex-col gap-y-2 select-none md:select-auto">
         {voicelines.slice(0, limit).map((entry) => (
           <Voiceline
             key={entry.command}
@@ -41,13 +41,15 @@ const VoicelineListScroller = ({
             setCurrentVoiceline={setCurrentVoiceline}
           />
         ))}
-      </ul>
+      </div>
       <div
         id="loadMoreVoicelinesArrow"
         ref={loadMoreTriggerRef}
         className="text-neutral-200 text-xl text-center p-4 mb-10"
       >
-        {limit <= voicelines.length && <DownArrow className="animate-bounce drop-shadow-sm" />}
+        {limit <= voicelines.length && (
+          <DownArrow className="animate-bounce drop-shadow-sm" />
+        )}
       </div>
     </div>
   );
