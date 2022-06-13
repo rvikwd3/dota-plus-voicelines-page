@@ -104,7 +104,7 @@ const VoicelineListScroller = ({
 
   return (
     <div
-      className="md:w-5/6 max-w-6xl h-full self-center"
+      className="w-full md:w-5/6 max-w-6xl h-full self-center"
       ref={listContainerRef}
       onKeyDown={handleKeyDown}
       tabIndex={0}
