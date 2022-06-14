@@ -54,10 +54,10 @@ export const InteractableCopyIcon = ({
     event.stopPropagation();
     copyCallback();
     setCopyState("Copied!");
-    await update!();
+    !!update && await update();   // update is not loaded on isSmallDisplay devices
     setTimeout(async () => {
       setCopyState("Copy Command");
-      await update!();
+      !!update && await update();
     }, 5000);
   };
 

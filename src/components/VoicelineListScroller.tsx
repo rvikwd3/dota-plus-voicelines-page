@@ -39,15 +39,16 @@ const VoicelineListScroller = ({
   const listRef = useRef<List | null>(null);
   const listContainerRef = useRef<HTMLDivElement | null>(null);
   const rowHeights = useRef<{ [key: number]: number }>({});
+  const gutterSize = 8;
   const [scrollOffset, setScrollOffset] = useState<number>(0);
 
   const Row = ({ index, style }: ListChildComponentProps) => {
     const rowRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-      if (rowRef.current) {
+      if (rowRef.current && !rowHeights.current[index]) {
         // console.log(
-        //   `Client height for '%c${voicelines[index].command}%c' is %c${rowRef.current.clientHeight}`,
+        //   `Client height for '%c${voicelines[index].command}%c' is %c${rowRef.current.clientHeight + 8}`,
         //   "color: cyan",
         //   "color: white",
         //   "color: forestgreen"
@@ -56,11 +57,42 @@ const VoicelineListScroller = ({
       }
     }, [rowRef]);
 
+    const updateOffsetRowHeight = (updatedHeight: number) => {
+      if (rowRef.current && rowHeights.current[index]) {
+        setRowHeight(index, rowHeights.current[index] + updatedHeight);
+        console.log(
+          `Resetting voiceline height for '%c${voicelines[index].command}%c' to %c${rowHeights.current[index]}`,
+          "color: cyan",
+          "color: white",
+          "color: pink"
+        );
+        if (listRef.current) {
+          listRef.current.resetAfterIndex(0);
+        }
+      }
+    };
+
+    const recalculateRowHeight = () => {
+      if (rowRef.current && rowHeights.current[index]) {
+        setRowHeight(index, rowRef.current.clientHeight);
+      }
+      listRef.current && listRef.current.resetAfterIndex(0);
+    }
+
     return (
-      <div style={style}>
+      <div
+        style={{
+          ...style,
+          top: style.top as number + gutterSize,
+          height: style.height as number - gutterSize,
+        }}
+        className="animateRow"
+      >
         <Voiceline
           ref={rowRef}
           key={voicelines[index].command}
+          updateRowHeight={updateOffsetRowHeight}
+          recalculateRowHeight={recalculateRowHeight}
           entry={voicelines[index]}
           isSmallDisplay={isSmallDisplay}
           setCurrentVoiceline={setCurrentVoiceline}
@@ -70,7 +102,7 @@ const VoicelineListScroller = ({
   };
 
   const getRowHeight = (index: number) => {
-    return rowHeights.current[index] + 8 || 60;
+    return rowHeights.current[index] + gutterSize || 56;
   };
 
   const setRowHeight = useCallback((index: number, size: number) => {
@@ -105,6 +137,7 @@ const VoicelineListScroller = ({
   return (
     <div
       className="w-full md:w-5/6 max-w-6xl h-full self-center"
+      id="virtualListContainer"
       ref={listContainerRef}
       onKeyDown={handleKeyDown}
       tabIndex={0}

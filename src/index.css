@@ -2,6 +2,7 @@
 @import "./css/fonts.css";
 @import "tailwindcss/components";
 @import "./css/noListScrollbar.css";
+@import "./css/animateRow.css";
 @import "./css/tooltip.css";
 @import "./css/voicelineItem.css";
 @import "tailwindcss/utilities";

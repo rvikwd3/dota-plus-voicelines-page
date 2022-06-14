@@ -1,6 +1,6 @@
 import { useSpring, useTransition, animated, easings } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
-import { forwardRef, useState } from "react";
+import { forwardRef, SyntheticEvent, useState } from "react";
 
 import { VoicelineContainerEntry } from "../../types";
 import { plusTierIconUrlList } from "../config";
@@ -8,17 +8,22 @@ import { InteractableCopyIcon, LeftChevronIcon, CopyIcon } from "../icons";
 import { Command, HeroIconWithTooltip, VoicelineText } from "./VoicelineEntry";
 import MobileCommandDrawer from "./MobileCommandDrawer";
 
-const Voiceline = forwardRef((
-  {
+const Voiceline = forwardRef(
+  (
+    {
       entry,
       isSmallDisplay,
       setCurrentVoiceline,
+      updateRowHeight,
+      recalculateRowHeight,
       id,
       classname,
     }: {
       entry: VoicelineContainerEntry;
       isSmallDisplay: boolean;
       setCurrentVoiceline: (url: string) => void;
+      updateRowHeight: (updatedHeight: number) => void;
+      recalculateRowHeight: () => void;
       id?: string;
       classname?: string;
     },
@@ -33,17 +38,17 @@ const Voiceline = forwardRef((
       from: {
         y: -52,
         opacity: 0,
-        // maxHeight: 0
+        maxHeight: 0,
       },
       enter: {
         y: 0,
         opacity: 1,
-        // maxHeight: 52
+        maxHeight: 52,
       },
       leave: {
         y: -52,
         opacity: 0,
-        // maxHeight: 0
+        maxHeight: 0,
       },
       config: {
         duration: 400,
@@ -51,13 +56,16 @@ const Voiceline = forwardRef((
       },
     });
 
-    const onVoicelineClick = () => {
+    const onVoicelineClick = (event: SyntheticEvent) => {
+      event.preventDefault();
+      event.stopPropagation();
       // If larger display, don't play the voiceline on click
       if (!isSmallDisplay) {
         setCurrentVoiceline(entry.voiceline.url);
       }
       // If smaller display, toggle expand/collapse the command drawer on tap(onClick handler)
       if (isSmallDisplay) {
+        showMobileCommandDrawer ? updateRowHeight(-52) : updateRowHeight(52); // update virtual List with open/closed drawer Voiceline Row heights
         setShowMobileCommandDrawer((isShowing) => !isShowing);
       }
     };
@@ -102,10 +110,16 @@ const Voiceline = forwardRef((
       setCurrentVoiceline(entry.voiceline.url);
     };
 
+    const enableImageClickOnMobile = (event: SyntheticEvent) =>
+      !isSmallDisplay && event.stopPropagation();
+
     return (
       <div ref={ref} id="voicelineAndDrawer">
         <div id="voiceline" className="relative">
-          <div id="slideToCopy" className="absolute md:hidden w-full h-full pr-2">
+          <div
+            id="slideToCopy"
+            className="absolute md:hidden w-full h-full pr-2"
+          >
             {copiedState ? (
               <div className="w-full h-full flex items-center justify-end text-neutral-400">
                 <span>Copied!</span>
@@ -141,7 +155,8 @@ const Voiceline = forwardRef((
               id="plusTierIcon"
               src={plusTierIconUrlList[entry.plusTierName]}
               className="justify-self-center cursor-default w-7 md:w-8 shadow-sm"
-              onClick={(e) => !isSmallDisplay && e.stopPropagation()}
+              onClick={enableImageClickOnMobile}
+              onLoad={recalculateRowHeight}
             />
             <VoicelineText
               id="voicelineText"
@@ -159,19 +174,23 @@ const Voiceline = forwardRef((
             )}
           </animated.div>
         </div>
-        {isSmallDisplay &&
-          animateDrawer(
-            (style, showDrawer) =>
-              showDrawer && (
-                <animated.div id="drawer" style={style} className={`shadow-xl md:hidden`}>
-                  <MobileCommandDrawer
-                    command={entry.command}
-                    copyCommandToClipboard={copyCommandToClipboard}
-                    setCurrentVoiceline={setVoicelineUrl}
-                  />
-                </animated.div>
-              )
-          )}
+        {animateDrawer((style, showDrawer) => {
+          return (
+            showDrawer && (
+              <animated.div
+                id="drawer"
+                style={style}
+                className={`shadow-xl md:hidden`}
+              >
+                <MobileCommandDrawer
+                  command={entry.command}
+                  copyCommandToClipboard={copyCommandToClipboard}
+                  setCurrentVoiceline={setVoicelineUrl}
+                />
+              </animated.div>
+            )
+          );
+        })}
       </div>
     );
   }
