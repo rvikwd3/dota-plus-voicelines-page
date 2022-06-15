@@ -1,40 +1,39 @@
 import { useSpring, useTransition, animated, easings } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
-import { forwardRef, SyntheticEvent, useState } from "react";
+import React, { forwardRef, SyntheticEvent, useContext, useState } from "react";
 
 import { VoicelineContainerEntry } from "../../types";
 import { plusTierIconUrlList } from "../config";
 import { InteractableCopyIcon, LeftChevronIcon, CopyIcon } from "../icons";
 import { Command, HeroIconWithTooltip, VoicelineText } from "./VoicelineEntry";
 import MobileCommandDrawer from "./MobileCommandDrawer";
+import { DispatchContext } from "../context/VoicelineAudioContextProvider";
 
 const Voiceline = forwardRef(
   (
     {
       entry,
-      isSmallDisplay,
-      setCurrentVoiceline,
       updateRowHeight,
       recalculateRowHeight,
+      isSmallDisplay,
       id,
       classname,
     }: {
       entry: VoicelineContainerEntry;
-      isSmallDisplay: boolean;
-      setCurrentVoiceline: (url: string) => void;
       updateRowHeight: (updatedHeight: number) => void;
       recalculateRowHeight: () => void;
+      isSmallDisplay: boolean;
       id?: string;
       classname?: string;
     },
     ref: React.ForwardedRef<HTMLDivElement>
   ) => {
+    const audioDispatch = useContext(DispatchContext);
     const [copiedState, setCopiedState] = useState<boolean>(false); // 'Slide to copy' state
-    const [showMobileCommandDrawer, setShowMobileCommandDrawer] =
-      useState<boolean>(false); // Show expand-collapse state for 'command' drawer on mobile
+    const [drawerState, setDrawerState] = useState<boolean>(false);
     const slideLeftBound = 170; // Distance voiceline can be slid left for 'Slide to copy'
 
-    const animateDrawer = useTransition(showMobileCommandDrawer, {
+    const animateDrawer = useTransition(drawerState, {
       from: {
         y: -52,
         opacity: 0,
@@ -61,12 +60,16 @@ const Voiceline = forwardRef(
       event.stopPropagation();
       // If larger display, don't play the voiceline on click
       if (!isSmallDisplay) {
-        setCurrentVoiceline(entry.voiceline.url);
+        audioDispatch({ type: "STOP" });
+        audioDispatch({
+          type: "PLAY_AUDIO",
+          payload: { url: entry.voiceline.url },
+        });
       }
       // If smaller display, toggle expand/collapse the command drawer on tap(onClick handler)
       if (isSmallDisplay) {
-        showMobileCommandDrawer ? updateRowHeight(-52) : updateRowHeight(52); // update virtual List with open/closed drawer Voiceline Row heights
-        setShowMobileCommandDrawer((isShowing) => !isShowing);
+        drawerState ? updateRowHeight(-52) : updateRowHeight(52); // update virtual List with open/closed drawer Voiceline Row heights
+        setDrawerState((isShowing) => !isShowing);
       }
     };
 
@@ -104,10 +107,6 @@ const Voiceline = forwardRef(
 
     const copyCommandToClipboard = () => {
       navigator.clipboard.writeText(entry.command);
-    };
-
-    const setVoicelineUrl = () => {
-      setCurrentVoiceline(entry.voiceline.url);
     };
 
     const enableImageClickOnMobile = (event: SyntheticEvent) =>
@@ -184,8 +183,8 @@ const Voiceline = forwardRef(
               >
                 <MobileCommandDrawer
                   command={entry.command}
+                  voicelineUrl={entry.voiceline.url}
                   copyCommandToClipboard={copyCommandToClipboard}
-                  setCurrentVoiceline={setVoicelineUrl}
                 />
               </animated.div>
             )

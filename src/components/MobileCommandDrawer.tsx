@@ -1,16 +1,18 @@
-import { SyntheticEvent, useState } from "react";
+import { SyntheticEvent, useContext, useState } from "react";
 import { usePopper } from "react-popper";
+import { DispatchContext } from "../context/VoicelineAudioContextProvider";
 import { InteractableCopyIcon, PlayAudioIcon } from "../icons";
 import AnimateTooltip from "./AnimateTooltip";
 
 type CommandDrawerProps = {
   command: string;
-  setCurrentVoiceline: () => void;
+  voicelineUrl: string;
   copyCommandToClipboard: () => void;
 };
 
 const MobileCommandDrawer = (props: CommandDrawerProps) => {
   const [showTooltip, setShowTooltip] = useState<boolean>(false);
+  const audioDispatch = useContext(DispatchContext);
 
   const [tooltipRef, setTooltipRef] = useState<HTMLDivElement | null>();
   const [popperRef, setPoppperRef] = useState<HTMLDivElement | null>();
@@ -34,10 +36,12 @@ const MobileCommandDrawer = (props: CommandDrawerProps) => {
   });
 
   const onPlayAudioIconClick = (event: SyntheticEvent) => {
-    console.log(`Clicked on ${props.command} PlayAudioIcon`);
-    props.setCurrentVoiceline();
+    event.preventDefault();
+    event.stopPropagation();
     setShowTooltip(true);
     setTimeout(() => setShowTooltip(false), 1000);
+    audioDispatch({ type: "STOP"});
+    audioDispatch({ type: "PLAY_AUDIO", payload: { url: props.voicelineUrl } });
   };
 
   return (

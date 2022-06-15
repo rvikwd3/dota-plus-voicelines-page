@@ -1,25 +1,17 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { VoicelineContainerEntry } from "../../types";
-import useInfiniteScroll from "../hooks/useInfiniteScroll";
 import Voiceline from "./Voiceline";
-import {
-  incrementVoicelinesShownOnScroll,
-  initialVoicelinesShown,
-} from "../config";
 import {
   ListChildComponentProps,
   VariableSizeList as List,
-  FixedSizeList as FList,
   ListOnScrollProps,
 } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 
 const VoicelineListScroller = ({
   voicelines,
-  setCurrentVoiceline,
 }: {
   voicelines: VoicelineContainerEntry[];
-  setCurrentVoiceline: (url: string) => void;
 }) => {
   // const { loadMoreTriggerRef, limit } = useInfiniteScroll(
   //   initialVoicelinesShown,
@@ -91,11 +83,10 @@ const VoicelineListScroller = ({
         <Voiceline
           ref={rowRef}
           key={voicelines[index].command}
+          entry={voicelines[index]}
           updateRowHeight={updateOffsetRowHeight}
           recalculateRowHeight={recalculateRowHeight}
-          entry={voicelines[index]}
           isSmallDisplay={isSmallDisplay}
-          setCurrentVoiceline={setCurrentVoiceline}
         />
       </div>
     );
