@@ -8,16 +8,7 @@ import {
 } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 
-const VoicelineListScroller = ({
-  voicelines,
-}: {
-  voicelines: VoicelineContainerEntry[];
-}) => {
-  // const { loadMoreTriggerRef, limit } = useInfiniteScroll(
-  //   initialVoicelinesShown,
-  //   incrementVoicelinesShownOnScroll
-  // );
-
+const Row = ({ index, style, data }: any) => {
   const [isSmallDisplay, setIsSmallDisplay] = useState<boolean>(
     !window.matchMedia("(min-width: 768px").matches
   );
@@ -28,69 +19,78 @@ const VoicelineListScroller = ({
       .addEventListener("change", (e) => setIsSmallDisplay(!e.matches));
   }, []);
 
+  const rowRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (rowRef.current && !data.rowHeights.current[index]) {
+      // console.log(
+      //   `Client height for '%c${voicelines[index].command}%c' is %c${rowRef.current.clientHeight + 8}`,
+      //   "color: cyan",
+      //   "color: white",
+      //   "color: forestgreen"
+      // );
+      data.setRowHeight(index, rowRef.current.clientHeight);
+    }
+  }, [rowRef]);
+
+  const updateOffsetRowHeight = (updatedHeight: number) => {
+    if (rowRef.current && data.rowHeights.current[index]) {
+      data.setRowHeight(index, data.rowHeights.current[index] + updatedHeight);
+      console.log(
+        `Resetting voiceline height for '%c${data.voicelines[index].command}%c' to %c${data.rowHeights.current[index]}`,
+        "color: cyan",
+        "color: white",
+        "color: pink"
+      );
+      if (data.listRef.current) {
+        data.listRef.current.resetAfterIndex(0);
+      }
+    }
+  };
+
+  const recalculateRowHeight = () => {
+    if (rowRef.current && data.rowHeights.current[index]) {
+      data.setRowHeight(index, rowRef.current.clientHeight);
+    }
+    data.listRef.current && data.listRef.current.resetAfterIndex(0);
+  };
+
+  return (
+    <div
+      style={{
+        ...style,
+        top: (style.top as number) + data.gutterSize,
+        height: (style.height as number) - data.gutterSize,
+      }}
+      className="animateRow"
+    >
+      <Voiceline
+        ref={rowRef}
+        key={data.voicelines[index].command}
+        entry={data.voicelines[index]}
+        updateRowHeight={updateOffsetRowHeight}
+        recalculateRowHeight={recalculateRowHeight}
+        isSmallDisplay={isSmallDisplay}
+      />
+    </div>
+  );
+};
+
+const VoicelineListScroller = ({
+  voicelines,
+}: {
+  voicelines: VoicelineContainerEntry[];
+}) => {
+  // const { loadMoreTriggerRef, limit } = useInfiniteScroll(
+  //   initialVoicelinesShown,
+  //   incrementVoicelinesShownOnScroll
+  // );
+
   const listRef = useRef<List | null>(null);
   const listContainerRef = useRef<HTMLDivElement | null>(null);
   const rowHeights = useRef<{ [key: number]: number }>({});
   const gutterSize = 8;
   const [scrollOffset, setScrollOffset] = useState<number>(0);
-
-  const Row = ({ index, style }: ListChildComponentProps) => {
-    const rowRef = useRef<HTMLDivElement | null>(null);
-
-    useEffect(() => {
-      if (rowRef.current && !rowHeights.current[index]) {
-        // console.log(
-        //   `Client height for '%c${voicelines[index].command}%c' is %c${rowRef.current.clientHeight + 8}`,
-        //   "color: cyan",
-        //   "color: white",
-        //   "color: forestgreen"
-        // );
-        setRowHeight(index, rowRef.current.clientHeight);
-      }
-    }, [rowRef]);
-
-    const updateOffsetRowHeight = (updatedHeight: number) => {
-      if (rowRef.current && rowHeights.current[index]) {
-        setRowHeight(index, rowHeights.current[index] + updatedHeight);
-        console.log(
-          `Resetting voiceline height for '%c${voicelines[index].command}%c' to %c${rowHeights.current[index]}`,
-          "color: cyan",
-          "color: white",
-          "color: pink"
-        );
-        if (listRef.current) {
-          listRef.current.resetAfterIndex(0);
-        }
-      }
-    };
-
-    const recalculateRowHeight = () => {
-      if (rowRef.current && rowHeights.current[index]) {
-        setRowHeight(index, rowRef.current.clientHeight);
-      }
-      listRef.current && listRef.current.resetAfterIndex(0);
-    }
-
-    return (
-      <div
-        style={{
-          ...style,
-          top: style.top as number + gutterSize,
-          height: style.height as number - gutterSize,
-        }}
-        className="animateRow"
-      >
-        <Voiceline
-          ref={rowRef}
-          key={voicelines[index].command}
-          entry={voicelines[index]}
-          updateRowHeight={updateOffsetRowHeight}
-          recalculateRowHeight={recalculateRowHeight}
-          isSmallDisplay={isSmallDisplay}
-        />
-      </div>
-    );
-  };
 
   const getRowHeight = (index: number) => {
     return rowHeights.current[index] + gutterSize || 56;
@@ -143,6 +143,7 @@ const VoicelineListScroller = ({
             height={height}
             itemCount={voicelines.length}
             itemSize={getRowHeight}
+            itemData={{ listRef: listRef, rowHeights: rowHeights, setRowHeight: setRowHeight, gutterSize: gutterSize, voicelines: voicelines}}
           >
             {Row}
           </List>

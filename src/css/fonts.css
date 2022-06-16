@@ -1,19 +1,22 @@
 @font-face {
   font-family: "Radiance";
-  src: url("./fonts/radiance/radiance-webfont.woff2") format("woff2"),
-    url("./fonts/radiance/radiance-webfont.woff") format("woff"),
-    url("./fonts/radiance/radiance.ttf");
-
+  src: url("/fonts/radiance/radiance.eot");
+  src: url("/fonts/radiance/radiance.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/radiance/radiance.woff2") format("woff2"), url("/fonts/radiance/radiance.woff") format("woff"),
+    url("/fonts/radiance/radiance.ttf") format("truetype"),
+    url("/fonts/radiance/radiance.svg#radianceregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Radiance";
-  src: url("./fonts/radiance/radiance-bold-webfont.woff2") format("woff2"),
-    url("./fonts/radiance/radiance-bold-webfont.woff") format("woff"),
-    url("./fonts/radiance/radiance-bold.ttf");
-
+  src: url("/fonts/radiance/radiance-bold.eot");
+  src: url("/fonts/radiance/radiance-bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/radiance/radiance-bold.woff2") format("woff2"),
+    url("/fonts/radiance/radiance-bold.woff") format("woff"),
+    url("/fonts/radiance/radiance-bold.ttf") format("truetype"),
+    url("/fonts/radiance/radiance-bold.svg#radiancebold") format("svg");
   font-weight: bold;
   font-style: bold;
 }

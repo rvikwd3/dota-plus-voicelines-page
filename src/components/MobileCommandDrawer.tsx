@@ -55,7 +55,7 @@ const MobileCommandDrawer = (props: CommandDrawerProps) => {
           ref={setTooltipRef}
           onClick={onPlayAudioIconClick}
         >
-          <PlayAudioIcon className="w-[30px] drop-shadow-sm" />
+          <PlayAudioIcon className="w-[30px] drop-shadow-sm stroke-neutral-300" />
         </div>
         <AnimateTooltip id="playingAudioTooltip" show={showTooltip}>
           <div
