@@ -31,7 +31,7 @@ const Voiceline = forwardRef(
     const audioDispatch = useContext(DispatchContext);
     const [copiedState, setCopiedState] = useState<boolean>(false); // 'Slide to copy' state
     const [drawerState, setDrawerState] = useState<boolean>(false);
-    const slideLeftBound = 170; // Distance voiceline can be slid left for 'Slide to copy'
+    const slideLeftBound = 140; // Distance voiceline can be slid left for 'Slide to copy'
 
     const animateDrawer = useTransition(drawerState, {
       from: {

@@ -8,7 +8,7 @@ import {
 } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 
-const Row = ({ index, style, data }: any) => {
+const Row = ({ index, style, data }: ListChildComponentProps) => {
   const [isSmallDisplay, setIsSmallDisplay] = useState<boolean>(
     !window.matchMedia("(min-width: 768px").matches
   );
@@ -23,12 +23,6 @@ const Row = ({ index, style, data }: any) => {
 
   useEffect(() => {
     if (rowRef.current && !data.rowHeights.current[index]) {
-      // console.log(
-      //   `Client height for '%c${voicelines[index].command}%c' is %c${rowRef.current.clientHeight + 8}`,
-      //   "color: cyan",
-      //   "color: white",
-      //   "color: forestgreen"
-      // );
       data.setRowHeight(index, rowRef.current.clientHeight);
     }
   }, [rowRef]);
@@ -36,12 +30,6 @@ const Row = ({ index, style, data }: any) => {
   const updateOffsetRowHeight = (updatedHeight: number) => {
     if (rowRef.current && data.rowHeights.current[index]) {
       data.setRowHeight(index, data.rowHeights.current[index] + updatedHeight);
-      console.log(
-        `Resetting voiceline height for '%c${data.voicelines[index].command}%c' to %c${data.rowHeights.current[index]}`,
-        "color: cyan",
-        "color: white",
-        "color: pink"
-      );
       if (data.listRef.current) {
         data.listRef.current.resetAfterIndex(0);
       }
@@ -76,16 +64,11 @@ const Row = ({ index, style, data }: any) => {
   );
 };
 
-const VoicelineListScroller = ({
+const VoicelineListScroller = React.memo(({
   voicelines,
 }: {
   voicelines: VoicelineContainerEntry[];
 }) => {
-  // const { loadMoreTriggerRef, limit } = useInfiniteScroll(
-  //   initialVoicelinesShown,
-  //   incrementVoicelinesShownOnScroll
-  // );
-
   const listRef = useRef<List | null>(null);
   const listContainerRef = useRef<HTMLDivElement | null>(null);
   const rowHeights = useRef<{ [key: number]: number }>({});
@@ -127,7 +110,7 @@ const VoicelineListScroller = ({
 
   return (
     <div
-      className="w-full md:w-5/6 max-w-6xl h-full self-center"
+      className="w-full md:w-5/6 max-w-6xl select-none md:select-auto h-full self-center"
       id="virtualListContainer"
       ref={listContainerRef}
       onKeyDown={handleKeyDown}
@@ -143,33 +126,20 @@ const VoicelineListScroller = ({
             height={height}
             itemCount={voicelines.length}
             itemSize={getRowHeight}
-            itemData={{ listRef: listRef, rowHeights: rowHeights, setRowHeight: setRowHeight, gutterSize: gutterSize, voicelines: voicelines}}
+            itemData={{
+              listRef: listRef,
+              rowHeights: rowHeights,
+              setRowHeight: setRowHeight,
+              gutterSize: gutterSize,
+              voicelines: voicelines,
+            }}
           >
             {Row}
           </List>
         )}
       </AutoSizer>
-      {/* <div className="md:w-5/6 max-w-6xl flex flex-col gap-y-2 select-none md:select-auto">
-        {voicelines.map((entry) => (
-          <Voiceline
-          key={entry.command}
-          entry={entry}
-          isSmallDisplay={isSmallDisplay}
-          setCurrentVoiceline={setCurrentVoiceline}
-          />
-          ))}
-        </div> */}
-      {/* <div
-        id="loadMoreVoicelinesArrow"
-        ref={loadMoreTriggerRef}
-        className="text-neutral-200 text-xl text-center p-4 mb-10"
-        >
-        {limit <= voicelines.length && (
-          <DownArrow className="animate-bounce drop-shadow-sm" />
-          )}
-        </div> */}
     </div>
   );
-};
+});
 
 export default VoicelineListScroller;

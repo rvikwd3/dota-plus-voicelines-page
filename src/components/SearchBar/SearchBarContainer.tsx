@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
+import { SearchBar } from "./SearchBar";
 
 type Props = {
+  searchInputValue: string;
+  setSearchInputValue: (value: string) => void;
   id?: string;
   className?: string;
 };
 
-export const SearchBarContainer = ({ id, className }: Props) => {
-  const [isPastScrollOffset, setIsPastScrollOffset] = useState<boolean>(false);
+export const SearchBarContainer = ({ searchInputValue, setSearchInputValue, id, className }: Props) => {
   const [isSmallDisplay, setIsSmallDisplay] = useState<boolean>(
     !window.matchMedia("(min-width: 768px").matches
   );
@@ -17,26 +19,14 @@ export const SearchBarContainer = ({ id, className }: Props) => {
       .addEventListener("change", (e) => setIsSmallDisplay(!e.matches));
   }, []);
 
-  useEffect(() => {
-    const scrollOffset = isSmallDisplay ? 56 : 104;
-    window.onscroll = () => {
-      if (window.scrollY > scrollOffset) {
-        setIsPastScrollOffset(true);
-      } else {
-        setIsPastScrollOffset(false);
-      }
-    };
-  }, []);
-
   return (
     <div
-      className={`bg-[#121212] p-4 my-4 z-20 sticky top-0 left-0 shadow-black/95 transition duration-200 ${
-        isPastScrollOffset ? "shadow-lg" : "shadow-none"
-      }`}
+      className={`bg-[#121212] w-full h-max text-center px-2 my-4 top-0 left-0 shadow-black/95 transition duration-200 flex justify-center`}
     >
-      <div className="bg-stone-700 p-5 rounded-md">
-        <span>Search Bar</span>
-      </div>
+      <SearchBar
+        searchInputValue={searchInputValue}
+        setSearchInputValue={setSearchInputValue}
+      />
     </div>
   );
 };

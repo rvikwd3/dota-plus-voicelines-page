@@ -666,7 +666,7 @@
     }
   },
   {
-    "name": ["bm", "beastmaster", "rexxar", "karroch"],
+    "name": ["bm", "beastmaster", "beast master", "rexxar", "karroch"],
     "icon": "/images/heroes/icons/npc_dota_hero_beastmaster_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_beastmaster_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_beastmaster_png.png",
@@ -1769,7 +1769,7 @@
   },
   {
     "name": ["cm", "crystal maiden", "crystalmaiden", "maiden", "rylai"],
-    "icon": "/images/heroes/icons/npc_dota_hero_crystal_maiden_alt1_png.png",
+    "icon": "/images/heroes/icons/npc_dota_hero_crystal_maiden_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_crystal_maiden_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_crystal_maiden_alt1_png.png",
     "plusVoiceLines": {
@@ -2049,6 +2049,18 @@
         {
           "text": "No, I will not calm my beard.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Vo_dark_seer_dkseer_rare_04.mp3"
+        },
+        {
+          "text": "The seer is here",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/69/Vo_dark_seer_dkseer_spawn_04.mp3"
+        },
+        {
+          "text": "Hewehehyuh.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b9/Vo_dark_seer_dkseer_anger_01.mp3"
+        },
+        {
+          "text": "You're no peer of the seer.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/81/Vo_dark_seer_dkseer_rival_05.mp3"
         },
         {
           "text": "Your end is coming.",
@@ -8785,7 +8797,7 @@
   },
   {
     "name": ["rubick", "rub", "grandmagus"],
-    "icon": "/images/heroes/icons/npc_dota_hero_rubick_alt_png.png",
+    "icon": "/images/heroes/icons/npc_dota_hero_rubick_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_rubick_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_rubick_alt_png.png",
     "plusVoiceLines": {
