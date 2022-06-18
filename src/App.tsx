@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import { SearchBarContainer } from "./components/SearchBar";
+import { SearchContainer } from "./components/Search";
 import VoicelinesListContainer from "./components/VoicelinesListContainer";
+import IsSmallDisplayContextProvider from "./context/IsSmallDisplayContextProvider";
 
 const App = () => {
   const [searchInputValue, setSearchInputValue] = useState<string>("");
-  
+  const [heroFilter, setHeroFilter] = useState<string | null>("");
+
   useEffect(() => {
-    console.log(`Search input value: ${searchInputValue}`);
+    // console.log(`Search input value: ${searchInputValue}`);
   }, [searchInputValue]);
 
   return (
@@ -14,8 +16,15 @@ const App = () => {
       <h1 className="text-center font-bold text-4xl text-rose-500">
         Dota Plus Voiceline Page
       </h1>
-      <SearchBarContainer searchInputValue={searchInputValue} setSearchInputValue={setSearchInputValue}/>
-      <VoicelinesListContainer searchInputValue={searchInputValue}/>
+      <IsSmallDisplayContextProvider>
+        <SearchContainer
+          searchInputValue={searchInputValue}
+          setSearchInputValue={setSearchInputValue}
+          heroFilter={heroFilter}
+          setHeroFilter={setHeroFilter}
+        />
+        <VoicelinesListContainer searchInputValue={searchInputValue} />
+      </IsSmallDisplayContextProvider>
     </div>
   );
 };

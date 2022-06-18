@@ -22,7 +22,8 @@ const VoicelinesListContainer = ({
         .forEach((item) => uniqueVoicelines.add(item));
       allVoicelines
         .filter((vc) =>
-          vc.voiceline.text .toLowerCase()
+          vc.voiceline.text
+            .toLowerCase()
             .includes(searchInputValue.toLowerCase())
         )
         .forEach((item) => uniqueVoicelines.add(item));
@@ -33,9 +34,9 @@ const VoicelinesListContainer = ({
   }, [searchInputValue]);
 
   return (
-    <VoicelineAudioContextProvider>
-      <VoicelineListScroller voicelines={voicelinesToShow} />
-    </VoicelineAudioContextProvider>
+      <VoicelineAudioContextProvider>
+        <VoicelineListScroller voicelines={voicelinesToShow} />
+      </VoicelineAudioContextProvider>
   );
 };
 

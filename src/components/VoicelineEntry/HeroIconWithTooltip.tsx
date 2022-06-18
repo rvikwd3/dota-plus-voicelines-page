@@ -27,6 +27,12 @@ export const HeroIconWithTooltip = ({
         },
       },
       {
+        name: "flip",
+        options: {
+          fallbackPlacements: ['right', 'bottom'],
+        }
+      },
+      {
         name: "offset",
         options: {
           offset: [0, 10],

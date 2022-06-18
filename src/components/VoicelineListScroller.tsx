@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { VoicelineContainerEntry } from "../../types";
 import Voiceline from "./Voiceline";
 import {
@@ -7,18 +7,9 @@ import {
   ListOnScrollProps,
 } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
+import { IsSmallDisplayContext } from "../context/IsSmallDisplayContextProvider";
 
 const Row = ({ index, style, data }: ListChildComponentProps) => {
-  const [isSmallDisplay, setIsSmallDisplay] = useState<boolean>(
-    !window.matchMedia("(min-width: 768px").matches
-  );
-
-  useEffect(() => {
-    window
-      .matchMedia("(min-width: 768px")
-      .addEventListener("change", (e) => setIsSmallDisplay(!e.matches));
-  }, []);
-
   const rowRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -43,6 +34,10 @@ const Row = ({ index, style, data }: ListChildComponentProps) => {
     data.listRef.current && data.listRef.current.resetAfterIndex(0);
   };
 
+  if (index === data.voicelines.length) {
+    return <div style={{...style, height: "8px", top: (style.top as number) + data.gutterSize }} className="block bg-inherit"></div>;
+  }
+
   return (
     <div
       style={{
@@ -58,88 +53,88 @@ const Row = ({ index, style, data }: ListChildComponentProps) => {
         entry={data.voicelines[index]}
         updateRowHeight={updateOffsetRowHeight}
         recalculateRowHeight={recalculateRowHeight}
-        isSmallDisplay={isSmallDisplay}
       />
     </div>
   );
 };
 
-const VoicelineListScroller = React.memo(({
-  voicelines,
-}: {
-  voicelines: VoicelineContainerEntry[];
-}) => {
-  const listRef = useRef<List | null>(null);
-  const listContainerRef = useRef<HTMLDivElement | null>(null);
-  const rowHeights = useRef<{ [key: number]: number }>({});
-  const gutterSize = 8;
-  const [scrollOffset, setScrollOffset] = useState<number>(0);
+const VoicelineListScroller = React.memo(
+  ({ voicelines }: { voicelines: VoicelineContainerEntry[] }) => {
 
-  const getRowHeight = (index: number) => {
-    return rowHeights.current[index] + gutterSize || 56;
-  };
+    const listRef = useRef<List | null>(null);
+    const listContainerRef = useRef<HTMLDivElement | null>(null);
+    const rowHeights = useRef<{ [key: number]: number }>({});
+    const [scrollOffset, setScrollOffset] = useState<number>(0);
+    const isSmallDisplay = useContext(IsSmallDisplayContext);
+    const gutterSize = 8;
 
-  const setRowHeight = useCallback((index: number, size: number) => {
-    rowHeights.current = { ...rowHeights.current, [index]: size };
-    listRef.current!.resetAfterIndex(0);
-  }, []);
+    const getRowHeight = (index: number) => {
+      return rowHeights.current[index] + gutterSize || 5;
+    };
 
-  // onKeyDown event listener added to an e.g. <div> that wraps list/grid
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    switch (event.key) {
-      case "PageUp": // page up
-        listRef.current!.scrollTo(
-          scrollOffset - listContainerRef.current!.clientHeight
-        );
-        break;
-      case "PageDown": // page down
-        listRef.current!.scrollTo(
-          scrollOffset + listContainerRef.current!.clientHeight
-        );
-        break;
-      case "Home":
-        listRef.current!.scrollTo(0);
-        break;
-    }
-  };
+    const setRowHeight = useCallback((index: number, size: number) => {
+      rowHeights.current = { ...rowHeights.current, [index]: size };
+      listRef.current!.resetAfterIndex(0);
+    }, []);
 
-  // onScroll handler added to list
-  const handleListScroll = ({ scrollOffset }: ListOnScrollProps) => {
-    setScrollOffset(scrollOffset);
-  };
+    // onKeyDown event listener added to an e.g. <div> that wraps list/grid
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+      switch (event.key) {
+        case "PageUp": // page up
+          listRef.current!.scrollTo(
+            scrollOffset - listContainerRef.current!.clientHeight
+          );
+          break;
+        case "PageDown": // page down
+          listRef.current!.scrollTo(
+            scrollOffset + listContainerRef.current!.clientHeight
+          );
+          break;
+        case "Home":
+          listRef.current!.scrollTo(0);
+          break;
+      }
+    };
 
-  return (
-    <div
-      className="w-full md:w-5/6 max-w-6xl select-none md:select-auto h-full self-center"
-      id="virtualListContainer"
-      ref={listContainerRef}
-      onKeyDown={handleKeyDown}
-      tabIndex={0}
-    >
-      <AutoSizer>
-        {({ width, height }) => (
-          <List
-            ref={listRef}
-            className="no-list-scrollbar"
-            onScroll={handleListScroll}
-            width={width}
-            height={height}
-            itemCount={voicelines.length}
-            itemSize={getRowHeight}
-            itemData={{
-              listRef: listRef,
-              rowHeights: rowHeights,
-              setRowHeight: setRowHeight,
-              gutterSize: gutterSize,
-              voicelines: voicelines,
-            }}
-          >
-            {Row}
-          </List>
-        )}
-      </AutoSizer>
-    </div>
-  );
-});
+    // onScroll handler added to list
+    const handleListScroll = ({ scrollOffset }: ListOnScrollProps) => {
+      setScrollOffset(scrollOffset);
+    };
+
+    return (
+      <div
+        className="w-full md:w-5/6 max-w-6xl select-none md:select-auto h-full self-center"
+        id="virtualListContainer"
+        ref={listContainerRef}
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+      >
+        <AutoSizer>
+          {({ width, height }) => (
+            <List
+              ref={listRef}
+              className="no-list-scrollbar"
+              onScroll={handleListScroll}
+              width={width}
+              height={height}
+              itemCount={voicelines.length + 1}
+              itemSize={getRowHeight}
+              itemData={{
+                listRef: listRef,
+                rowHeights: rowHeights,
+                setRowHeight: setRowHeight,
+                gutterSize: gutterSize,
+                voicelines: voicelines,
+                isSmallDisplay: isSmallDisplay,
+              }}
+            >
+              {Row}
+            </List>
+          )}
+        </AutoSizer>
+      </div>
+    );
+  }
+);
 
 export default VoicelineListScroller;

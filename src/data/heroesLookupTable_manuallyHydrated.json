@@ -1,6 +1,6 @@
 [
   {
-    "name": ["aba", "abbadon", "abaddon", "abba"],
+    "name": ["aba", "abaddon", "abba", "abbadon"],
     "icon": "/images/heroes/icons/npc_dota_hero_abaddon_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_abaddon_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_abaddon_png.png",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "name": ["alch", "alchemist", "alc", "razzil"],
+    "name": ["alch", "alc", "razzil", "alchemist"],
     "icon": "/images/heroes/icons/npc_dota_hero_alchemist_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_alchemist_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_alchemist_png.png",
@@ -146,10 +146,10 @@
   {
     "name": [
       "aa",
-      "ancient apparition",
       "ancientapparition",
       "ancientapprition",
-      "kaldr"
+      "kaldr",
+      "ancient apparition"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_ancient_apparition_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_ancient_apparition_png.png",
@@ -222,7 +222,7 @@
     }
   },
   {
-    "name": ["am", "anti-mage", "magina"],
+    "name": ["am", "antimage", "magina", "anti-mage"],
     "icon": "/images/heroes/icons/npc_dota_hero_antimage_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_antimage_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_antimage_png.png",
@@ -294,7 +294,13 @@
     }
   },
   {
-    "name": ["wei", "ampersona", "antimagepersona", "disciple"],
+    "name": [
+      "wei",
+      "ampersona",
+      "antimagepersona",
+      "disciple",
+      "anti-Mage persona"
+    ],
     "icon": "/images/heroes/icons/npc_dota_hero_antimage_persona1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_antimage_persona1_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_antimage_persona1_png.png",
@@ -370,7 +376,7 @@
     }
   },
   {
-    "name": ["arc", "arc warden", "arcwarden", "aw", "warden", "zet"],
+    "name": ["arc", "arcwarden", "aw", "warden", "zet", "arc warden"],
     "icon": "/images/heroes/icons/npc_dota_hero_arc_warden_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_arc_warden_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_arc_warden_png.png",
@@ -442,7 +448,7 @@
     }
   },
   {
-    "name": ["axe", "mogulkhan", "mogul khan"],
+    "name": ["axe", "mogulkhan", "mogul khan", "axe"],
     "icon": "/images/heroes/icons/npc_dota_hero_axe_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_axe_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_axe_png.png",
@@ -518,7 +524,7 @@
     }
   },
   {
-    "name": ["bane", "atropos"],
+    "name": ["bane", "atropos", "bane"],
     "icon": "/images/heroes/icons/npc_dota_hero_bane_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_bane_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_bane_png.png",
@@ -666,7 +672,7 @@
     }
   },
   {
-    "name": ["bm", "beastmaster", "beast master", "rexxar", "karroch"],
+    "name": ["bm", "beast master", "rexxar", "karroch", "beastmaster"],
     "icon": "/images/heroes/icons/npc_dota_hero_beastmaster_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_beastmaster_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_beastmaster_png.png",
@@ -754,7 +760,7 @@
     }
   },
   {
-    "name": ["bs", "bloodseeker", "blood", "seeker", "strygwyr"],
+    "name": ["bs", "blood", "seeker", "strygwyr", "bloodseeker"],
     "icon": "/images/heroes/icons/npc_dota_hero_bloodseeker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_bloodseeker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_bloodseeker_png.png",
@@ -826,7 +832,7 @@
     }
   },
   {
-    "name": ["bh", "bounty hunter", "bountyhunter", "bounty", "gondar"],
+    "name": ["bh", "bountyhunter", "bounty", "gondar", "bounty hunter"],
     "icon": "/images/heroes/icons/npc_dota_hero_bounty_hunter_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_bounty_hunter_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_bounty_hunter_png.png",
@@ -902,7 +908,7 @@
     }
   },
   {
-    "name": ["brew", "brewmaster", "panda"],
+    "name": ["brew", "panda", "brewmaster"],
     "icon": "/images/heroes/icons/npc_dota_hero_brewmaster_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_brewmaster_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_brewmaster_png.png",
@@ -1010,7 +1016,7 @@
     }
   },
   {
-    "name": ["bristle", "bristleback", "bb"],
+    "name": ["bristle", "bb", "bristleback"],
     "icon": "/images/heroes/icons/npc_dota_hero_bristleback_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_bristleback_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_bristleback_png.png",
@@ -1118,7 +1124,7 @@
     }
   },
   {
-    "name": ["brood", "broodmother", "spider"],
+    "name": ["brood", "spider", "broodmother"],
     "icon": "/images/heroes/icons/npc_dota_hero_broodmother_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_broodmother_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_broodmother_png.png",
@@ -1200,10 +1206,10 @@
   {
     "name": [
       "centaur",
-      "centaur warrunner",
       "centaurwarrunner",
       "cent",
-      "bradwarden"
+      "bradwarden",
+      "centaur warrunner"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_centaur_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_centaur_png.png",
@@ -1288,7 +1294,7 @@
     }
   },
   {
-    "name": ["ck", "chaos knight", "chaosknight", "chaos", "nessaj"],
+    "name": ["ck", "chaosknight", "chaos", "nessaj", "chaos knight"],
     "icon": "/images/heroes/icons/npc_dota_hero_chaos_knight_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_chaos_knight_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_chaos_knight_png.png",
@@ -1488,7 +1494,7 @@
     }
   },
   {
-    "name": ["clinkz", "bone", "bonefletcher", "brooklynkurtz"],
+    "name": ["clinkz", "bone", "bonefletcher", "brooklynkurtz", "clinkz"],
     "icon": "/images/heroes/icons/npc_dota_hero_clinkz_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_clinkz_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_clinkz_png.png",
@@ -1612,7 +1618,7 @@
     }
   },
   {
-    "name": ["clock", "clockwerk", "clockwork", "rattletrap", "cw"],
+    "name": ["clock", "clockwork", "rattletrap", "cw", "clockwerk"],
     "icon": "/images/heroes/icons/npc_dota_hero_rattletrap_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_rattletrap_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_rattletrap_png.png",
@@ -1768,7 +1774,7 @@
     }
   },
   {
-    "name": ["cm", "crystal maiden", "crystalmaiden", "maiden", "rylai"],
+    "name": ["cm", "crystalmaiden", "maiden", "rylai", "crystal maiden"],
     "icon": "/images/heroes/icons/npc_dota_hero_crystal_maiden_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_crystal_maiden_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_crystal_maiden_alt1_png.png",
@@ -2040,7 +2046,7 @@
     }
   },
   {
-    "name": ["ds", "dark seer", "darkseer", "seer"],
+    "name": ["ds", "darkseer", "seer", "dark seer"],
     "icon": "/images/heroes/icons/npc_dota_hero_dark_seer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_dark_seer_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_dark_seer_png.png",
@@ -2051,7 +2057,7 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Vo_dark_seer_dkseer_rare_04.mp3"
         },
         {
-          "text": "The seer is here",
+          "text": "The seer is here.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/69/Vo_dark_seer_dkseer_spawn_04.mp3"
         },
         {
@@ -2200,7 +2206,7 @@
     }
   },
   {
-    "name": ["dw", "dark willow", "darkwillow", "willow", "mireska"],
+    "name": ["dw", "darkwillow", "willow", "mireska", "dark willow"],
     "icon": "/images/heroes/icons/npc_dota_hero_dark_willow_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_dark_willow_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_dark_willow_png.png",
@@ -2640,7 +2646,7 @@
     }
   },
   {
-    "name": ["dawn", "dawnbreaker", "valora", "db", "hammermommy"],
+    "name": ["dawn", "valora", "db", "hammermommy", "dawnbreaker"],
     "icon": "/images/heroes/icons/npc_dota_hero_dawnbreaker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_dawnbreaker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_dawnbreaker_png.png",
@@ -2908,7 +2914,7 @@
     }
   },
   {
-    "name": ["dazzle", "dazz", "shadowpriest"],
+    "name": ["dazz", "shadowpriest", "dazzle"],
     "icon": "/images/heroes/icons/npc_dota_hero_dazzle_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_dazzle_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_dazzle_png.png",
@@ -3008,7 +3014,7 @@
     }
   },
   {
-    "name": ["dp", "death prophet", "deathprophet", "krobe", "krobelus"],
+    "name": ["dp", "deathprophet", "krobe", "krobelus", "death prophet"],
     "icon": "/images/heroes/icons/npc_dota_hero_death_prophet_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_death_prophet_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_death_prophet_png.png",
@@ -3136,7 +3142,7 @@
     }
   },
   {
-    "name": ["disruptor", "disraptor", "thrall", "disrupter"],
+    "name": ["disruptor", "disraptor", "thrall", "disrupter", "disruptor"],
     "icon": "/images/heroes/icons/npc_dota_hero_disruptor_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_disruptor_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_disruptor_png.png",
@@ -3264,7 +3270,7 @@
     }
   },
   {
-    "name": ["doom", "doombringer"],
+    "name": ["doom", "doombringer", "doom"],
     "icon": "/images/heroes/icons/npc_dota_hero_doom_bringer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_doom_bringer_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_doom_bringer_png.png",
@@ -3416,7 +3422,7 @@
     }
   },
   {
-    "name": ["dk", "dragon knight", "dragonknight"],
+    "name": ["dk", "dragonknight", "dragon knight"],
     "icon": "/images/heroes/icons/npc_dota_hero_dragon_knight_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_dragon_knight_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_dragon_knight_png.png",
@@ -3540,7 +3546,7 @@
     }
   },
   {
-    "name": ["davion", "dkpersona"],
+    "name": ["davion", "dkpersona", "dk persona"],
     "icon": "/images/heroes/icons/npc_dota_hero_dragon_knight_persona1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_dragon_knight_persona1_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_dragon_knight_persona1_png.png",
@@ -4036,7 +4042,7 @@
     }
   },
   {
-    "name": ["drow", "drow ranger", "drowranger", "trax", "traxex"],
+    "name": ["drow", "drowranger", "trax", "traxex", "drow ranger"],
     "icon": "/images/heroes/icons/npc_dota_hero_drow_ranger_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_drow_ranger_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_drow_ranger_png.png",
@@ -4110,12 +4116,12 @@
   {
     "name": [
       "drow arcana",
-      "drow ranger arcana",
       "drowrangerarcana",
       "dread",
       "retribution",
       "drowarcana",
-      "dreadretribution"
+      "dreadretribution",
+      "drow ranger arcana"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_drow_ranger_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_drow_ranger_alt1_png.png",
@@ -4204,7 +4210,7 @@
     }
   },
   {
-    "name": ["earthspirit", "earth spirit", "kaolin", "earth"],
+    "name": ["earthspirit", "kaolin", "earth", "earth spirit"],
     "icon": "/images/heroes/icons/npc_dota_hero_earth_spirit_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_earth_spirit_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_earth_spirit_png.png",
@@ -4276,7 +4282,7 @@
     }
   },
   {
-    "name": ["shaker", "earthshaker", "raigor", "es"],
+    "name": ["shaker", "raigor", "es", "earthshaker"],
     "icon": "/images/heroes/icons/npc_dota_hero_earthshaker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_earthshaker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_earthshaker_png.png",
@@ -4358,11 +4364,11 @@
   {
     "name": [
       "es arcana",
-      "earthshaker arcana",
       "earthshakerarcana",
       "shaker arcana",
       "raigor arcana",
-      "esarcana"
+      "esarcana",
+      "earthshaker arcana"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_earthshaker_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_earthshaker_alt1_png.png",
@@ -4445,12 +4451,12 @@
   {
     "name": [
       "et",
-      "elder titan",
       "eldertitan",
       "elder",
       "titan",
       "tc",
-      "worldsmith"
+      "worldsmith",
+      "elder titan"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_elder_titan_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_elder_titan_png.png",
@@ -4523,7 +4529,7 @@
     }
   },
   {
-    "name": ["ember", "ember spirit", "emberspirit", "xin"],
+    "name": ["ember", "emberspirit", "xin", "ember spirit"],
     "icon": "/images/heroes/icons/npc_dota_hero_ember_spirit_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_ember_spirit_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_ember_spirit_png.png",
@@ -4599,7 +4605,7 @@
     }
   },
   {
-    "name": ["ench", "enchantress", "bambi"],
+    "name": ["ench", "bambi", "enchantress"],
     "icon": "/images/heroes/icons/npc_dota_hero_enchantress_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_enchantress_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_enchantress_png.png",
@@ -4753,11 +4759,11 @@
   {
     "name": [
       "fv",
-      "faceless void",
       "facelessvoid",
       "faceless",
       "darkterror",
-      "void"
+      "void",
+      "faceless void"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_faceless_void_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_faceless_void_png.png",
@@ -4922,7 +4928,7 @@
     }
   },
   {
-    "name": ["gyro", "gyrocopter", "aurel"],
+    "name": ["gyro", "aurel", "gyrocopter"],
     "icon": "/images/heroes/icons/npc_dota_hero_gyrocopter_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_gyrocopter_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_gyrocopter_png.png",
@@ -4994,7 +5000,7 @@
     }
   },
   {
-    "name": ["hood", "hoodwink", "squirrel", "furry"],
+    "name": ["hood", "squirrel", "furry", "hoodwink"],
     "icon": "/images/heroes/icons/npc_dota_hero_hoodwink_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_hoodwink_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_hoodwink_png.png",
@@ -5078,7 +5084,7 @@
     }
   },
   {
-    "name": ["huskar", "husk"],
+    "name": ["huskar"],
     "icon": "/images/heroes/icons/npc_dota_hero_huskar_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_huskar_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_huskar_png.png",
@@ -5150,7 +5156,7 @@
     }
   },
   {
-    "name": ["invoker", "voker", "arsenalmagus"],
+    "name": ["invoker", "voker", "arsenalmagus", "invoker"],
     "icon": "/images/heroes/icons/npc_dota_hero_invoker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_invoker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_invoker_png.png",
@@ -5223,12 +5229,12 @@
   },
   {
     "name": [
-      "kid invoker",
       "kidvoker",
       "kid",
       "acolyte",
       "carl",
-      "invokerpersona"
+      "invokerpersona",
+      "kid invoker"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_invoker_persona1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_invoker_persona1_png.png",
@@ -5337,7 +5343,7 @@
     }
   },
   {
-    "name": ["io", "wisp"],
+    "name": ["io", "wisp", "io"],
     "icon": "/images/heroes/icons/npc_dota_hero_wisp_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_wisp_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_wisp_png.png",
@@ -5409,7 +5415,7 @@
     }
   },
   {
-    "name": ["jakiro", "jak", "thd"],
+    "name": ["jak", "thd", "jakiro"],
     "icon": "/images/heroes/icons/npc_dota_hero_jakiro_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_jakiro_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_jakiro_png.png",
@@ -5481,7 +5487,7 @@
     }
   },
   {
-    "name": ["jugg", "juggernaut", "yurnero"],
+    "name": ["jugg", "yurnero", "juggernaut"],
     "icon": "/images/heroes/icons/npc_dota_hero_juggernaut_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_juggernaut_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_juggernaut_png.png",
@@ -5563,10 +5569,10 @@
   {
     "name": [
       "kotl",
-      "keeper of the light",
       "keeperofthelight",
       "ezalor",
-      "keeper"
+      "keeper",
+      "keeper of the light"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_keeper_of_the_light_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_keeper_of_the_light_png.png",
@@ -5663,7 +5669,7 @@
     }
   },
   {
-    "name": ["kunkka", "kunka", "admiral"],
+    "name": ["kunkka", "kunka", "admiral", "kunkka"],
     "icon": "/images/heroes/icons/npc_dota_hero_kunkka_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_kunkka_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_kunkka_png.png",
@@ -5737,11 +5743,11 @@
   {
     "name": [
       "lc",
-      "legion commander",
       "legioncommander",
       "legioncomander",
       "legion",
-      "tresdin"
+      "tresdin",
+      "legion commander"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_legion_commander_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_legion_commander_png.png",
@@ -5962,7 +5968,7 @@
     }
   },
   {
-    "name": ["ls", "lifestealer", "naix"],
+    "name": ["ls", "naix", "lifestealer"],
     "icon": "/images/heroes/icons/npc_dota_hero_life_stealer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_life_stealer_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_life_stealer_png.png",
@@ -6034,7 +6040,7 @@
     }
   },
   {
-    "name": ["lina", "linainverse", "slayer"],
+    "name": ["lina", "linainverse", "slayer", "lina"],
     "icon": "/images/heroes/icons/npc_dota_hero_lina_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_lina_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_lina_png.png",
@@ -6180,13 +6186,13 @@
   {
     "name": [
       "ld",
-      "lone druid",
       "lonedruid",
       "sylla",
       "syllabear",
       "lone",
       "druid",
-      "bear"
+      "bear",
+      "lone druid"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_lone_druid_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_lone_druid_png.png",
@@ -6259,7 +6265,7 @@
     }
   },
   {
-    "name": ["luna", "moonrider"],
+    "name": ["luna", "moonrider", "luna"],
     "icon": "/images/heroes/icons/npc_dota_hero_luna_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_luna_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_luna_png.png",
@@ -6331,7 +6337,7 @@
     }
   },
   {
-    "name": ["lycan", "lycanthrope", "banehollow", "wolf"],
+    "name": ["lycan", "lycanthrope", "banehollow", "wolf", "lycan"],
     "icon": "/images/heroes/icons/npc_dota_hero_lycan_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_lycan_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_lycan_png.png",
@@ -6403,7 +6409,7 @@
     }
   },
   {
-    "name": ["magnus", "magnataur", "mag"],
+    "name": ["mag", "magnataur", "magnus"],
     "icon": "/images/heroes/icons/npc_dota_hero_magnataur_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_magnataur_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_magnataur_png.png",
@@ -6555,7 +6561,7 @@
     }
   },
   {
-    "name": ["marci", "marcy", "bestgirl"],
+    "name": ["marci", "marcy", "bestgirl", "marci"],
     "icon": "/images/heroes/icons/npc_dota_hero_marci_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_marci_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_marci_png.png",
@@ -6623,7 +6629,7 @@
     }
   },
   {
-    "name": ["medusa", "dusa", "gorgon"],
+    "name": ["medusa", "dusa", "gorgon", "medusa"],
     "icon": "/images/heroes/icons/npc_dota_hero_medusa_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_medusa_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_medusa_png.png",
@@ -6771,7 +6777,7 @@
     }
   },
   {
-    "name": ["mirana", "potm"],
+    "name": ["mirana", "potm", "mirana"],
     "icon": "/images/heroes/icons/npc_dota_hero_mirana_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_mirana_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_mirana_png.png",
@@ -6843,7 +6849,12 @@
     }
   },
   {
-    "name": ["mirana persona", "miranapersona", "nightsilver"],
+    "name": [
+      "mirana persona",
+      "miranapersona",
+      "nightsilver",
+      "mirana persona"
+    ],
     "icon": "/images/heroes/icons/npc_dota_hero_mirana_persona1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_mirana_persona1_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_mirana_persona1_png.png",
@@ -6915,7 +6926,7 @@
     }
   },
   {
-    "name": ["mk", "monkey king", "monkeyking", "monkey"],
+    "name": ["mk", "monkeyking", "monkey", "monkey king"],
     "icon": "/images/heroes/icons/npc_dota_hero_monkey_king_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_monkey_king_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_monkey_king_png.png",
@@ -6995,7 +7006,7 @@
     }
   },
   {
-    "name": ["morphling", "morph"],
+    "name": ["morphling", "morph", "morphling"],
     "icon": "/images/heroes/icons/npc_dota_hero_morphling_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_morphling_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_morphling_png.png",
@@ -7067,7 +7078,7 @@
     }
   },
   {
-    "name": ["naga", "naga siren", "nagasiren", "siren"],
+    "name": ["naga", "nagasiren", "siren", "naga siren"],
     "icon": "/images/heroes/icons/npc_dota_hero_naga_siren_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_naga_siren_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_naga_siren_png.png",
@@ -7141,11 +7152,11 @@
   {
     "name": [
       "np",
-      "nature's prophet",
       "natures prophet",
       "naturesprohpet",
       "furion",
-      "nature"
+      "nature",
+      "nature's prophet"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_furion_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_furion_png.png",
@@ -7218,7 +7229,7 @@
     }
   },
   {
-    "name": ["necro", "necrophos", "necrolyte"],
+    "name": ["necro", "necrolyte", "necrophos"],
     "icon": "/images/heroes/icons/npc_dota_hero_necrolyte_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_necrolyte_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_necrolyte_png.png",
@@ -7290,7 +7301,7 @@
     }
   },
   {
-    "name": ["ns", "night stalker", "nightstalker", "night"],
+    "name": ["ns", "nightstalker", "night", "night stalker"],
     "icon": "/images/heroes/icons/npc_dota_hero_night_stalker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_night_stalker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_night_stalker_png.png",
@@ -7362,7 +7373,7 @@
     }
   },
   {
-    "name": ["nyx", "nyx assassin", "nyxassassin", "nyxnyxnyx"],
+    "name": ["nyx", "nyxassassin", "nyxnyxnyx", "nyx assassin"],
     "icon": "/images/heroes/icons/npc_dota_hero_nyx_assassin_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_nyx_assassin_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_nyx_assassin_png.png",
@@ -7434,7 +7445,7 @@
     }
   },
   {
-    "name": ["ogre", "ogre magi", "ogremagi", "om"],
+    "name": ["ogre", "ogremagi", "om", "ogre magi"],
     "icon": "/images/heroes/icons/npc_dota_hero_ogre_magi_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_ogre_magi_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_ogre_magi_png.png",
@@ -7508,11 +7519,11 @@
   {
     "name": [
       "ogre arcana",
-      "ogre magi arcana",
       "ogremagiarcana",
       "ogrearcana",
       "omarcana",
-      "om arcana"
+      "om arcana",
+      "ogre magi arcana"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_ogre_magi_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_ogre_magi_alt1_png.png",
@@ -7593,7 +7604,7 @@
     }
   },
   {
-    "name": ["omni", "omniknight", "purist"],
+    "name": ["omni", "purist", "omniknight"],
     "icon": "/images/heroes/icons/npc_dota_hero_omniknight_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_omniknight_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_omniknight_png.png",
@@ -7743,13 +7754,13 @@
   {
     "name": [
       "od",
-      "outworld destroyer",
       "outworlddestroyer",
       "obsidiandestroyer",
       "outworlddevourer",
       "harbinger",
       "outworld",
-      "outhousedecorator"
+      "outhousedecorator",
+      "outworld destroyer"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_obsidian_destroyer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_obsidian_destroyer_png.png",
@@ -7894,7 +7905,7 @@
     }
   },
   {
-    "name": ["pa", "phantom assassin", "phantomassassin", "mordred"],
+    "name": ["pa", "phantomassassin", "mordred", "phantom assassin"],
     "icon": "/images/heroes/icons/npc_dota_hero_phantom_assassin_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_phantom_assassin_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_phantom_assassin_png.png",
@@ -7966,7 +7977,7 @@
     }
   },
   {
-    "name": ["pl", "phantom lancer", "phantomlancer", "azwraith"],
+    "name": ["pl", "phantomlancer", "azwraith", "phantom lancer"],
     "icon": "/images/heroes/icons/npc_dota_hero_phantom_lancer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_phantom_lancer_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_phantom_lancer_png.png",
@@ -8038,7 +8049,7 @@
     }
   },
   {
-    "name": ["phoenix", "phx", "ph", "bird", "birb"],
+    "name": ["phoenix", "phx", "ph", "bird", "birb", "phoenix"],
     "icon": "/images/heroes/icons/npc_dota_hero_phoenix_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_phoenix_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_phoenix_png.png",
@@ -8106,7 +8117,7 @@
     }
   },
   {
-    "name": ["primal", "primal beast", "primalbeast", "pb"],
+    "name": ["primal", "primalbeast", "pb", "primal beast"],
     "icon": "/images/heroes/icons/npc_dota_hero_primal_beast_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_primal_beast_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_primal_beast_png.png",
@@ -8325,7 +8336,8 @@
       "pudgepersona",
       "toybutcher",
       "pudge toy",
-      "pudgetoy"
+      "pudgetoy",
+      "pudge persona"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_pudge_persona1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_pudge_persona1_png.png",
@@ -8494,7 +8506,7 @@
     }
   },
   {
-    "name": ["qop", "queen of pain", "queenofpain", "queen", "akasha"],
+    "name": ["qop", "queenofpain", "queen", "akasha", "queen of pain"],
     "icon": "/images/heroes/icons/npc_dota_hero_queenofpain_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_queenofpain_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_queenofpain_png.png",
@@ -8570,17 +8582,7 @@
     }
   },
   {
-    "name": [
-      "qop arcana",
-      "queen of pain arcana",
-      "queenofpain arcana",
-      "qoparcana",
-      "queenofpainarcana",
-      "queen arcana",
-      "akasha arcana",
-      "ristul",
-      "eminence"
-    ],
+    "name": ["qoparcana", "queenofpain arcana", "queenofpainarcana", "queen arcana", "akasha arcana", "ristul", "eminence", "queen of pain arcana", "QoP arcana"],
     "icon": "/images/heroes/icons/npc_dota_hero_queenofpain_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_queenofpain_alt1_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_queenofpain_alt1_png.png",
@@ -8796,7 +8798,7 @@
     }
   },
   {
-    "name": ["rubick", "rub", "grandmagus"],
+    "name": ["rubick", "rub", "grandmagus", "rubick"],
     "icon": "/images/heroes/icons/npc_dota_hero_rubick_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_rubick_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_rubick_alt_png.png",
@@ -8868,7 +8870,7 @@
     }
   },
   {
-    "name": ["sk", "sand king", "sand", "sandyclaws", "sandking"],
+    "name": ["sk", "sand", "sandyclaws", "sandking", "sand king"],
     "icon": "/images/heroes/icons/npc_dota_hero_sand_king_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_sand_king_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_sand_king_png.png",
@@ -8940,7 +8942,7 @@
     }
   },
   {
-    "name": ["sd", "shadow demon", "shadowdemon"],
+    "name": ["sd", "shadowdemon", "shadow demon"],
     "icon": "/images/heroes/icons/npc_dota_hero_shadow_demon_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_shadow_demon_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_shadow_demon_png.png",
@@ -9012,7 +9014,7 @@
     }
   },
   {
-    "name": ["sf", "shadow fiend", "shadowfiend", "nevermore"],
+    "name": ["sf", "shadowfiend", "nevermore", "shadow fiend"],
     "icon": "/images/heroes/icons/npc_dota_hero_nevermore_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_nevermore_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_nevermore_png.png",
@@ -9084,7 +9086,7 @@
     }
   },
   {
-    "name": ["shaman", "shadow shaman", "shadowshaman", "rhasta", "ss"],
+    "name": ["shaman", "shadowshaman", "rhasta", "ss", "shadow shaman"],
     "icon": "/images/heroes/icons/npc_dota_hero_shadow_shaman_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_shadow_shaman_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_shadow_shaman_png.png",
@@ -9156,7 +9158,7 @@
     }
   },
   {
-    "name": ["silencer", "nortrom"],
+    "name": ["silencer", "nortrom", "silencer"],
     "icon": "/images/heroes/icons/npc_dota_hero_silencer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_silencer_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_silencer_png.png",
@@ -9228,7 +9230,7 @@
     }
   },
   {
-    "name": ["sky", "skywrath mage", "skywrathmage", "skywrath", "sw"],
+    "name": ["sky", "skywrathmage", "skywrath", "sw", "skywrath mage"],
     "icon": "/images/heroes/icons/npc_dota_hero_skywrath_mage_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_skywrath_mage_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_skywrath_mage_png.png",
@@ -9304,7 +9306,7 @@
     }
   },
   {
-    "name": ["slardar", "slar"],
+    "name": ["slardar", "slar", "slardar"],
     "icon": "/images/heroes/icons/npc_dota_hero_slardar_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_slardar_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_slardar_png.png",
@@ -9452,7 +9454,7 @@
     }
   },
   {
-    "name": ["snap", "snapfire", "granny", "beatrix", "mortimer"],
+    "name": ["snap", "granny", "beatrix", "mortimer", "snapfire"],
     "icon": "/images/heroes/icons/npc_dota_hero_snapfire_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_snapfire_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_snapfire_png.png",
@@ -9532,7 +9534,7 @@
     }
   },
   {
-    "name": ["sniper", "kardel"],
+    "name": ["sniper", "kardel", "sniper"],
     "icon": "/images/heroes/icons/npc_dota_hero_sniper_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_sniper_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_sniper_png.png",
@@ -9608,7 +9610,7 @@
     }
   },
   {
-    "name": ["spec", "spectre", "specter", "mercurial"],
+    "name": ["spec", "specter", "mercurial", "spectre"],
     "icon": "/images/heroes/icons/npc_dota_hero_spectre_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_spectre_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_spectre_png.png",
@@ -9716,7 +9718,7 @@
     }
   },
   {
-    "name": ["sb", "spirit breaker", "spiritbreaker", "bara"],
+    "name": ["sb", "spiritbreaker", "bara", "spirit breaker"],
     "icon": "/images/heroes/icons/npc_dota_hero_spirit_breaker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_spirit_breaker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_spirit_breaker_png.png",
@@ -9796,7 +9798,7 @@
     }
   },
   {
-    "name": ["storm", "storm spirit", "stormspirit", "raijin"],
+    "name": ["storm", "stormspirit", "raijin", "storm spirit"],
     "icon": "/images/heroes/icons/npc_dota_hero_storm_spirit_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_storm_spirit_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_storm_spirit_png.png",
@@ -9872,7 +9874,7 @@
     }
   },
   {
-    "name": ["sven", "rogueknight"],
+    "name": ["sven", "rogueknight", "sven"],
     "icon": "/images/heroes/icons/npc_dota_hero_sven_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_sven_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_sven_png.png",
@@ -10024,7 +10026,7 @@
     }
   },
   {
-    "name": ["ta", "templar assassin", "templarassassin", "templar", "lanaya"],
+    "name": ["ta", "templarassassin", "templar", "lanaya", "templar assassin"],
     "icon": "/images/heroes/icons/npc_dota_hero_templar_assassin_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_templar_assassin_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_templar_assassin_png.png",
@@ -10096,7 +10098,7 @@
     }
   },
   {
-    "name": ["tb", "terrorblade", "terror"],
+    "name": ["tb", "terror", "terrorblade"],
     "icon": "/images/heroes/icons/npc_dota_hero_terrorblade_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_terrorblade_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_terrorblade_png.png",
@@ -10240,7 +10242,7 @@
     }
   },
   {
-    "name": ["timber", "timbersaw", "shredder", "rizzrak"],
+    "name": ["timber", "shredder", "rizzrak", "timbersaw"],
     "icon": "/images/heroes/icons/npc_dota_hero_shredder_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_shredder_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_shredder_png.png",
@@ -10312,7 +10314,7 @@
     }
   },
   {
-    "name": ["tinker", "boush", "tink"],
+    "name": ["tinker", "boush", "tink", "tinker"],
     "icon": "/images/heroes/icons/npc_dota_hero_tinker_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_tinker_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_tinker_png.png",
@@ -10384,7 +10386,7 @@
     }
   },
   {
-    "name": ["tiny", "tony", "tuny"],
+    "name": ["tiny", "tony", "tuny", "tiny"],
     "icon": "/images/heroes/icons/npc_dota_hero_tiny_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_tiny_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_tiny_png.png",
@@ -10459,10 +10461,10 @@
     "name": [
       "treant",
       "tree",
-      "treant protector",
       "treantprotector",
       "tp",
-      "rooftrellen"
+      "rooftrellen",
+      "treant protector"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_treant_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_treant_png.png",
@@ -10535,7 +10537,7 @@
     }
   },
   {
-    "name": ["troll", "troll warlord", "trollwarlord"],
+    "name": ["troll", "trollwarlord", "troll warlord"],
     "icon": "/images/heroes/icons/npc_dota_hero_troll_warlord_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_troll_warlord_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_troll_warlord_png.png",
@@ -10607,7 +10609,7 @@
     }
   },
   {
-    "name": ["tusk", "tuskarr", "tuskar", "walrus"],
+    "name": ["tusk", "tuskarr", "tuskar", "walrus", "tusk"],
     "icon": "/images/heroes/icons/npc_dota_hero_tusk_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_tusk_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_tusk_png.png",
@@ -10683,7 +10685,7 @@
     }
   },
   {
-    "name": ["underlord", "pitlord", "abyssalunderlord"],
+    "name": ["underlord", "pitlord", "abyssalunderlord", "underlord"],
     "icon": "/images/heroes/icons/npc_dota_hero_abyssal_underlord_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_abyssal_underlord_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_abyssal_underlord_png.png",
@@ -10755,7 +10757,7 @@
     }
   },
   {
-    "name": ["undying", "undy", "dirge", "ud"],
+    "name": ["undying", "undy", "dirge", "ud", "undying"],
     "icon": "/images/heroes/icons/npc_dota_hero_undying_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_undying_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_undying_png.png",
@@ -10827,7 +10829,7 @@
     }
   },
   {
-    "name": ["ursa", "fuzzywuzzy"],
+    "name": ["ursa", "fuzzywuzzy", "ursa"],
     "icon": "/images/heroes/icons/npc_dota_hero_ursa_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_ursa_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_ursa_png.png",
@@ -10903,7 +10905,7 @@
     }
   },
   {
-    "name": ["venge", "vengeful spirit", "vengefulspirit", "vengeful", "vs"],
+    "name": ["venge", "vengefulspirit", "vengeful", "vs", "vengeful spirit"],
     "icon": "/images/heroes/icons/npc_dota_hero_vengefulspirit_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_vengefulspirit_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_vengefulspirit_png.png",
@@ -10975,7 +10977,7 @@
     }
   },
   {
-    "name": ["veno", "venomancer", "lesale"],
+    "name": ["veno", "lesale", "venomancer"],
     "icon": "/images/heroes/icons/npc_dota_hero_venomancer_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_venomancer_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_venomancer_png.png",
@@ -11047,7 +11049,7 @@
     }
   },
   {
-    "name": ["viper", "netherdrake"],
+    "name": ["viper", "netherdrake", "viper"],
     "icon": "/images/heroes/icons/npc_dota_hero_viper_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_viper_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_viper_png.png",
@@ -11195,7 +11197,7 @@
     }
   },
   {
-    "name": ["voidspirit", "void spirit", "inai"],
+    "name": ["voidspirit", "inai", "void spirit"],
     "icon": "/images/heroes/icons/npc_dota_hero_void_spirit_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_void_spirit_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_void_spirit_png.png",
@@ -11423,7 +11425,7 @@
     }
   },
   {
-    "name": ["wind", "windranger", "windrunner", "wr", "lyralei"],
+    "name": ["wind", "windrunner", "wr", "lyralei", "windranger"],
     "icon": "/images/heroes/icons/npc_dota_hero_windrunner_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_windrunner_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_windrunner_png.png",
@@ -11497,7 +11499,6 @@
   {
     "name": [
       "wind arcana",
-      "windranger arcana",
       "windrunner arcana",
       "wr arcana",
       "lyralei arcana",
@@ -11507,7 +11508,8 @@
       "windrangerarcana",
       "windarcana",
       "wrarcana",
-      "windrunnerarcana"
+      "windrunnerarcana",
+      "windranger arcana"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_windrunner_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_windrunner_alt1_png.png",
@@ -11624,7 +11626,7 @@
     }
   },
   {
-    "name": ["wyvern", "winter wyvern", "winterwyvern", "winter", "ww"],
+    "name": ["wyvern", "winterwyvern", "winter", "ww", "winter wyvern"],
     "icon": "/images/heroes/icons/npc_dota_hero_winter_wyvern_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_winter_wyvern_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_winter_wyvern_png.png",
@@ -11696,7 +11698,7 @@
     }
   },
   {
-    "name": ["wd", "witch doctor", "witchdoctor", "witch"],
+    "name": ["wd", "witchdoctor", "witch", "witch doctor"],
     "icon": "/images/heroes/icons/npc_dota_hero_witch_doctor_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_witch_doctor_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_witch_doctor_png.png",
@@ -11768,7 +11770,7 @@
     }
   },
   {
-    "name": ["wk", "wraith king", "wraithking", "wraith", "ostarion"],
+    "name": ["wk", "wraithking", "wraith", "ostarion", "wraith king"],
     "icon": "/images/heroes/icons/npc_dota_hero_skeleton_king_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_skeleton_king_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_skeleton_king_png.png",
@@ -11842,11 +11844,11 @@
   {
     "name": [
       "wkarcana",
-      "skeleton king",
       "skeletonking",
       "skele",
       "wraithkingarcana",
-      "leoric"
+      "leoric",
+      "skeleton king"
     ],
     "icon": "/images/heroes/icons/npc_dota_hero_skeleton_king_alt1_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_skeleton_king_alt1_png.png",
@@ -11923,7 +11925,7 @@
     }
   },
   {
-    "name": ["zeus", "zues", "zuus", "zeuz"],
+    "name": ["zeus", "zues", "zuus", "zeuz", "zeus"],
     "icon": "/images/heroes/icons/npc_dota_hero_zuus_png.png",
     "selection": "/images/heroes/selection/npc_dota_hero_zuus_png.png",
     "avatar": "/images/heroes/avatars/npc_dota_hero_zuus_png.png",

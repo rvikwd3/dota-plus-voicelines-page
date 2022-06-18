@@ -44,6 +44,10 @@ module.exports = {
           to: '#add7e0',
         },
       },
+      dropShadow: {
+        'dark': '0 2px 4px rgb(0 0 0 / 0.6)',
+        'pop': '0 2px 4px rgb(0 0 0 / 0.3)',
+      }
     },
   },
   future: {

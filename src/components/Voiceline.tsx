@@ -1,38 +1,43 @@
-import { useSpring, useTransition, animated, easings } from "@react-spring/web";
+// react imports
+import { animated, easings, useSpring, useTransition } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import React, { forwardRef, SyntheticEvent, useContext, useState } from "react";
 
+// useContext imports
+import { IsSmallDisplayContext } from "../context/IsSmallDisplayContextProvider";
+import { DispatchContext } from "../context/VoicelineAudioContextProvider";
+
+// misc imports
 import { VoicelineContainerEntry } from "../../types";
 import { plusTierIconUrlList } from "../config";
-import { InteractableCopyIcon, LeftChevronIcon, CopyIcon } from "../icons";
-import { Command, HeroIconWithTooltip, VoicelineText } from "./VoicelineEntry";
+import { CopyIcon, InteractableCopyIcon, LeftChevronIcon } from "../icons";
+import { uniqueStrings } from "../utils/uniqueStrings";
+
+// component imports
 import MobileCommandDrawer from "./MobileCommandDrawer";
-import { DispatchContext } from "../context/VoicelineAudioContextProvider";
+import { Command, HeroIconWithTooltip, VoicelineText } from "./VoicelineEntry";
+
+
+type Props = {
+  entry: VoicelineContainerEntry;
+  updateRowHeight: (updatedHeight: number) => void;
+  recalculateRowHeight: () => void;
+  id?: string;
+  classname?: string;
+};
 
 const Voiceline = forwardRef(
   (
-    {
-      entry,
-      updateRowHeight,
-      recalculateRowHeight,
-      isSmallDisplay,
-      id,
-      classname,
-    }: {
-      entry: VoicelineContainerEntry;
-      updateRowHeight: (updatedHeight: number) => void;
-      recalculateRowHeight: () => void;
-      isSmallDisplay: boolean;
-      id?: string;
-      classname?: string;
-    },
+    { entry, updateRowHeight, recalculateRowHeight, id, classname }: Props,
     ref: React.ForwardedRef<HTMLDivElement>
   ) => {
     const audioDispatch = useContext(DispatchContext);
+    const isSmallDisplay = useContext(IsSmallDisplayContext);
     const [copiedState, setCopiedState] = useState<boolean>(false); // 'Slide to copy' state
     const [drawerState, setDrawerState] = useState<boolean>(false);
-    const slideLeftBound = 140; // Distance voiceline can be slid left for 'Slide to copy'
+    const slideLeftBound = 100; // Distance voiceline can be slid left for 'Slide to copy'
 
+    // MobileCommandDrawer Expand/Collapse spring animation
     const animateDrawer = useTransition(drawerState, {
       from: {
         y: -52,
@@ -55,9 +60,9 @@ const Voiceline = forwardRef(
       },
     });
 
+    // Handle clicking on a voiceline
     const onVoicelineClick = (event: SyntheticEvent) => {
       event.preventDefault();
-      event.stopPropagation();
       // If larger display, don't play the voiceline on click
       if (!isSmallDisplay) {
         audioDispatch({ type: "STOP" });
@@ -73,6 +78,7 @@ const Voiceline = forwardRef(
       }
     };
 
+    // Handle swiping a voiceline to the left
     const [{ x }, api] = useSpring(() => ({ x: 0 }));
     const bind = useDrag(
       ({ down, active, distance, offset: [x] }) => {
@@ -125,9 +131,8 @@ const Voiceline = forwardRef(
               </div>
             ) : (
               <div className="w-full h-full flex items-center justify-end text-neutral-400">
-                <span>Slide to copy</span>
-                <LeftChevronIcon className="w-5 stroke-neutral-400 -mr-1" />
-                <CopyIcon className="w-6 stroke-neutral-400" />
+                <LeftChevronIcon className="w-7 stroke-neutral-300 -mr-1 stroke-2" />
+                <CopyIcon className="w-[30px] stroke-neutral-300" />
               </div>
             )}
           </div>
@@ -147,7 +152,7 @@ const Voiceline = forwardRef(
             )}
             <HeroIconWithTooltip
               iconUrl={entry.heroIconUrl}
-              tooltipText={entry.heroNames.join(", ")}
+              tooltipText={uniqueStrings(entry.heroNames).join(", ")}
               className="justify-self-end"
             />
             <img

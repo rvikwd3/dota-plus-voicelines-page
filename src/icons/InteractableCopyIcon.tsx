@@ -20,7 +20,7 @@ export const InteractableCopyIcon = ({
   const [tooltipRef, setTooltipRef] = useState<HTMLAnchorElement | null>();
   const [popperRef, setPoppperRef] = useState<HTMLDivElement | null>();
   const [arrowRef, setArrowRef] = useState<HTMLDivElement | null>();
-  const { update, styles, attributes } = usePopper(tooltipRef, popperRef, {
+  const { update: updateTooltip, styles, attributes } = usePopper(tooltipRef, popperRef, {
     placement: "top",
     modifiers: [
       {
@@ -28,6 +28,12 @@ export const InteractableCopyIcon = ({
         options: {
           element: arrowRef,
         },
+      },
+      {
+        name: "flip",
+        options: {
+          fallbackPlacements: ['left', 'bottom'],
+        }
       },
       {
         name: "offset",
@@ -54,10 +60,10 @@ export const InteractableCopyIcon = ({
     event.stopPropagation();
     copyCallback();
     setCopyState("Copied!");
-    !!update && await update();   // update is not loaded on isSmallDisplay devices
+    !!updateTooltip && await updateTooltip();   // update is not loaded on isSmallDisplay devices
     setTimeout(async () => {
       setCopyState("Copy Command");
-      !!update && await update();
+      !!updateTooltip && await updateTooltip();
     }, 5000);
   };
 

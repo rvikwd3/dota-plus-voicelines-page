@@ -28,9 +28,11 @@ export type PlusVoicelines =  {
 }
 
 export interface Hero {
-  name: Array<String>;
+  name: Array<string>;
   icon: string;
   selection: string;
   avatar: string;
   plusVoicelines: PlusVoicelines;
 }
+
+export type HeroFilterItem = Pick<Hero, 'name' | 'icon'>;

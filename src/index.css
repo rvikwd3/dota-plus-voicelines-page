@@ -10,7 +10,10 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-smoothing: always;
+    text-rendering: optimizeLegibility;
   }
 
   html, body, #root {

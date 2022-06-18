@@ -37,7 +37,6 @@ const MobileCommandDrawer = (props: CommandDrawerProps) => {
 
   const onPlayAudioIconClick = (event: SyntheticEvent) => {
     event.preventDefault();
-    event.stopPropagation();
     setShowTooltip(true);
     setTimeout(() => setShowTooltip(false), 1000);
     audioDispatch({ type: "STOP"});
