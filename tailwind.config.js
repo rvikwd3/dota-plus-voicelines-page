@@ -47,7 +47,10 @@ module.exports = {
       dropShadow: {
         'dark': '0 2px 4px rgb(0 0 0 / 0.6)',
         'pop': '0 2px 4px rgb(0 0 0 / 0.3)',
-      }
+      },
+      boxShadow: {
+        'menu': '0 0 60px 1px rgba(0, 0, 0, 1)',
+      },
     },
   },
   future: {

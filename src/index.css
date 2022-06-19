@@ -5,6 +5,7 @@
 @import "./css/animateRow.css";
 @import "./css/tooltip.css";
 @import "./css/voicelineItem.css";
+@import "./css/searchBar.css";
 @import "tailwindcss/utilities";
 
 @layer base {

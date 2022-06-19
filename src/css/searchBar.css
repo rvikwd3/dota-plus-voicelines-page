@@ -1,0 +1,12 @@
+.heroFilterItem {
+  --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  width: auto;
+  opacity: 1;
+  overflow: hidden;
+  transition: width 600ms var(--ease-out-cubic), opacity 600ms var(--ease-in-out-cubic);
+}
+
+.heroFilterItem.collapsed {
+  opacity: 0;
+}

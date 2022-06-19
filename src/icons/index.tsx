@@ -5,3 +5,6 @@ export { CopyIcon } from "./CopyIcon";
 export { PlayAudioIcon } from "./PlayAudioIcon";
 export { CancelIcon } from "./CancelIcon";
 export { ChevronUpIcon } from "./ChevronUpIcon";
+export { SearchIcon } from "./SearchIcon";
+export { HelpIcon } from "./HelpIcon";
+export { MenuIcon } from "./MenuIcon";

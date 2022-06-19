@@ -58,6 +58,7 @@ const Voiceline = forwardRef(
         duration: 400,
         easing: easings.easeOutCubic,
       },
+      immediate: !isSmallDisplay, // disable drawer animation if NOT small display
     });
 
     // Handle clicking on a voiceline
@@ -78,7 +79,7 @@ const Voiceline = forwardRef(
       }
     };
 
-    // Handle swiping a voiceline to the left
+    // Handle swiping a voiceline to the left (react-use-gesture)
     const [{ x }, api] = useSpring(() => ({ x: 0 }));
     const bind = useDrag(
       ({ down, active, distance, offset: [x] }) => {
@@ -152,7 +153,7 @@ const Voiceline = forwardRef(
             )}
             <HeroIconWithTooltip
               iconUrl={entry.heroIconUrl}
-              tooltipText={uniqueStrings(entry.heroNames).join(", ")}
+              tooltipText={uniqueStrings(entry.heroNames).join(", ").toLowerCase()}
               className="justify-self-end"
             />
             <img
