@@ -1,3 +1,6 @@
+# Vite Rollup Plugin generated html file
+stats.html
+
 # Logs
 logs
 *.log
@@ -22,6 +25,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Vite Rollup Plugin generated html file
-stats.html

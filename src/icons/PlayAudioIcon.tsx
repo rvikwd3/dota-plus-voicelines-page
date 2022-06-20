@@ -1,10 +1,6 @@
-export const PlayAudioIcon = ({
-  id,
-  className,
-}: {
-  id?: string;
-  className?: string;
-}) => {
+type Props = React.ComponentPropsWithoutRef<'svg'>;
+
+export const PlayAudioIcon = ({className}: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

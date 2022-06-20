@@ -3,11 +3,17 @@ import { HelpIcon, MenuIcon } from "../icons";
 
 interface Props extends React.ComponentPropsWithoutRef<'nav'> {
   setShowNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowMobileHelpDialog: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Navbar = ({ setShowNavMenu }: Props) => {
+const Navbar = ({ setShowNavMenu, setShowMobileHelpDialog }: Props) => {
   const handleMenuClick = (event: SyntheticEvent) => {
-    setShowNavMenu(prevState => !prevState);
+    setShowNavMenu(true);
+  }
+
+  const handleMobileNavHelpClick = (event: SyntheticEvent) => {
+    setShowNavMenu(false);
+    setShowMobileHelpDialog(true);
   }
 
   return (
@@ -22,7 +28,7 @@ const Navbar = ({ setShowNavMenu }: Props) => {
         </span>
       </div>
 
-      <div className="hidden md:flex md:flex-row gap-x-8 px-4 items-center">
+      <div className="hidden md:flex md:flex-row gap-x-9 px-4 items-center">
         <a href="#" className="">
           <div className="flex items-center gap-x-1">
             <span className="text-xl font-bold text-white">Help</span>
@@ -34,7 +40,7 @@ const Navbar = ({ setShowNavMenu }: Props) => {
         </a>
       </div>
 
-      <div className="md:hidden active:scale-90">
+      <div className="md:hidden active:scale-90 transition duration-100 ease-out" onClick={handleMobileNavHelpClick}>
         <HelpIcon className="w-10 h-10 drop-shadow-xl" />
       </div>
     </nav>

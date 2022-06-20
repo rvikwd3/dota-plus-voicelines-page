@@ -18,7 +18,7 @@ const VoicelineAudioContextProvider = ({ children }: PropsWithChildren) => {
       case "PLAY_AUDIO":
         const audio = new Audio(action.payload.url);
         const controller = new AbortController();
-        audio.volume = 0.25;
+        audio.volume = 0.4;
         audio.addEventListener("canplaythrough", () => audio.play(), {
           signal: controller.signal,
         });

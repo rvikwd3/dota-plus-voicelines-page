@@ -33,12 +33,6 @@ export const HeroFilterContainer = React.memo(
       <div
         className={`bg-zinc-900 rounded-md border-4 hover:border-neutral-300 border-neutral-400 focus:border-neutral-300 outline-none overflow-y-scroll ${className}`}
       >
-        <div
-          className="group flex h-6 mt-4 mb-1 bg-inherit items-center justify-center active:bg-zinc-700 transiton duration-150 ease-out cursor-pointer"
-          onClick={closeContainer}
-        >
-          <ChevronUpIcon className="group-hover:-translate-y-1 w-9 h-9 md:w-11 md:h-11 transition duration-150 ease-out" />
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 px-4 py-2">
           {heroesToShow.map((heroFilterItem) => (
             <div
@@ -61,6 +55,12 @@ export const HeroFilterContainer = React.memo(
               </span>
             </div>
           ))}
+        </div>
+        <div
+          className="group sticky flex py-1 bottom-0 bg-inherit items-center justify-center active:bg-zinc-700 transiton duration-150 ease-out cursor-pointer"
+          onClick={closeContainer}
+        >
+          <ChevronUpIcon className="group-hover:-translate-y-1 w-9 h-9 md:w-11 md:h-11 transition duration-150 ease-out" />
         </div>
       </div>
     );
