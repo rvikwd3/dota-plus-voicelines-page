@@ -1,4 +1,4 @@
-import { SyntheticEvent, useEffect, useMemo, useState } from "react";
+import { SyntheticEvent, useMemo } from "react";
 import { CancelIcon } from "../../icons";
 import { parseHeroFilterItems } from "../../utils/parseHeroFilterItems";
 

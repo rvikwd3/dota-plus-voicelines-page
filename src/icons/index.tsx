@@ -10,3 +10,7 @@ export { HelpIcon } from "./HelpIcon";
 export { MenuIcon } from "./MenuIcon";
 export { PasteIcon } from "./PasteIcon";
 export { FilterIcon } from "./FilterIcon";
+export { MicrophoneIcon } from "./MicrophoneIcon";
+export { GithubIcon } from "./GithubIcon";
+export { TwitterIcon } from "./TwitterIcon";
+export { DiscordIcon } from "./DiscordIcon";

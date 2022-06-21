@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { VoicelineContainerEntry } from "../../types";
-import VoicelineListScroller from "./VoicelineListScroller";
-import { parseHeroesLookupTable } from "../utils/parseHeroesLookupTable";
 import VoicelineAudioContextProvider from "../context/VoicelineAudioContextProvider";
+import { parseHeroesLookupTable } from "../utils/parseHeroesLookupTable";
+import VoicelineListScroller from "./VoicelineListScroller";
 
 const VoicelinesListContainer = ({
   searchInputValue,

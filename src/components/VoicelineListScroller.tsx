@@ -1,13 +1,28 @@
-import React, { useCallback, useContext, useEffect, useRef, useState } from "react";
+// react imports
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState
+} from "react";
+
+// type imports
 import { VoicelineContainerEntry } from "../../types";
-import Voiceline from "./Voiceline";
+
+// library imports
+import AutoSizer from "react-virtualized-auto-sizer";
 import {
   ListChildComponentProps,
-  VariableSizeList as List,
   ListOnScrollProps,
+  VariableSizeList as List
 } from "react-window";
-import AutoSizer from "react-virtualized-auto-sizer";
+
+// context imports
 import { IsSmallDisplayContext } from "../context/IsSmallDisplayContextProvider";
+
+// component imports
+import Voiceline from "./Voiceline";
 
 const Row = ({ index, style, data }: ListChildComponentProps) => {
   const rowRef = useRef<HTMLDivElement | null>(null);
@@ -35,7 +50,16 @@ const Row = ({ index, style, data }: ListChildComponentProps) => {
   };
 
   if (index === data.voicelines.length) {
-    return <div style={{...style, height: "8px", top: (style.top as number) + data.gutterSize }} className="block bg-inherit"></div>;
+    return (
+      <div
+        style={{
+          ...style,
+          height: "8px",
+          top: (style.top as number) + data.gutterSize,
+        }}
+        className="block bg-inherit"
+      ></div>
+    );
   }
 
   return (
@@ -60,7 +84,6 @@ const Row = ({ index, style, data }: ListChildComponentProps) => {
 
 const VoicelineListScroller = React.memo(
   ({ voicelines }: { voicelines: VoicelineContainerEntry[] }) => {
-
     const listRef = useRef<List | null>(null);
     const listContainerRef = useRef<HTMLDivElement | null>(null);
     const rowHeights = useRef<{ [key: number]: number }>({});

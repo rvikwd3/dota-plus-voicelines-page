@@ -4,9 +4,17 @@ import { HelpIcon, MenuIcon } from "../../icons";
 interface Props extends React.ComponentPropsWithoutRef<"nav"> {
   setShowNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
   setShowMobileHelpDialog: React.Dispatch<React.SetStateAction<boolean>>;
+  handleDesktopHelpClick: (event: SyntheticEvent) => void;
+  handleAboutClick: (event: SyntheticEvent) => void;
 }
 
-export const Navbar = ({ setShowNavMenu, setShowMobileHelpDialog }: Props) => {
+export const Navbar = ({
+  className,
+  setShowNavMenu,
+  setShowMobileHelpDialog,
+  handleDesktopHelpClick,
+  handleAboutClick,
+}: Props) => {
   const handleMenuClick = (event: SyntheticEvent) => {
     setShowNavMenu(true);
   };
@@ -17,7 +25,9 @@ export const Navbar = ({ setShowNavMenu, setShowMobileHelpDialog }: Props) => {
   };
 
   return (
-    <nav className="w-full md:w-11/12 md:max-w-7xl mx-auto px-4 py-2 md:py-1 md:rounded-b-sm bg-neutral-900 flex flex-row items-center place-content-between">
+    <nav
+      className={`w-full md:w-11/12 md:max-w-7xl mx-auto px-4 py-2 md:py-1 md:rounded-b-sm bg-neutral-900 flex flex-row items-center place-content-between ${className}`}
+    >
       <div className="md:hidden active:scale-90" onClick={handleMenuClick}>
         <MenuIcon className="w-10 h-10 drop-shadow-xl" />
       </div>
@@ -30,7 +40,7 @@ export const Navbar = ({ setShowNavMenu, setShowMobileHelpDialog }: Props) => {
 
       <div className="hidden md:flex md:flex-row gap-x-9 px-4 items-center">
         <a href="#" className="">
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-1" onClick={handleDesktopHelpClick}>
             <span className="text-xl text-neutral-200 hover:text-neutral-50 hover:underline underline-offset-4 decoration-neutral-200">
               Help
             </span>
@@ -40,6 +50,7 @@ export const Navbar = ({ setShowNavMenu, setShowMobileHelpDialog }: Props) => {
         <a
           href="#"
           className="text-xl text-neutral-200 hover:text-neutral-50 hover:underline underline-offset-4 decoration-neutral-200 [text-shadow:0_4px_8px_rgba(0,0,0,0.2)]"
+          onClick={handleAboutClick}
         >
           About
         </a>

@@ -4,8 +4,8 @@ interface Props extends React.ComponentPropsWithoutRef<"div"> {
   showBackdrop: boolean;
 }
 
-export const MobileHelpDialogBackdrop = ({ showBackdrop, className }: Props) => {
-  const fadeHelpDialogBackdrop = useTransition(showBackdrop, {
+export const DarkenBackdrop = ({ showBackdrop, className }: Props) => {
+  const fadeBackdrop = useTransition(showBackdrop, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
@@ -16,10 +16,11 @@ export const MobileHelpDialogBackdrop = ({ showBackdrop, className }: Props) => 
   });
   return (
     <>
-      {fadeHelpDialogBackdrop(
+      {fadeBackdrop(
         (styles, show) =>
           show && (
             <animated.div
+              id="darkBackdrop"
               style={styles}
               className={`bg-black/80 ${className}`}
             />

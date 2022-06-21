@@ -1,4 +1,4 @@
-import { easings, useTransition, animated } from "@react-spring/web";
+import { animated, easings, useTransition } from "@react-spring/web";
 
 const AnimateTooltip = ({ children, show, id }: { children: React.ReactNode; show: boolean; id?: string; }) => {
   const animateTooltip = useTransition(show, {

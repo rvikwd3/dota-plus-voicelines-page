@@ -1,5 +1,4 @@
-import React from "react";
-import { SyntheticEvent } from "react";
+import React, { SyntheticEvent } from "react";
 import { ChevronUpIcon } from "../../icons";
 import { parseHeroFilterItems } from "../../utils/parseHeroFilterItems";
 
@@ -20,7 +19,7 @@ export const HeroFilterContainer = React.memo(
     className,
   }: Props) => {
     const heroesToShow = parseHeroFilterItems().filter((item) =>
-      item.name.some((name) => name.includes(searchInputValue))
+      item.name.some((name) => name.includes(searchInputValue.toLowerCase()))
     );
 
     // Prevent onMouseDown from firing an onBlur event to SearchBar, before onClick has a chance to fire

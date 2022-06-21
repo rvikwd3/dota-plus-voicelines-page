@@ -36,3 +36,8 @@ export interface Hero {
 }
 
 export type HeroFilterItem = Pick<Hero, 'name' | 'icon'>;
+
+export enum HelpContentSwitch {
+  text = 'TEXT',
+  img = 'IMG'
+}

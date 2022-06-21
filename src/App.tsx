@@ -1,15 +1,15 @@
-import { useTransition, config, animated, easings } from "@react-spring/web";
+// react imports
 import { SyntheticEvent, useState } from "react";
-import DesktopHelpTip from "./components/DesktopHelpTip";
-import {
-  MobileHelpDialog,
-  MobileHelpDialogBackdrop,
-} from "./components/MobileHelpDialog";
+
+// component imports
+import DesktopHelpSection from "./components/DesktopHelpSection";
+import { AboutDialog, MobileHelpDialog } from "./components/Dialogs";
 import { MobileNavDrawer, Navbar } from "./components/Navigation";
 import { SearchContainer } from "./components/Search";
 import VoicelinesListContainer from "./components/VoicelinesListContainer";
+
+// context imports
 import IsSmallDisplayContextProvider from "./context/IsSmallDisplayContextProvider";
-import { CancelIcon } from "./icons";
 
 const App = () => {
   const [searchInputValue, setSearchInputValue] = useState<string>("");
@@ -17,12 +17,15 @@ const App = () => {
   const [showMobileNavMenu, setShowMobileNavMenu] = useState<boolean>(false);
   const [showMobileHelpDialog, setShowMobileHelpDialog] =
     useState<boolean>(false);
+  const [showDesktopHelpSection, setShowDesktopHelpSection] =
+    useState<boolean>(false);
+  const [showAbout, setShowAbout] = useState<boolean>(false);
 
   const handleMobileNavDrawerClose = (event: SyntheticEvent) => {
     setShowMobileNavMenu(false);
   };
 
-  const handleHelpDialogClose = (event: SyntheticEvent) => {
+  const handleMobileHelpDialogClose = (event: SyntheticEvent) => {
     setShowMobileHelpDialog(false);
   };
 
@@ -31,39 +34,64 @@ const App = () => {
     setShowMobileHelpDialog(true);
   };
 
+  const handleMobileAboutNavClick = (event: SyntheticEvent) => {
+    setShowMobileNavMenu(false);
+    setShowAbout(true);
+  };
+
+  const handleDesktopHelpNavClick = (event: SyntheticEvent) => {
+    setShowDesktopHelpSection(true);
+  };
+
+  const handleAboutNavClick = (event: SyntheticEvent) => {
+    setShowAbout(true);
+  };
+
+  const handleHelpSectionCloseClick = (event: SyntheticEvent) => {
+    setShowDesktopHelpSection(false);
+  };
+
+  const handleAboutDialogClose = (event: SyntheticEvent) => {
+    setShowAbout(false);
+  };
+
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full overflow-hidden">
       <MobileNavDrawer
         className="md:hidden z-40 absolute"
         showDrawer={showMobileNavMenu}
         handleMenuClose={handleMobileNavDrawerClose}
-        handleMobileHelpNavClick={handleMobileHelpNavClick}
+        handleHelpClick={handleMobileHelpNavClick}
+        handleAboutClick={handleMobileAboutNavClick}
       />
-      <MobileHelpDialogBackdrop
-        className="md:hidden z-20 absolute w-full h-full"
-        showBackdrop={showMobileHelpDialog}
-      />
-      <MobileHelpDialog
-        className="md:hidden z-30 absolute w-full h-full"
-        showDialog={showMobileHelpDialog}
-        handleHelpDialogClose={handleHelpDialogClose}
-      />
+      <IsSmallDisplayContextProvider>
+        <MobileHelpDialog
+          className="md:hidden z-30 absolute w-full h-full"
+          showDialog={showMobileHelpDialog}
+          handleHelpDialogClose={handleMobileHelpDialogClose}
+        />
+        <AboutDialog
+          className="z-30 absolute w-full h-full"
+          showAbout={showAbout}
+          handleAboutClose={handleAboutDialogClose}
+        />
+      </IsSmallDisplayContextProvider>
       <div className="z-0 w-full h-full flex flex-col justify-center relative">
         <Navbar
+          className="z-10 mb-2"
           setShowNavMenu={setShowMobileNavMenu}
           setShowMobileHelpDialog={setShowMobileHelpDialog}
+          handleDesktopHelpClick={handleDesktopHelpNavClick}
+          handleAboutClick={handleAboutNavClick}
         />
-        <div className="hidden mt-4 md:block md:w-5/6 md:max-w-6xl relative self-center bg-stone-800 rounded-lg">
-          <div className="flex flex-row items-center justify-between gap-x-5 py-4 px-12">
-            <DesktopHelpTip className="p-8"/>
-            <span className="text-2xl text-white">HELP</span>
-            <span className="text-2xl text-white">HELP</span>
-            <span className="text-2xl text-white">HELP</span>
-            <span className="text-2xl text-white">HELP</span>
-          </div>
-        </div>
+        <DesktopHelpSection
+          className="z-0"
+          showHelpSection={showDesktopHelpSection}
+          handleHelpClose={handleHelpSectionCloseClick}
+        />
         <IsSmallDisplayContextProvider>
           <SearchContainer
+            className="mt-2"
             searchInputValue={searchInputValue}
             setSearchInputValue={setSearchInputValue}
             heroFilter={heroFilter}

@@ -1,13 +1,15 @@
 import { animated, config, useTransition } from "@react-spring/web";
-import { SyntheticEvent } from "react";
+import { SyntheticEvent, useContext } from "react";
+import { IsSmallDisplayContext } from "../../context/IsSmallDisplayContextProvider";
 import {
   CancelIcon,
   CopyIcon,
   FilterIcon,
   PasteIcon,
   PlayAudioIcon,
-  SearchIcon,
+  SearchIcon
 } from "../../icons";
+import { DarkenBackdrop } from "./DarkenBackdrop";
 import { MobileHelpTip } from "./MobileHelpTip";
 
 interface Props extends React.ComponentPropsWithoutRef<"div"> {
@@ -20,6 +22,7 @@ export const MobileHelpDialog = ({
   showDialog,
   className
 }: Props) => {
+  const isSmallDisplay = useContext(IsSmallDisplayContext);
   const slideHelpDialog = useTransition(showDialog, {
     from: { transform: "translate3d(0, 100%, 0)" },
     enter: { transform: "translate3d(0, 0%, 0)" },
@@ -74,9 +77,9 @@ export const MobileHelpDialog = ({
 
   return (
     <>
+      <DarkenBackdrop showBackdrop={showDialog && isSmallDisplay} className="z-20 absolute w-full h-full"/>
       {slideHelpDialog(
-        (styles, show) =>
-          show && (
+        (styles, show) => show && (
             <animated.div
               style={styles}
               className={`${className}`}

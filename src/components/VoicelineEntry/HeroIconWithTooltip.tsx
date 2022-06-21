@@ -17,29 +17,33 @@ export const HeroIconWithTooltip = ({
   const [tooltipRef, setTooltipRef] = useState<HTMLDivElement | null>();
   const [popperRef, setPoppperRef] = useState<HTMLDivElement | null>();
   const [arrowRef, setArrowRef] = useState<HTMLDivElement | null>();
-  const { update, styles, attributes, state } = usePopper(tooltipRef, popperRef, {
-    placement: "top",
-    modifiers: [
-      {
-        name: "arrow",
-        options: {
-          element: arrowRef,
+  const { update, styles, attributes, state } = usePopper(
+    tooltipRef,
+    popperRef,
+    {
+      placement: "top",
+      modifiers: [
+        {
+          name: "arrow",
+          options: {
+            element: arrowRef,
+          },
         },
-      },
-      {
-        name: "flip",
-        options: {
-          fallbackPlacements: ['right', 'bottom'],
-        }
-      },
-      {
-        name: "offset",
-        options: {
-          offset: [0, 10],
+        {
+          name: "flip",
+          options: {
+            fallbackPlacements: ["right", "bottom"],
+          },
         },
-      },
-    ],
-  });
+        {
+          name: "offset",
+          options: {
+            offset: [0, 10],
+          },
+        },
+      ],
+    }
+  );
 
   const [hoverTimeout, setHoverTimeout] = useState<number>();
   const hoverIcon = () => {

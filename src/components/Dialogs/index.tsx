@@ -1,3 +1,4 @@
 export { MobileHelpDialog } from "./MobileHelpDialog";
 export { MobileHelpTip } from "./MobileHelpTip";
-export { MobileHelpDialogBackdrop } from "./MobileHelpDialogBackdrop";
+export { DarkenBackdrop } from "./DarkenBackdrop";
+export { AboutDialog } from "./AboutDialog";

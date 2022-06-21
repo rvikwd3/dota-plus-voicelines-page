@@ -5,13 +5,15 @@ import { CancelIcon } from "../../icons";
 interface Props extends React.ComponentPropsWithoutRef<"div"> {
   showDrawer: boolean;
   handleMenuClose: (event: SyntheticEvent) => void;
-  handleMobileHelpNavClick: (event: SyntheticEvent) => void;
+  handleHelpClick: (event: SyntheticEvent) => void;
+  handleAboutClick: (event: SyntheticEvent) => void;
 }
 
 export const MobileNavDrawer = ({
   showDrawer,
   handleMenuClose,
-  handleMobileHelpNavClick,
+  handleHelpClick,
+  handleAboutClick,
   className,
 }: Props) => {
   const slideMenu = useTransition(showDrawer, {
@@ -41,7 +43,7 @@ export const MobileNavDrawer = ({
                   <a
                     href="#"
                     className="self-start"
-                    onClick={handleMobileHelpNavClick}
+                    onClick={handleHelpClick}
                   >
                     <span className="text-3xl tracking-wide font-bold text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.2)]">
                       Help
@@ -50,6 +52,7 @@ export const MobileNavDrawer = ({
                   <a
                     href="#"
                     className="text-3xl tracking-wide text-white font-bold self-start [text-shadow:0_4px_8px_rgba(0,0,0,0.2)]"
+                    onClick={handleAboutClick}
                   >
                     About
                   </a>

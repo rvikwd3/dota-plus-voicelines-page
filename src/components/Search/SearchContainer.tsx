@@ -27,9 +27,9 @@ export const SearchContainer = ({
   const isSmallDisplay = useContext(IsSmallDisplayContext);
 
   const heroFilterContainerTransition = useTransition(showHeroFilterContainer, {
-    from: { maxHeight: '0%' },
-    enter: { maxHeight: '80%' },
-    leave: { maxHeight: '0%' },
+    from: { maxHeight: "0%" },
+    enter: { maxHeight: "80%" },
+    leave: { maxHeight: "0%" },
     config: config.default,
   });
 
@@ -60,7 +60,7 @@ export const SearchContainer = ({
   return (
     <>
       <div
-        className={`bg-[#121212] w-full h-max text-center px-2 md:px-0 my-4 top-0 left-0 shadow-black/95 transition duration-200 flex justify-center overflow-visible`}
+        className={`bg-[#121212] w-full h-max text-center px-2 md:px-0 top-0 left-0 shadow-black/95 transition duration-200 flex justify-center overflow-visible ${className}`}
       >
         <SearchBar
           className="z-10"

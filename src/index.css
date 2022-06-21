@@ -6,6 +6,7 @@
 @import "./css/tooltip.css";
 @import "./css/voicelineItem.css";
 @import "./css/searchBar.css";
+@import "./css/textShadow.css";
 @import "tailwindcss/utilities";
 
 @layer base {
