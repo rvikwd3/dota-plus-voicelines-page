@@ -6488,8 +6488,144 @@
     "plusVoiceLines": {
       "bonus": [
         {
-          "text": "FIIIGHT MEEE!",
-          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e3/Vo_mars_mars_ability4_09.mp3"
+          "text": "What's with this stupid wizard anyway?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/Vo_mars_mars_whawiz_01.mp3"
+        },
+        {
+          "text": "Can't you count?!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/39/Vo_mars_mars_notyet_15.mp3"
+        },
+        {
+          "text": "Time to run them down!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Vo_mars_mars_haste_03.mp3"
+        },
+        {
+          "text": "Ploonk!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d7/Vo_mars_mars_bottle_02.mp3"
+        },
+        {
+          "text": "What is this madness?!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ea/Vo_mars_mars_death_20.mp3"
+        },
+        {
+          "text": "Hmm, smoke. Prudent.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/14/Vo_mars_mars_item_64.mp3"
+        },
+        {
+          "text": "Everyone! Look! I bought... Wards!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4e/Vo_mars_mars_item_41.mp3"
+        },
+        {
+          "text": "Red Lightning? Hmm....",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8f/Vo_mars_mars_item_05.mp3"
+        },
+        {
+          "text": "A fine trade!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ab/Vo_mars_mars_purch_02.mp3"
+        },
+        {
+          "text": "Enough practice!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3d/Vo_mars_mars_lasthit_15.mp3"
+        },
+        {
+          "text": "Wait. Do creeps have pockets?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/Vo_mars_mars_lasthit_13.mp3"
+        },
+        {
+          "text": "When I put an enemy in the arena, don't let them out!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/30/Vo_mars_mars_ally_138.mp3"
+        },
+        {
+          "text": "Why do you always have to make it weird, Void Spirit?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/90/Vo_mars_mars_ally_137.mp3"
+        },
+        {
+          "text": "I'm only a handful of generations into this whole helping people thing. Any pointers?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d6/Vo_mars_mars_ally_112.mp3"
+        },
+        {
+          "text": "Who'd want to be king of sand?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/86/Vo_mars_mars_ally_92.mp3"
+        },
+        {
+          "text": "Folks seem to give you a wide berth, Rubick. Maybe wash the robes?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fe/Vo_mars_mars_ally_90.mp3"
+        },
+        {
+          "text": "That's not what an oracle looks like!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/ff/Vo_mars_mars_ally_76.mp3"
+        },
+        {
+          "text": "I feel some good vibes coming off of you, new friend!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bb/Vo_mars_mars_ally_67.mp3"
+        },
+        {
+          "text": "Let me juggle your tiny orbs, Invoker!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ec/Vo_mars_mars_ally_51.mp3"
+        },
+        {
+          "text": "Why so serious? There's battle ahead!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b5/Vo_mars_mars_ally_40_01.mp3"
+        },
+        {
+          "text": "Maybe I'll settle down and have kids someday...",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Vo_mars_mars_ally_22.mp3"
+        },
+        {
+          "text": "Oh! This guy's creepy... Just what we needed!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1f/Vo_mars_mars_ally_08.mp3"
+        },
+        {
+          "text": "How about I just kill one head, Ogre?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a9/Vo_mars_mars_rival_99.mp3"
+        },
+        {
+          "text": "There is something seriously wrong!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1d/Vo_mars_mars_rival_161.mp3"
+        },
+        {
+          "text": "Auf auf! Auf!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/aa/Vo_mars_mars_rival_167.mp3"
+        },
+        {
+          "text": "Slippery little bastard!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e6/Vo_mars_mars_rival_120.mp3"
+        },
+        {
+          "text": "Attacking from all sides? A classic mistake!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/16/Vo_mars_mars_rival_176.mp3"
+        },
+        {
+          "text": "Get good, youngin.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/84/Vo_mars_mars_rival_68_02.mp3"
+        },
+        {
+          "text": "Oh, something about that felt extra nice.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dc/Vo_mars_mars_rival_55.mp3"
+        },
+        {
+          "text": "I hate lightning!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ab/Vo_mars_mars_rival_44.mp3"
+        },
+        {
+          "text": "They're playing my song!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f9/Vo_mars_mars_ability4_23.mp3"
+        },
+        {
+          "text": "You gave it your best.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fc/Vo_mars_mars_ability2_12.mp3"
+        },
+        {
+          "text": "Called it!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bd/Vo_mars_mars_ability5_04.mp3"
+        },
+        {
+          "text": "Kebab time!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/ca/Vo_mars_mars_attack_20.mp3"
+        },
+        {
+          "text": "A step towards victory.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/85/Vo_mars_mars_move_37.mp3"
         },
         {
           "text": "Shitty wizard!",
