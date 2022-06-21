@@ -1,11 +1,15 @@
-import { useTransition, config, animated } from "@react-spring/web";
+import { useTransition, config, animated, easings } from "@react-spring/web";
 import { SyntheticEvent, useState } from "react";
-import { MobileHelpDialog } from "./components/MobileHelpDialog";
-import Navbar from "./components/Navbar";
+import DesktopHelpTip from "./components/DesktopHelpTip";
+import {
+  MobileHelpDialog,
+  MobileHelpDialogBackdrop,
+} from "./components/MobileHelpDialog";
+import { MobileNavDrawer, Navbar } from "./components/Navigation";
 import { SearchContainer } from "./components/Search";
 import VoicelinesListContainer from "./components/VoicelinesListContainer";
 import IsSmallDisplayContextProvider from "./context/IsSmallDisplayContextProvider";
-import { CancelIcon, HelpIcon, PlayAudioIcon, SearchIcon } from "./icons";
+import { CancelIcon } from "./icons";
 
 const App = () => {
   const [searchInputValue, setSearchInputValue] = useState<string>("");
@@ -13,14 +17,8 @@ const App = () => {
   const [showMobileNavMenu, setShowMobileNavMenu] = useState<boolean>(false);
   const [showMobileHelpDialog, setShowMobileHelpDialog] =
     useState<boolean>(false);
-  const slideMenu = useTransition(showMobileNavMenu, {
-    from: { transform: "translate3d(-130%, 0, 0)" },
-    enter: { transform: "translate3d(0%, 0, 0)" },
-    leave: { transform: "translate3d(-130%, 0, 0)" },
-    config: config.default,
-  });
 
-  const handleMenuClose = (event: SyntheticEvent) => {
+  const handleMobileNavDrawerClose = (event: SyntheticEvent) => {
     setShowMobileNavMenu(false);
   };
 
@@ -35,47 +33,35 @@ const App = () => {
 
   return (
     <div className="relative w-full h-full">
-      {showMobileHelpDialog && (
-        <MobileHelpDialog handleHelpDialogClose={handleHelpDialogClose} />
-      )}
-      {slideMenu(
-        (styles, show) =>
-          show && (
-            <animated.div
-              id="mobileNavSlideout"
-              style={styles}
-              className="z-40 absolute w-6/12 h-full bg-neutral-700 shadow-menu border-r-2 border-zinc-400"
-            >
-              <div className="flex flex-col gap-y-4 w-full">
-                <div className="ml-3 mt-2" onClick={handleMenuClose}>
-                  <CancelIcon className="w-10 h-10 drop-shadow-md" />
-                </div>
-                <div className="flex flex-col gap-y-7 mr-3">
-                  <a
-                    href="#"
-                    className="self-end"
-                    onClick={handleMobileHelpNavClick}
-                  >
-                    <span className="text-2xl font-bold text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.2)]">
-                      Help
-                    </span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-2xl text-white font-bold self-end [text-shadow:0_4px_8px_rgba(0,0,0,0.2)]"
-                  >
-                    About
-                  </a>
-                </div>
-              </div>
-            </animated.div>
-          )
-      )}
-      <div className="z-0 w-full h-full flex flex-col justify-center">
+      <MobileNavDrawer
+        className="md:hidden z-40 absolute"
+        showDrawer={showMobileNavMenu}
+        handleMenuClose={handleMobileNavDrawerClose}
+        handleMobileHelpNavClick={handleMobileHelpNavClick}
+      />
+      <MobileHelpDialogBackdrop
+        className="md:hidden z-20 absolute w-full h-full"
+        showBackdrop={showMobileHelpDialog}
+      />
+      <MobileHelpDialog
+        className="md:hidden z-30 absolute w-full h-full"
+        showDialog={showMobileHelpDialog}
+        handleHelpDialogClose={handleHelpDialogClose}
+      />
+      <div className="z-0 w-full h-full flex flex-col justify-center relative">
         <Navbar
           setShowNavMenu={setShowMobileNavMenu}
           setShowMobileHelpDialog={setShowMobileHelpDialog}
         />
+        <div className="hidden mt-4 md:block md:w-5/6 md:max-w-6xl relative self-center bg-stone-800 rounded-lg">
+          <div className="flex flex-row items-center justify-between gap-x-5 py-4 px-12">
+            <DesktopHelpTip className="p-8"/>
+            <span className="text-2xl text-white">HELP</span>
+            <span className="text-2xl text-white">HELP</span>
+            <span className="text-2xl text-white">HELP</span>
+            <span className="text-2xl text-white">HELP</span>
+          </div>
+        </div>
         <IsSmallDisplayContextProvider>
           <SearchContainer
             searchInputValue={searchInputValue}

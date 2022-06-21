@@ -5,7 +5,7 @@ interface Props extends React.ComponentPropsWithoutRef<"div"> {
   tipLabel: string;
 }
 
-export const HelpTip = ({ icon, tipTextSpan, tipImgUrl, tipLabel }: Props) => {
+export const MobileHelpTip = ({ icon, tipTextSpan, tipImgUrl, tipLabel }: Props) => {
   return (
     <div id={`helpTip-${tipLabel}`} className="flex flex-col gap-y-4">
       <div className="px-4 flex flex-row gap-x-4 items-center">

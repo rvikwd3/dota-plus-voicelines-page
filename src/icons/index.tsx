@@ -8,3 +8,5 @@ export { ChevronUpIcon } from "./ChevronUpIcon";
 export { SearchIcon } from "./SearchIcon";
 export { HelpIcon } from "./HelpIcon";
 export { MenuIcon } from "./MenuIcon";
+export { PasteIcon } from "./PasteIcon";
+export { FilterIcon } from "./FilterIcon";
