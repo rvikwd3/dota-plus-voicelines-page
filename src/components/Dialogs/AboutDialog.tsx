@@ -42,11 +42,11 @@ export const AboutDialog = ({
                 >
                   <CancelIcon className="w-10 h-10 stroke-neutral-400 active:scale-90 transition duration-100 ease-out" />
                 </div>
-                <div className="w-5/6 h-full flex flex-col gap-y-4 items-center relative">
+                <div className="w-5/6 no-list-scrollbar h-full flex flex-col gap-y-8 items-center justify-between overflow-y-scroll">
                   <span className="pt-8 pb-4 uppercase text-3xl tracking-widest font-bold text-neutral-200">
                     about
                   </span>
-                  <p className="text-neutral-200 text-base tracking-wide">
+                  <p className="text-neutral-200 text-base text-center tracking-wide">
                     This website was developed as a reference to use with the
                     Streamer Dota Voiceline project.
                     <br />
@@ -89,7 +89,7 @@ export const AboutDialog = ({
                       tsunami643
                     </a>
                   </p>
-                  <div className="absolute bottom-4 flex flex-col gap-y-2">
+                  <div className="flex flex-col gap-y-2">
                     <img
                       className="w-16 h-16 rounded-full border-neutral-200 border-2 self-center hover:scale-110 transition duration-200 ease-out"
                       src="/images/avatar/croppedOpenAIProfile.jpg"

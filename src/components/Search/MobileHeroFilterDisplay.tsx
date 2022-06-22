@@ -22,7 +22,7 @@ export const MobileHeroFilterDisplay = ({
   };
 
   return (
-    <div className="flex flex-row mx-3 items-center gap-x-2 mb-2">
+    <div className="flex flex-row mx-3 items-center gap-x-2 my-2">
       <div onClick={handleCancelClick} className="active:scale-90">
         <CancelIcon className="w-9 h-9" />
       </div>

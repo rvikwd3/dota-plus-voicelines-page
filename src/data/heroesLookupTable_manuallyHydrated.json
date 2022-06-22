@@ -7065,12 +7065,100 @@
     "plusVoiceLines": {
       "bonus": [
         {
+          "text": "Doom, huh? Your mom musta loved you.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/92/Vo_monkey_king_monkey_ally_49.mp3"
+        },
+        {
+          "text": "You mind if I call you Bones? Because whenever I hear Clinkz I start looking for a clockwork creature and I get really confused.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d2/Vo_monkey_king_monkey_ally_35.mp3"
+        },
+        {
+          "text": "So how does one become a Brewmaster? Is it hours as an apprentice? An accredited course? Self given title?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6b/Vo_monkey_king_monkey_ally_24.mp3"
+        },
+        {
+          "text": "Quick question Abaddon: when you say 'Lord of Avernus' is that by birth or by marriage?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/41/Vo_monkey_king_monkey_ally_01.mp3"
+        },
+        {
+          "text": "I wish I could unsee you, Riki.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/ff/Vo_monkey_king_monkey_rival_143.mp3"
+        },
+        {
+          "text": "Oh, I hate birds.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/47/Vo_monkey_king_monkey_rival_226.mp3"
+        },
+        {
+          "text": "That's the biggest banana slug I've ever seen.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e4/Vo_monkey_king_monkey_rival_202.mp3"
+        },
+        {
+          "text": "Trolls. Always a challenge, never an obstacle.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/17/Vo_monkey_king_monkey_rival_190.mp3"
+        },
+        {
+          "text": "No one likes you, Techies. Just go away.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/Vo_monkey_king_monkey_rival_173.mp3"
+        },
+        {
+          "text": "I'm not saying there's always a connection between excessive brawn and mental deficiency.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9c/Vo_monkey_king_monkey_rival_171.mp3"
+        },
+        {
+          "text": "Twice the ogre? Try half the challenge.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c9/Vo_monkey_king_monkey_rival_122.mp3"
+        },
+        {
+          "text": "Your name's 'Lifestealer'? Hohoho! Man, this joke writes itself.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2a/Vo_monkey_king_monkey_rival_90.mp3"
+        },
+        {
+          "text": "Cute hammer, Earthshaker, hah. Next time use it.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Vo_monkey_king_monkey_rival_58.mp3"
+        },
+        {
+          "text": "Let's be real, Maiden, your sister has all the talent.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a4/Vo_monkey_king_monkey_rival_40.mp3"
+        },
+        {
+          "text": "You gonna fight back or just make stupid ice puns all day?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f6/Vo_monkey_king_monkey_rival_39.mp3"
+        },
+        {
+          "text": "For someone who says he's anti-magic you sure like teleporting around the battle field.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2e/Vo_monkey_king_monkey_rival_07.mp3"
+        },
+        {
+          "text": "Oh, next time, try not to die.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8c/Vo_monkey_king_monkey_kill_12.mp3"
+        },
+        {
+          "text": "Aw come on, you're dead already?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0d/Vo_monkey_king_monkey_kill_03.mp3"
+        },
+        {
+          "text": "You can see everything up here.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/89/Vo_monkey_king_monkey_ability1_06.mp3"
+        },
+        {
+          "text": "Show me what you got!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1c/Vo_monkey_king_monkey_attack_06.mp3"
+        },
+        {
+          "text": "Who's next?!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/84/Vo_monkey_king_monkey_attack_14.mp3"
+        },
+        {
           "text": "Nice try.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e8/Vo_monkey_king_monkey_kill_10.mp3"
         },
         {
           "text": "Oh, there'll be stories about this fight.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a2/Vo_monkey_king_monkey_spawn_04.mp3"
+        },
+        {
+          "text": "I need no introduction!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/Vo_monkey_king_monkey_spawn_13.mp3"
         },
         {
           "text": "Shitty wizard!",
