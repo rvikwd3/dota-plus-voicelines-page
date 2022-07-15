@@ -10,6 +10,7 @@ type Props = {
   setSearchInputValue: (value: string) => void;
   onSearchInputFocus: (event: SyntheticEvent) => void;
   onSearchInputBlur: (event: SyntheticEvent) => void;
+  onSearchInputKeyUp: (event: React.KeyboardEvent) => void;
   id?: string;
   className?: string;
 };
@@ -21,6 +22,7 @@ export const SearchBar = ({
   setSearchInputValue,
   onSearchInputFocus,
   onSearchInputBlur,
+  onSearchInputKeyUp,
   id,
   className,
 }: Props) => {
@@ -70,6 +72,7 @@ export const SearchBar = ({
           onChange={onSearchInputChange}
           onFocus={onSearchInputFocus}
           onBlur={onSearchInputBlur}
+          onKeyUp={onSearchInputKeyUp}
         />
         {searchInputValue.length > 0 && (
           <span

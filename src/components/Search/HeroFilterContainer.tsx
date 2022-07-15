@@ -1,9 +1,10 @@
 import React, { SyntheticEvent } from "react";
+import { HeroFilterItem } from "../../../types";
 import { ChevronUpIcon } from "../../icons";
-import { parseHeroFilterItems } from "../../utils/parseHeroFilterItems";
 
 type Props = {
   searchInputValue: string;
+  heroesToShow: HeroFilterItem[];
   closeContainer: () => void;
   onHeroFilterItemClick: (event: SyntheticEvent) => void;
   id?: string;
@@ -13,15 +14,12 @@ type Props = {
 export const HeroFilterContainer = React.memo(
   ({
     searchInputValue,
+    heroesToShow,
     closeContainer,
     onHeroFilterItemClick,
     id,
     className,
   }: Props) => {
-    const heroesToShow = parseHeroFilterItems().filter((item) =>
-      item.name.some((name) => name.includes(searchInputValue.toLowerCase()))
-    );
-
     // Prevent onMouseDown from firing an onBlur event to SearchBar, before onClick has a chance to fire
     // https://stackoverflow.com/a/57630197/10081445
     const delaySearchBarOnBlur = (event: SyntheticEvent) => {

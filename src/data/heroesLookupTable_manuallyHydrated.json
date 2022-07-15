@@ -233,6 +233,46 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/06/Vo_antimage_anti_magicuser_03.mp3"
         },
         {
+          "text": "Blink Dagger? Really?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/59/Vo_antimage_anti_blink_01.mp3"
+        },
+        {
+          "text": "Manta. Wonderful!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Vo_antimage_anti_manta_03.mp3"
+        },
+        {
+          "text": "Scepter? Really.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1d/Vo_antimage_anti_scepter_01.mp3"
+        },
+        {
+          "text": "Begone!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Vo_antimage_anti_attack_05.mp3"
+        },
+        {
+          "text": "Thou art a poor speller.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Vo_antimage_anti_resist_03.mp3"
+        },
+        {
+          "text": "One less dark conspiracy!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/48/Vo_antimage_anti_ability_multi_03.mp3"
+        },
+        {
+          "text": "Hello, brother.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Vo_antimage_anti_brother_06.mp3"
+        },
+        {
+          "text": "Thou hast paid the price.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/46/Vo_antimage_anti_lasthit_07.mp3"
+        },
+        {
+          "text": "Oh, Rapier Divine!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/35/Vo_antimage_anti_rapier_02.mp3"
+        },
+        {
+          "text": "It was worth it.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/64/Vo_antimage_anti_death_14.mp3"
+        },
+        {
           "text": "Shitty wizard!",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ea/Vo_antimage_anti_shitwiz_01.mp3"
         }
@@ -4289,6 +4329,86 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/16/Vo_earthshaker_erth_ability_echo_03.mp3"
         },
         {
+          "text": "Blink Dagger... Now it's on!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/43/Vo_earthshaker_erth_blink_02.mp3"
+        },
+        {
+          "text": "I'm gonna pound you!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c1/Vo_earthshaker_erth_attack_08.mp3"
+        },
+        {
+          "text": "Shake it!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3a/Vo_earthshaker_erth_spawn_05.mp3"
+        },
+        {
+          "text": "Let's roll…",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/Vo_earthshaker_erth_move_13.mp3"
+        },
+        {
+          "text": "The time has come.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/75/Vo_earthshaker_erth_cast_03.mp3"
+        },
+        {
+          "text": "Echo Slam…?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Vo_earthshaker_erth_ability_echo_07.mp3"
+        },
+        {
+          "text": "No one sees an earthquake coming.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/50/Vo_earthshaker_erth_invis_02.mp3"
+        },
+        {
+          "text": "Don't take that magnitude with me.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Vo_earthshaker_erth_kill_11.mp3"
+        },
+        {
+          "text": "Tiny, your name is still too big for you.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Vo_earthshaker_erth_rival_01.mp3"
+        },
+        {
+          "text": "Pick a different place to raise a family next time.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/41/Vo_earthshaker_erth_rival_08.mp3"
+        },
+        {
+          "text": "Clockworks…and then it doesn't.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Vo_earthshaker_erth_rival_12.mp3"
+        },
+        {
+          "text": "Clock-blocked!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8a/Vo_earthshaker_erth_rival_13.mp3"
+        },
+        {
+          "text": "Respect the earth…shaker.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/97/Vo_earthshaker_erth_rival_19.mp3"
+        },
+        {
+          "text": "Phantom Lancer, I hate all of you.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a7/Vo_earthshaker_erth_rival_21.mp3"
+        },
+        {
+          "text": "I'm saving up.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/76/Vo_earthshaker_erth_lasthit_07.mp3"
+        },
+        {
+          "text": "I'll give them such a pounding!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3b/Vo_earthshaker_erth_scepter_02.mp3"
+        },
+        {
+          "text": "Don't blink or you'll miss it!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/75/Vo_earthshaker_erth_blink_06.mp3"
+        },
+        {
+          "text": "Black King Bar!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e5/Vo_earthshaker_erth_item_05.mp3"
+        },
+        {
+          "text": "Shake it off!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/83/Vo_earthshaker_erth_respawn_01.mp3"
+        },
+        {
+          "text": "Raaaaa!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6e/Vo_earthshaker_erth_anger_08.mp3"
+        },
+        {
           "text": "Shitty wizard!",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/16/Vo_earthshaker_erth_shitwiz_01.mp3"
         }
@@ -4682,6 +4802,54 @@
         {
           "text": "If there is a future, this will be useful.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/39/Vo_enigma_enig_bottle_03.mp3"
+        },
+        {
+          "text": "Reality is illusion.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ec/Vo_enigma_enig_move_13.mp3"
+        },
+        {
+          "text": "I go.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7e/Vo_enigma_enig_move_06.mp3"
+        },
+        {
+          "text": "As you wish.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a7/Vo_enigma_enig_move_12.mp3"
+        },
+        {
+          "text": "I smash you.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e8/Vo_enigma_enig_attack_07.mp3"
+        },
+        {
+          "text": "My nihilism increases.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/de/Vo_enigma_enig_level_05.mp3"
+        },
+        {
+          "text": "My horizon expands.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0c/Vo_enigma_enig_level_06.mp3"
+        },
+        {
+          "text": "Welcome to the abyss.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/71/Vo_enigma_enig_kill_06.mp3"
+        },
+        {
+          "text": "Rise from that, Phoenix.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/92/Vo_enigma_enig_rival_25.mp3"
+        },
+        {
+          "text": "Those from the founding here once again.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/50/Vo_enigma_enig_ally_17.mp3"
+        },
+        {
+          "text": "Those from the founding here once again.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/50/Vo_enigma_enig_ally_17.mp3"
+        },
+        {
+          "text": "This, like time, can wait.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ec/Vo_enigma_enig_bottle_02.mp3"
+        },
+        {
+          "text": "Who escapes a black hole?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/ba/Vo_enigma_enig_ability_failure_02.mp3"
         },
         {
           "text": "Shitty wizard!",
@@ -5420,6 +5588,42 @@
         {
           "text": "This changes everything.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/Vo_jakiro_jak_rare_03.mp3"
+        },
+        {
+          "text": "Puck, you needed more dragon, less fairy. Not that there's anything wrong with that.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/46/Vo_jakiro_jak_rival_12.mp3"
+        },
+        {
+          "text": "A respectable chill, Apparition, but put some fire in it next time. More ice, too.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e9/Vo_jakiro_jak_rival_11.mp3"
+        },
+        {
+          "text": "It takes two to tango.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/90/Vo_jakiro_jak_item_05.mp3"
+        },
+        {
+          "text": "How could you?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Vo_jakiro_jak_rival_13.mp3"
+        },
+        {
+          "text": "And I blame you!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5c/Vo_jakiro_jak_lose_04.mp3"
+        },
+        {
+          "text": "You need a wintermint.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/ba/Vo_jakiro_jak_brother_07.mp3"
+        },
+        {
+          "text": "Ah, the Scythe of Vyse.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/43/Vo_jakiro_jak_item_02.mp3"
+        },
+        {
+          "text": "Suffer!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Vo_jakiro_jak_attack_05.mp3"
+        },
+        {
+          "text": "Someone's been eating peppers.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/Vo_jakiro_jak_brother_05.mp3"
         },
         {
           "text": "Shitty wizard!",
@@ -10329,6 +10533,114 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/99/Vo_terrorblade_terr_rival_36.mp3"
         },
         {
+          "text": "I open your throat to close your eyes.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dc/Vo_terrorblade_terr_kill_04.mp3"
+        },
+        {
+          "text": "From the hell of hells I come.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fe/Vo_terrorblade_terr_spawn_05.mp3"
+        },
+        {
+          "text": "Watch them flee.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a9/Vo_terrorblade_terr_move_02.mp3"
+        },
+        {
+          "text": "Stalking.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Vo_terrorblade_terr_movedemon_08.mp3"
+        },
+        {
+          "text": "Fear he who fears nothing.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f1/Vo_terrorblade_terr_attack_05.mp3"
+        },
+        {
+          "text": "Cut to the chase.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/41/Vo_terrorblade_terr_cast_02.mp3"
+        },
+        {
+          "text": "Fair trade.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d8/Vo_terrorblade_terr_sunder_02.mp3"
+        },
+        {
+          "text": "Well, this unlevels the playing field.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Vo_terrorblade_terr_levelup_08.mp3"
+        },
+        {
+          "text": "The devil's in the details.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/79/Vo_terrorblade_terr_rival_02.mp3"
+        },
+        {
+          "text": "Stillness is beauty; I render you beautiful.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/68/Vo_terrorblade_terr_rival_13.mp3"
+        },
+        {
+          "text": "I was the devil on your shoulder.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/18/Vo_terrorblade_terr_rival_14.mp3"
+        },
+        {
+          "text": "Stole your thunder.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dc/Vo_terrorblade_terr_rival_23.mp3"
+        },
+        {
+          "text": "You were quick Windranger, but not quick enough.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d6/Vo_terrorblade_terr_rival_29.mp3"
+        },
+        {
+          "text": "Did you see that coming, Oracle?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d4/Vo_terrorblade_terr_rival_30.mp3"
+        },
+        {
+          "text": "Always so doom and gloom.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/Vo_terrorblade_terr_rival_44.mp3"
+        },
+        {
+          "text": "For a thing named Undying, you look awfully dead.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6f/Vo_terrorblade_terr_rival_21.mp3"
+        },
+        {
+          "text": "Undying? More likes Keeps-dying.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/10/Vo_terrorblade_terr_rival_22.mp3"
+        },
+        {
+          "text": "Timbersaw, what the hell is wrong with you anyway.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Vo_terrorblade_terr_ally_04.mp3"
+        },
+        {
+          "text": "Techies. It has to be Techies.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/Vo_terrorblade_terr_ally_05.mp3"
+        },
+        {
+          "text": "I'm every demon's worst nightmare, but I'm your best friend.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/48/Vo_terrorblade_terr_ally_22.mp3"
+        },
+        {
+          "text": "Hey Timbersaw, look out, a tree! Heyah, heh, hah.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8f/Vo_terrorblade_terr_ally_02.mp3"
+        },
+        {
+          "text": "Timbersaw, please shut up about the trees. Seriously, you need help.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/06/Vo_terrorblade_terr_ally_01.mp3"
+        },
+        {
+          "text": "Your silence is golden.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/40/Vo_terrorblade_terr_lasthit_07.mp3"
+        },
+        {
+          "text": "Satanic. Of course I am.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d4/Vo_terrorblade_terr_items_05.mp3"
+        },
+        {
+          "text": "Heaven's Halberd. The irony does not escape me.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4e/Vo_terrorblade_terr_items_18.mp3"
+        },
+        {
+          "text": "What have we here?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4b/Vo_terrorblade_terr_itemdrop_moderate_02.mp3"
+        },
+        {
+          "text": "I'm so stupid.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/77/Vo_terrorblade_terr_failure_08.mp3"
+        },
+        {
           "text": "Shitty wizard.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/Vo_terrorblade_terr_shiwiz_01.mp3"
         }
@@ -10471,6 +10783,146 @@
         {
           "text": "I don't need therapy!",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a8/Vo_shredder_timb_rival_24.mp3"
+        },
+        {
+          "text": "I cut things. It's what I do. What else would I do?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1a/Vo_shredder_timb_spawn_03.mp3"
+        },
+        {
+          "text": "Trees? What do you mean there's trees out there?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/92/Vo_shredder_timb_spawn_04.mp3"
+        },
+        {
+          "text": "That one looks angry!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/62/Vo_shredder_timb_move_08.mp3"
+        },
+        {
+          "text": "It is dangerous out there.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/41/Vo_shredder_timb_reactivearmor_03.mp3"
+        },
+        {
+          "text": "They can try to stop me. They can try!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c0/Vo_shredder_timb_levelup_06.mp3"
+        },
+        {
+          "text": "Are you sure about this?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0e/Vo_shredder_timb_move_05.mp3"
+        },
+        {
+          "text": "Yeah yeah.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cb/Vo_shredder_timb_move_09.mp3"
+        },
+        {
+          "text": "Do I have to?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7e/Vo_shredder_timb_move_17.mp3"
+        },
+        {
+          "text": "You're with the trees aren't you?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/07/Vo_shredder_timb_attack_08.mp3"
+        },
+        {
+          "text": "I'm trapped. Trapped!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/06/Vo_shredder_timb_failure_03.mp3"
+        },
+        {
+          "text": "They're gonna get me.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/58/Vo_shredder_timb_failure_01.mp3"
+        },
+        {
+          "text": "Ah! Well, that was fun.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Vo_shredder_timb_chakramreturn_01.mp3"
+        },
+        {
+          "text": "Looking sharp. Crazy sharp.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/Vo_shredder_timb_levelup_04.mp3"
+        },
+        {
+          "text": "Hilarious.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Vo_shredder_timb_kill_11.mp3"
+        },
+        {
+          "text": "If you fall in the woods, and I laugh, will anyone hear me?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/10/Vo_shredder_timb_rival_04.mp3"
+        },
+        {
+          "text": "Sympathizer!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ef/Vo_shredder_timb_rival_23.mp3"
+        },
+        {
+          "text": "Not listening. Not listening. Not listening.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/14/Vo_shredder_timb_rival_12.mp3"
+        },
+        {
+          "text": "There's…a giant…tree-person…right next to me. Stay calm. Ha ha ha ha. Just stay calm.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/17/Vo_shredder_timb_ally_01.mp3"
+        },
+        {
+          "text": "Ah, Dark Seer. Finally someone who appreciates a wall without padding.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a6/Vo_shredder_timb_ally_09.mp3"
+        },
+        {
+          "text": "Hm, those brambles are like baby trees.. I'm watching you.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/68/Vo_shredder_timb_ally_19.mp3"
+        },
+        {
+          "text": "Nut!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/12/Vo_shredder_timb_lasthit_09.mp3"
+        },
+        {
+          "text": "Oh ho ho ho ho ho! No.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Vo_shredder_timb_deny_14.mp3"
+        },
+        {
+          "text": "Hey that is a crazy bargain.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f1/Vo_shredder_timb_purch_01.mp3"
+        },
+        {
+          "text": "You're selling me this? And they call me crazy?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/58/Vo_shredder_timb_purch_02.mp3"
+        },
+        {
+          "text": "Blink dagger? I don't need to blink!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/62/Vo_shredder_timb_blink_02.mp3"
+        },
+        {
+          "text": "What? What happened?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ae/Vo_shredder_timb_death_06.mp3"
+        },
+        {
+          "text": "Dammit!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f9/Vo_shredder_timb_death_09.mp3"
+        },
+        {
+          "text": "Oh no. Back here again?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/Vo_shredder_timb_respawn_01.mp3"
+        },
+        {
+          "text": "Hey don't tell me to calm down. I am calm!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/19/Vo_shredder_timb_respawn_03.mp3"
+        },
+        {
+          "text": "It's great to be back. Well that's what I tell people anyway.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/Vo_shredder_timb_respawn_07.mp3"
+        },
+        {
+          "text": "This is my scheming face.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3b/Vo_shredder_timb_bottle_01.mp3"
+        },
+        {
+          "text": "Oh great, now I'm seeing things too.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b3/Vo_shredder_timb_illus_02.mp3"
+        },
+        {
+          "text": "You're one of the good ones!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/ce/Vo_shredder_timb_thanks_02.mp3"
+        },
+        {
+          "text": "Finally a pleasant surprise.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/44/Vo_shredder_timb_drop_common_01.mp3"
+        },
+        {
+          "text": "Oh yeah ha ha.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/Vo_shredder_timb_happy_05.mp3"
         },
         {
           "text": "Shitty wizard.",
@@ -10696,6 +11148,70 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Vo_treant_treant_rival_11.mp3"
         },
         {
+          "text": "Trees are not so good with motion, you know.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/81/Vo_treant_treant_move_20.mp3"
+        },
+        {
+          "text": "So soon?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0c/Vo_treant_treant_move_22.mp3"
+        },
+        {
+          "text": "How about a stroll?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/70/Vo_treant_treant_move_25.mp3"
+        },
+        {
+          "text": "Be one with the leaves.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b9/Vo_treant_treant_ability_naturesguise_02.mp3"
+        },
+        {
+          "text": "Hmm. Where's a tree when you need one.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6a/Vo_treant_treant_ability_naturesguise_11.mp3"
+        },
+        {
+          "text": "Sorry, friend.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a0/Vo_treant_treant_tango_01.mp3"
+        },
+        {
+          "text": "Is it weird that I drink with my feet?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6b/Vo_treant_treant_levelup_13.mp3"
+        },
+        {
+          "text": "You may be the only one here who is slower than I.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/57/Vo_treant_treant_rival_11.mp3"
+        },
+        {
+          "text": "Well! I think I enjoyed that.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/29/Vo_treant_treant_rival_16.mp3"
+        },
+        {
+          "text": "It seems only fitting that you have a log jammed up— Oh, but where are my manners.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e5/Vo_treant_treant_rival_15.mp3"
+        },
+        {
+          "text": "Sheep… stick?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9f/Vo_treant_treant_items_07.mp3"
+        },
+        {
+          "text": "What a lovely day.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/Vo_treant_treant_respawn_06.mp3"
+        },
+        {
+          "text": "I think I'll go for a nice walk.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0c/Vo_treant_treant_respawn_09.mp3"
+        },
+        {
+          "text": "Is it over already? Good, good.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Vo_treant_treant_win_04.mp3"
+        },
+        {
+          "text": "I rather enjoyed that break.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4e/Vo_treant_treant_respawn_11.mp3"
+        },
+        {
+          "text": "I'll get there. Eventually.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/65/Vo_treant_treant_move_24.mp3"
+        },
+        {
           "text": "Shitty wizard!",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4f/Vo_treant_treant_shiwiz_01.mp3"
         }
@@ -10838,6 +11354,406 @@
         {
           "text": "Well there's your problem.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1d/Vo_tusk_tusk_failure_03.mp3"
+        },
+        {
+          "text": "Who's ready for a fight? The first hit is free! Anyone?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Vo_tusk_tusk_battlebegins_01.mp3"
+        },
+        {
+          "text": "Time to brawl.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/Vo_tusk_tusk_attack_09.mp3"
+        },
+        {
+          "text": "Sounds like a good idea.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/99/Vo_tusk_tusk_move_07.mp3"
+        },
+        {
+          "text": "Ya sure.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b2/Vo_tusk_tusk_move_19.mp3"
+        },
+        {
+          "text": "Okie-dokie.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7b/Vo_tusk_tusk_move_25.mp3"
+        },
+        {
+          "text": "This should be fun!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/09/Vo_tusk_tusk_attack_02.mp3"
+        },
+        {
+          "text": "Get ready! Here I come!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/90/Vo_tusk_tusk_attack_14.mp3"
+        },
+        {
+          "text": "Ally-oop!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d0/Vo_tusk_tusk_snowball_09.mp3"
+        },
+        {
+          "text": "Stay awhile!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/de/Vo_tusk_tusk_snowball_13.mp3"
+        },
+        {
+          "text": "Here's snow in your eye!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bf/Vo_tusk_tusk_snowball_11.mp3"
+        },
+        {
+          "text": "Where did they go?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/72/Vo_tusk_tusk_snowball_18.mp3"
+        },
+        {
+          "text": "Ta… Da… Ah, hmm.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/96/Vo_tusk_tusk_snowball_20.mp3"
+        },
+        {
+          "text": "I will just let you off here.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/Vo_tusk_tusk_snowball_27.mp3"
+        },
+        {
+          "text": "Roshan Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/be/Vo_tusk_tusk_superpunch_attack_09.mp3"
+        },
+        {
+          "text": "Phoenix Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c7/Vo_tusk_tusk_superpunch_attack_12.mp3"
+        },
+        {
+          "text": "Keen Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/34/Vo_tusk_tusk_superpunch_attack_02.mp3"
+        },
+        {
+          "text": "Greevil Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/ff/Vo_tusk_tusk_superpunch_attack_04.mp3"
+        },
+        {
+          "text": "Dire Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3d/Vo_tusk_tusk_superpunch_attack_07.mp3"
+        },
+        {
+          "text": "Radiant Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a2/Vo_tusk_tusk_superpunch_attack_08.mp3"
+        },
+        {
+          "text": "Chaos Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/68/Vo_tusk_tusk_superpunch_attack_14.mp3"
+        },
+        {
+          "text": "Puck Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e1/Vo_tusk_tusk_superpunch_attack_15.mp3"
+        },
+        {
+          "text": "Omni Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0e/Vo_tusk_tusk_superpunch_attack_16.mp3"
+        },
+        {
+          "text": "Shadow Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cc/Vo_tusk_tusk_superpunch_attack_17.mp3"
+        },
+        {
+          "text": "Phantom Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Vo_tusk_tusk_superpunch_attack_18.mp3"
+        },
+        {
+          "text": "My Signature Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/04/Vo_tusk_tusk_superpunch_attack_25.mp3"
+        },
+        {
+          "text": "Ultimate Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/Vo_tusk_tusk_superpunch_attack_23.mp3"
+        },
+        {
+          "text": "Magnificent Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b3/Vo_tusk_tusk_superpunch_attack_24.mp3"
+        },
+        {
+          "text": "Arctic Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f7/Vo_tusk_tusk_superpunch_attack_27.mp3"
+        },
+        {
+          "text": "Polar Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/03/Vo_tusk_tusk_superpunch_attack_31.mp3"
+        },
+        {
+          "text": "Galactic Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a6/Vo_tusk_tusk_superpunch_attack_32.mp3"
+        },
+        {
+          "text": "Cannon Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3c/Vo_tusk_tusk_superpunch_attack_34.mp3"
+        },
+        {
+          "text": "Orbital Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/90/Vo_tusk_tusk_superpunch_attack_35.mp3"
+        },
+        {
+          "text": "Onehellofa Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6e/Vo_tusk_tusk_superpunch_attack_36.mp3"
+        },
+        {
+          "text": "That's the Love Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/19/Vo_tusk_tusk_superpunch_attack_38.mp3"
+        },
+        {
+          "text": "Friendship Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9e/Vo_tusk_tusk_superpunch_attack_40.mp3"
+        },
+        {
+          "text": "Counter Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a7/Vo_tusk_tusk_superpunch_attack_41.mp3"
+        },
+        {
+          "text": "Penetrating Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/21/Vo_tusk_tusk_superpunch_attack_43.mp3"
+        },
+        {
+          "text": "Equatorial Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f6/Vo_tusk_tusk_superpunch_attack_44.mp3"
+        },
+        {
+          "text": "Winterfreeze Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/39/Vo_tusk_tusk_superpunch_attack_48.mp3"
+        },
+        {
+          "text": "Snowflake Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/71/Vo_tusk_tusk_superpunch_attack_49.mp3"
+        },
+        {
+          "text": "Pudge Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e4/Vo_tusk_tusk_superpunch_attack_50.mp3"
+        },
+        {
+          "text": "Drunk Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3e/Vo_tusk_tusk_superpunch_attack_51.mp3"
+        },
+        {
+          "text": "Falcon Punch.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Vo_tusk_tusk_superpunch_attack_53.mp3"
+        },
+        {
+          "text": "Another Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/75/Vo_tusk_tusk_superpunch_attack_55.mp3"
+        },
+        {
+          "text": "And Another Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/bf/Vo_tusk_tusk_superpunch_attack_56.mp3"
+        },
+        {
+          "text": "And Another Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a4/Vo_tusk_tusk_superpunch_attack_57.mp3"
+        },
+        {
+          "text": "Punch Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/75/Vo_tusk_tusk_superpunch_attack_58.mp3"
+        },
+        {
+          "text": "Punch Punch Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ed/Vo_tusk_tusk_superpunch_attack_59.mp3"
+        },
+        {
+          "text": "Moderately Painful Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7c/Vo_tusk_tusk_superpunch_attack_62.mp3"
+        },
+        {
+          "text": "Regrettable Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/76/Vo_tusk_tusk_superpunch_attack_63.mp3"
+        },
+        {
+          "text": "Bug Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/da/Vo_tusk_tusk_superpunch_attack_64.mp3"
+        },
+        {
+          "text": "Face Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/58/Vo_tusk_tusk_superpunch_attack_65.mp3"
+        },
+        {
+          "text": "Surgical Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e3/Vo_tusk_tusk_superpunch_attack_67.mp3"
+        },
+        {
+          "text": "Crippling Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1f/Vo_tusk_tusk_superpunch_attack_68.mp3"
+        },
+        {
+          "text": "Action Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/37/Vo_tusk_tusk_superpunch_attack_70.mp3"
+        },
+        {
+          "text": "Final Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/Vo_tusk_tusk_superpunch_attack_71.mp3"
+        },
+        {
+          "text": "Fruit Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c9/Vo_tusk_tusk_superpunch_attack_72.mp3"
+        },
+        {
+          "text": "Spiked Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Vo_tusk_tusk_superpunch_attack_73.mp3"
+        },
+        {
+          "text": "Diet Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c8/Vo_tusk_tusk_superpunch_attack_74.mp3"
+        },
+        {
+          "text": "Hole Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/18/Vo_tusk_tusk_superpunch_attack_76.mp3"
+        },
+        {
+          "text": "Magnus Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/79/Vo_tusk_tusk_superpunch_attack_78.mp3"
+        },
+        {
+          "text": "Double Dragon Punch Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d7/Vo_tusk_tusk_superpunch_attack_79.mp3"
+        },
+        {
+          "text": "Punchdrunk Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/85/Vo_tusk_tusk_superpunch_attack_80.mp3"
+        },
+        {
+          "text": "Here's a Bunch of Punches!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/35/Vo_tusk_tusk_superpunch_attack_81.mp3"
+        },
+        {
+          "text": "Magus Punch!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cc/Vo_tusk_tusk_superpunch_attack_83.mp3"
+        },
+        {
+          "text": "Time to punch things up!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f0/Vo_tusk_tusk_levelup_03.mp3"
+        },
+        {
+          "text": "A good warmup!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/80/Vo_tusk_tusk_levelup_06.mp3"
+        },
+        {
+          "text": "That gets my seal of approval!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c4/Vo_tusk_tusk_kill_01.mp3"
+        },
+        {
+          "text": "Pack some snow on it. You'll be fine.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/23/Vo_tusk_tusk_kill_07.mp3"
+        },
+        {
+          "text": "Care to go another round?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Vo_tusk_tusk_kill_11.mp3"
+        },
+        {
+          "text": "I was just getting warmed up!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Vo_tusk_tusk_kill_12.mp3"
+        },
+        {
+          "text": "That was my favorite Punch! You were impressed?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/39/Vo_tusk_tusk_kill_24.mp3"
+        },
+        {
+          "text": "Sorry to do that to you darling.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/ff/Vo_tusk_tusk_rival_13.mp3"
+        },
+        {
+          "text": "Not so fast. I will take that keg.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c5/Vo_tusk_tusk_rival_04.mp3"
+        },
+        {
+          "text": "I do not think you're having fun, man-horse!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d9/Vo_tusk_tusk_rival_11.mp3"
+        },
+        {
+          "text": "How many were there? Maybe I've had one too many blows to the head!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/dd/Vo_tusk_tusk_rival_08.mp3"
+        },
+        {
+          "text": "First blood! Now who wants to be second?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/Vo_tusk_tusk_firstblood_03.mp3"
+        },
+        {
+          "text": "Find me after the battle, Brewmaster. The second round is on me.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/36/Vo_tusk_tusk_ally_02.mp3"
+        },
+        {
+          "text": "Ho ho ho ho! Are you not the jovial sort!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/df/Vo_tusk_tusk_ally_07.mp3"
+        },
+        {
+          "text": "I look forward to your kebabs, Magnus.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Vo_tusk_tusk_ally_08.mp3"
+        },
+        {
+          "text": "Just a warmup!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e2/Vo_tusk_tusk_lasthit_01.mp3"
+        },
+        {
+          "text": "Cool off.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ee/Vo_tusk_tusk_lasthit_04.mp3"
+        },
+        {
+          "text": "Chill out.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/49/Vo_tusk_tusk_lasthit_05.mp3"
+        },
+        {
+          "text": "Don't take it personal.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8b/Vo_tusk_tusk_lasthit_06.mp3"
+        },
+        {
+          "text": "Nice try!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/de/Vo_tusk_tusk_lasthit_07.mp3"
+        },
+        {
+          "text": "Good practice.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f6/Vo_tusk_tusk_lasthit_08.mp3"
+        },
+        {
+          "text": "Aw denied!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c8/Vo_tusk_tusk_deny_02.mp3"
+        },
+        {
+          "text": "You should rethink that.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/59/Vo_tusk_tusk_deny_10.mp3"
+        },
+        {
+          "text": "It's very nice. What does it do?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/08/Vo_tusk_tusk_purch_04.mp3"
+        },
+        {
+          "text": "Shiva's Guard! Now that's cold!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2c/Vo_tusk_tusk_items_01.mp3"
+        },
+        {
+          "text": "Wow! You hit hard.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Vo_tusk_tusk_death_04.mp3"
+        },
+        {
+          "text": "Atta girl.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b0/Vo_tusk_tusk_death_15.mp3"
+        },
+        {
+          "text": "Isn't she something.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b9/Vo_tusk_tusk_death_17.mp3"
+        },
+        {
+          "text": "I threw this one.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ef/Vo_tusk_tusk_death_18.mp3"
+        },
+        {
+          "text": "I'm back. What did I miss?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f9/Vo_tusk_tusk_respawn_03.mp3"
+        },
+        {
+          "text": "Oh good. I returned. I was not done.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a8/Vo_tusk_tusk_respawn_07.mp3"
+        },
+        {
+          "text": "Tally-ho!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0b/Vo_tusk_tusk_haste_02.mp3"
+        },
+        {
+          "text": "And the winner, by unanimous decision, is me!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/Vo_tusk_tusk_win_05.mp3"
+        },
+        {
+          "text": "Oh, I'm going to be sore tomorrow.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/56/Vo_tusk_tusk_lose_03.mp3"
+        },
+        {
+          "text": "Oh yeah.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/Vo_tusk_tusk_happy_02.mp3"
         },
         {
           "text": "Shitty wizard.",
@@ -11857,6 +12773,126 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9a/Vo_winter_wyvern_winwyv_death_08.mp3"
         },
         {
+          "text": "Some breathe fire. I breathe ice.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2f/Vo_winter_wyvern_winwyv_spawn_05.mp3"
+        },
+        {
+          "text": "Huh.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0e/Vo_winter_wyvern_winwyv_anger_07.mp3"
+        },
+        {
+          "text": "You know, I think I just might.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/Vo_winter_wyvern_winwyv_move_04.mp3"
+        },
+        {
+          "text": "You know I will.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d4/Vo_winter_wyvern_winwyv_move_06.mp3"
+        },
+        {
+          "text": "Have patience, child.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/Vo_winter_wyvern_winwyv_move_10.mp3"
+        },
+        {
+          "text": "Wyvern's kiss.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/42/Vo_winter_wyvern_winwyv_articburn_02.mp3"
+        },
+        {
+          "text": "Sleep and heal.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c6/Vo_winter_wyvern_winwyv_coldembrace_01.mp3"
+        },
+        {
+          "text": "Ah! Beautiful!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a8/Vo_winter_wyvern_winwyv_winterscurse_14.mp3"
+        },
+        {
+          "text": "A coldness grows in my breast. Delicious!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/83/Vo_winter_wyvern_winwyv_levelup_06.mp3"
+        },
+        {
+          "text": "Was that wise?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3f/Vo_winter_wyvern_winwyv_kill_04.mp3"
+        },
+        {
+          "text": "Oh.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/64/Vo_winter_wyvern_winwyv_laugh_10.mp3"
+        },
+        {
+          "text": "I've got your number, Lich.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fb/Vo_winter_wyvern_winwyv_rival_03.mp3"
+        },
+        {
+          "text": "Lina, I don't find you hot at all.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/Vo_winter_wyvern_winwyv_rival_13.mp3"
+        },
+        {
+          "text": "Let's talk tactics another time, Tresdin.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7f/Vo_winter_wyvern_winwyv_ally_05.mp3"
+        },
+        {
+          "text": "Arc Warden, you have such a magnetic personality.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5f/Vo_winter_wyvern_winwyv_ally_10.mp3"
+        },
+        {
+          "text": "Hello Maiden, and how fare the wolves of Icewrack.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/30/Vo_winter_wyvern_winwyv_ally_13.mp3"
+        },
+        {
+          "text": "Dark Seer, you can vacuum up the mess I make.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0c/Vo_winter_wyvern_winwyv_ally_18.mp3"
+        },
+        {
+          "text": "Huh. Such a little one.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b1/Vo_winter_wyvern_winwyv_lasthit_03.mp3"
+        },
+        {
+          "text": "Don't mind if I do.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/59/Vo_winter_wyvern_winwyv_lasthit_10.mp3"
+        },
+        {
+          "text": "Cool.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e6/Vo_winter_wyvern_winwyv_lasthit_12.mp3"
+        },
+        {
+          "text": "Very cool.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c2/Vo_winter_wyvern_winwyv_lasthit_13.mp3"
+        },
+        {
+          "text": "That's cool.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5b/Vo_winter_wyvern_winwyv_lasthit_17.mp3"
+        },
+        {
+          "text": "Not cool.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/54/Vo_winter_wyvern_winwyv_deny_09.mp3"
+        },
+        {
+          "text": "Mm! Mekansm!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1c/Vo_winter_wyvern_winwyv_items_17.mp3"
+        },
+        {
+          "text": "Mm, Daedalus!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2f/Vo_winter_wyvern_winwyv_items_15.mp3"
+        },
+        {
+          "text": "I'll keep this on ice.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ae/Vo_winter_wyvern_winwyv_bottle_01.mp3"
+        },
+        {
+          "text": "You're wonderful.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c0/Vo_winter_wyvern_winwyv_thanks_04.mp3"
+        },
+        {
+          "text": "Mmm.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/75/Vo_winter_wyvern_winwyv_happy_03.mp3"
+        },
+        {
+          "text": "Ohh.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/53/Vo_winter_wyvern_winwyv_happy_04.mp3"
+        },
+        {
+          "text": "Ahh.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2c/Vo_winter_wyvern_winwyv_happy_05.mp3"
+        },
+        {
           "text": "Ugh. Shitty wizard.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/55/Vo_winter_wyvern_winwyv_shiwiz_01.mp3"
         }
@@ -11929,6 +12965,66 @@
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d8/Vo_witchdoctor_wdoc_ability_cask_04.mp3"
         },
         {
+          "text": "Which doctor you expecting?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0c/Vo_witchdoctor_wdoc_spawn_03.mp3"
+        },
+        {
+          "text": "Time for shots.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d7/Vo_witchdoctor_wdoc_attack_02.mp3"
+        },
+        {
+          "text": "Here I come!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/af/Vo_witchdoctor_wdoc_move_05.mp3"
+        },
+        {
+          "text": "Malpractice makes perfect.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/de/Vo_witchdoctor_wdoc_attack_07.mp3"
+        },
+        {
+          "text": "He's about to pop.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4e/Vo_witchdoctor_wdoc_killspecial_02.mp3"
+        },
+        {
+          "text": "Hah! Hex marks de spot.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f5/Vo_witchdoctor_wdoc_kill_01.mp3"
+        },
+        {
+          "text": "Ah, don't worry. You're not contagious.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/19/Vo_witchdoctor_wdoc_kill_09.mp3"
+        },
+        {
+          "text": "I thought I'd get a second opinion.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4c/Vo_witchdoctor_wdoc_respawn_01.mp3"
+        },
+        {
+          "text": "Thought I'd never get out of that waiting room.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fd/Vo_witchdoctor_wdoc_respawn_02.mp3"
+        },
+        {
+          "text": "It's a fetish of mine.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fd/Vo_witchdoctor_wdoc_bottle_01.mp3"
+        },
+        {
+          "text": "Take two blows and call me in the morning.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d3/Vo_witchdoctor_wdoc_doubdam_02.mp3"
+        },
+        {
+          "text": "Whodundat!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/9e/Vo_witchdoctor_wdoc_pain_03.mp3"
+        },
+        {
+          "text": "Do no harm. Chaaah! What fun is that?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/Vo_witchdoctor_wdoc_rare_03.mp3"
+        },
+        {
+          "text": "You'll be getting my bill.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/66/Vo_witchdoctor_wdoc_win_03.mp3"
+        },
+        {
+          "text": "I'll sue for malpractice!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4d/Vo_witchdoctor_wdoc_lose_04.mp3"
+        },
+        {
           "text": "Shitty wizard!",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6a/Vo_witchdoctor_wdoc_shitwiz_01.mp3"
         }
@@ -11999,6 +13095,126 @@
         {
           "text": "DEATH IS MY BITCH.",
           "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/ff/Vo_skeleton_king_wraith_move_09.mp3"
+        },
+        {
+          "text": "BOW BEFORE ME.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/28/Vo_skeleton_king_wraith_attack_02.mp3"
+        },
+        {
+          "text": "WE ARE IN AGREEMENT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2e/Vo_skeleton_king_wraith_move_01.mp3"
+        },
+        {
+          "text": "I'LL CONSIDER IT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/3e/Vo_skeleton_king_wraith_move_05.mp3"
+        },
+        {
+          "text": "WHO'S IN CHARGE HERE?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Vo_skeleton_king_wraith_move_10.mp3"
+        },
+        {
+          "text": "KEEP YOUR THOUGHTS TO YOURSELF.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/26/Vo_skeleton_king_wraith_move_18.mp3"
+        },
+        {
+          "text": "QUESTIONABLE.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/98/Vo_skeleton_king_wraith_move_22.mp3"
+        },
+        {
+          "text": "WHAT ARE YOU AFRAID OF?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/43/Vo_skeleton_king_wraith_attack_01.mp3"
+        },
+        {
+          "text": "KING ME!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8d/Vo_skeleton_king_wraith_level_03.mp3"
+        },
+        {
+          "text": "SOON PERHAPS I'LL CHOOSE A QUEEN.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/64/Vo_skeleton_king_wraith_level_06.mp3"
+        },
+        {
+          "text": "VERY WELL, I ACCEPT YOUR SURRENDER.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/70/Vo_skeleton_king_wraith_kill_06.mp3"
+        },
+        {
+          "text": "I'LL TAKE THAT AS A COMPLIMENT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/15/Vo_skeleton_king_wraith_kill_08.mp3"
+        },
+        {
+          "text": "MY QUEEN.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0c/Vo_skeleton_king_wraith_rival_02.mp3"
+        },
+        {
+          "text": "NO AMOUNT OF FORESIGHT COULD HAVE PREPARED YOU.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d2/Vo_skeleton_king_wraith_rival_23.mp3"
+        },
+        {
+          "text": "I DUB THEE CHAOS KNIGHT! HOW'S THAT FOR A NAME? NOT BAD, EH?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ef/Vo_skeleton_king_wraith_ally_14.mp3"
+        },
+        {
+          "text": "GOOD DAY, PEASANT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/41/Vo_skeleton_king_wraith_lasthit_02.mp3"
+        },
+        {
+          "text": "EVERY COIN COUNTS.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0d/Vo_skeleton_king_wraith_lasthit_07.mp3"
+        },
+        {
+          "text": "OH NO.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/9/97/Vo_skeleton_king_wraith_deny_06.mp3"
+        },
+        {
+          "text": "BAD PEASANT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/69/Vo_skeleton_king_wraith_deny_15.mp3"
+        },
+        {
+          "text": "AS IF I NEEDED MORE OF THIS. BUT I'LL TAKE IT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/47/Vo_skeleton_king_wraith_immort_02.mp3"
+        },
+        {
+          "text": "IT'S THE THREE R'S--REFRESHER, RAPIER, AND WRAITH!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b6/Vo_skeleton_king_wraith_items_17.mp3"
+        },
+        {
+          "text": "BUT—BUT!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/85/Vo_skeleton_king_wraith_death_27.mp3"
+        },
+        {
+          "text": "BUT—BUT—BUT I--!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c7/Vo_skeleton_king_wraith_death_37.mp3"
+        },
+        {
+          "text": "WHO'S IDEA WAS THAT?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e1/Vo_skeleton_king_wraith_death_long_02.mp3"
+        },
+        {
+          "text": "POOR TIMING!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/Vo_skeleton_king_wraith_death_long_11.mp3"
+        },
+        {
+          "text": "I'LL BE RIGHT BACK. WAIT? WHAT?",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/51/Vo_skeleton_king_wraith_death_long_17.mp3"
+        },
+        {
+          "text": "I DARE YOU.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/Vo_skeleton_king_wraith_death_long_28.mp3"
+        },
+        {
+          "text": "WHAT IS A KINGDOM WITHOUT A KING? JUST DOM.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2e/Vo_skeleton_king_wraith_respawn_07.mp3"
+        },
+        {
+          "text": "BEST DEATH YET!",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/29/Vo_skeleton_king_wraith_fastres_01.mp3"
+        },
+        {
+          "text": "THANK YOU, PEASANT.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/49/Vo_skeleton_king_wraith_thanks_04.mp3"
+        },
+        {
+          "text": "WELCOME TO ALL MY NEW SUBJECTS. NOW LET'S GET TO KNOW EACH OTHER.",
+          "url": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Vo_skeleton_king_wraith_win_03.mp3"
         },
         {
           "text": "SHITTY WIZARD...",

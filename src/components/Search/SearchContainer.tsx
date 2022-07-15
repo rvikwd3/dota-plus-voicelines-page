@@ -1,9 +1,11 @@
 import { animated, config, useTransition } from "@react-spring/web";
-import React, { SyntheticEvent, useContext, useState } from "react";
+import React, { SyntheticEvent, useContext, useMemo, useState } from "react";
 import { IsSmallDisplayContext } from "../../context/IsSmallDisplayContextProvider";
 import { HeroFilterContainer } from "./HeroFilterContainer";
 import { MobileHeroFilterDisplay } from "./MobileHeroFilterDisplay";
 import { SearchBar } from "./SearchBar";
+import { parseHeroFilterItems } from "../../utils/parseHeroFilterItems";
+import { HeroFilterItem } from "../../../types";
 
 type Props = {
   searchInputValue: string;
@@ -24,6 +26,15 @@ export const SearchContainer = ({
 }: Props) => {
   const [showHeroFilterContainer, setShowHeroFilterContainer] =
     useState<boolean>(false);
+
+  const heroFilterHeroesToShow = useMemo(
+    () =>
+      parseHeroFilterItems().filter((item) =>
+        item.name.some((name) => name.includes(searchInputValue.toLowerCase()))
+      ),
+    [searchInputValue]
+  );
+
   const isSmallDisplay = useContext(IsSmallDisplayContext);
 
   const heroFilterContainerTransition = useTransition(showHeroFilterContainer, {
@@ -53,6 +64,24 @@ export const SearchContainer = ({
     }
   };
 
+  const handleSearchInputKeyUp = (event: React.KeyboardEvent) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+
+      if (heroFilterHeroesToShow.length === 1) {
+        const heroFilterName =
+          heroFilterHeroesToShow[0].name[
+            heroFilterHeroesToShow[0].name.length - 1
+          ];
+        if (heroFilterName) {
+          setHeroFilter(heroFilterName);
+          setSearchInputValue("");
+          closeHeroFilterContainer();
+        }
+      }
+    }
+  };
+
   const clearHeroFilter = () => {
     setHeroFilter("");
   };
@@ -70,6 +99,7 @@ export const SearchContainer = ({
           setSearchInputValue={setSearchInputValue}
           onSearchInputFocus={openHeroFilterContainer}
           onSearchInputBlur={closeHeroFilterContainer}
+          onSearchInputKeyUp={handleSearchInputKeyUp}
         />
         {heroFilterContainerTransition(
           (styles, show) =>
@@ -82,6 +112,7 @@ export const SearchContainer = ({
                   searchInputValue={searchInputValue}
                   closeContainer={closeHeroFilterContainer}
                   onHeroFilterItemClick={selectHeroFilterItem}
+                  heroesToShow={heroFilterHeroesToShow}
                   className="max-h-[80%] relative no-list-scrollbar"
                 />
               </animated.div>
